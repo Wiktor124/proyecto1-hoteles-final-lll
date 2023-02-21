@@ -14,8 +14,6 @@ const fetchApiData = async (endpoint) => {
     if (response.ok) {
       const apiData = await response.json();
       hotelsData.push(apiData);
-
-      // TODO: send data to show in the HTML
     }
   } catch (error) {
     throw new Error(error);
