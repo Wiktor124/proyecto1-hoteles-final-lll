@@ -58,10 +58,15 @@ img {
 .carrousel {
   gap: 30px;
 }
-.carrousel__links {
+.carrousel li {
   position: relative;
-  z-index: 1;
   color: #fff;
+}
+.carrousel__links {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 .carrousel__title {
   position: absolute;
