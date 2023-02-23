@@ -1,0 +1,17 @@
+.carrousel-flex { display: flex; }
+
+.carrousel {
+  gap: 30px;
+  
+  &__links {
+    position: relative;
+    z-index: 1;
+    color: $white;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+  }
+}
