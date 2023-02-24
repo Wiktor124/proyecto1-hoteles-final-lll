@@ -1,19 +1,18 @@
 
 // Connect to Api
 const fetchApiData = async () => {
+  const api = 'https://63ed6ef13d9c852c3f5a8b83.mockapi.io/';
+
   try {
-    const data = await Promise.resolve(
-      fetch(
-        'https://63ed6ef13d9c852c3f5a8b83.mockapi.io/places',
-      ).then((response) => response.json()),
-    )
-
-    return data;
-  } catch (error) {
-    throw new Error(error)
+    const [places, hotels] = await Promise.all([
+      fetch(`${api}places`).then((response) => response.json()),
+      fetch(`${api}hotels`).then((response) => response.json())
+    ]);
+    localStorage.setItem('apiData', JSON.stringify({places, hotels}))
+    
+    return { places, hotels };
+  } catch  {
+    return JSON.parse(localStorage.getItem('apiData'))
   }
-}
-const apiData = await fetchApiData()
-
-export  {apiData};
-
+};
+export const { places, hotels } = await fetchApiData();

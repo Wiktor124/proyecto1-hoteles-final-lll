@@ -1,0 +1,26 @@
+[
+  {
+    "placeName": "placeName 1",
+    "description": "description 1",
+    "heroImage": "public/img-routes/guanacaste.jpg",
+    "id": "1"
+  },
+  {
+    "placeName": "placeName 2",
+    "description": "description 2",
+    "heroImage": "public/img-routes/limon.jpg",
+    "id": "2"
+  },
+  {
+    "placeName": "placeName 3",
+    "description": "description 3",
+    "heroImage": "public/img-routes/puntarenas.jpg",
+    "id": "3"
+  },
+  {
+    "placeName": "placeName 4",
+    "description": "description 4",
+    "heroImage": "public/img-routes/tamarindo.jpg",
+    "id": "4"
+  }
+]
