@@ -1,17 +1,83 @@
-// Work here!
+import {places} from './apiConnection.js';
+
+// class Places {
+//   constructor(places, hotels, rooms) {
+//     this.places = places;
+//     this.hotels = hotels;
+//   }
+
+//   // printPlacesImages() {
+//   //   document.querySelector('.carrousel').innerHTML = this.places.map(item => {
+//   //     return `
+//   //       <li>
+//   //         <a href="places.html" class="carrousel__links" data-id="${item.id}"></a>  
+//   //         <img src="${item.heroImage}" alt="${item.placeName}">
+//   //         <h3 class="carrousel__title">${item.placeName} <strong>TRAVEL</strong></h3>
+//   //       </li>
+//   //     `
+//   //   }).join('');
+//   // }
+
+//   printPlaces() {
+//     document.querySelector('.carrousel').innerHTML = this.places.map(item => {
+//       return `
+//         <li>
+//           <h3 class="carrousel__title">${item.placeName} <strong>TRAVEL</strong></h3>
+//           <img src="${item.heroImage}" alt="${item.placeName}">
+//           <p>${item.description}</p>
+//         </li>
+//       `
+//     }).join('');
+//   }
+
+//   printHotels() {
+//     document.querySelector('.hotel__list').innerHTML = this.hotels.map(item => {
+//       return `
+//       <li>
+//         <h2>${item.hotelName}</h2>
+//         <p>${item.characteristics}</p>
+//         <p>${item.description}</p>
+//         <img src="${item.image}" alt="${item.hotelName}">
+//         <span>${item.price}</span>
+//       </li>
+//       `
+//     }).join('');
+//   }
+
+//   printRooms() {
+
+//   }
+// }
+
+// export const print = new Places(places, hotels);
+// print.printPlacesImages();
+
+// print.printPlaces()
 
 
-// Connect to Api
-const fetchApiData = async () => {
+// })
 
-  try {
-    const data = await Promise.resolve(
-      fetch('https://63ed6ef13d9c852c3f5a8b83.mockapi.io/places').then(response => response.json())
-    )
-    printPlaces(data);
+function printPlacesImages(placesData) {
+  document.querySelector('.carrousel').innerHTML = placesData.map(item => {
+    return `
+      <li>
+        <a href="./place.html" class="carrousel__links" data-id="${item.id}"></a>  
+        <img src="${item.heroImage}" alt="${item.placeName}">
+        <h3 class="carrousel__title">${item.placeName} <strong>TRAVEL</strong></h3>
+      </li>
+    `
+  }).join('');
 
-  } catch (error) {
-    throw new Error(error);
+}
+printPlacesImages(places)
+ 
+
+function onePlace(target) {
+  localStorage.setItem('place', places.findIndex(item => item.id === target));
+}
+
+document.getElementById('carrousel').addEventListener('click', (e) => {
+  if(e.target.matches('a')) {
+    onePlace(e.target.dataset.id);
   }
-};
-window.onload = () => fetchApiData();
+})
