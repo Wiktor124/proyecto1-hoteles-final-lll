@@ -1,0 +1,38 @@
+.container {
+  &h2 {
+    font-weight: 300px;
+  }
+  & .tab-container {
+    display: flex;
+    flex-flow: row nowrap;
+
+    max-width: fit-content;
+    & .tab {
+      padding: 1rem 7rem 1rem 1rem;
+      margin: 0;
+      background-color: lightcyan;
+    }
+    & .tab.active {
+      background-color: blue;
+    }
+  }
+
+  .data-container {
+    background-color: aquamarine;
+    position: relative;
+    max-height: 10vh;
+  }
+
+  .data-container .data {
+    background-color: red;
+    margin: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+  }
+
+  .data-container .data.active {
+    opacity: 1;
+  }
+}

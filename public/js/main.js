@@ -55,7 +55,7 @@ import {places} from './apiConnection.js';
 // print.printPlaces()
 
 
-// })
+// 
 
 function printPlacesImages(placesData) {
   document.querySelector('.carrousel').innerHTML = placesData.map(item => {
@@ -81,3 +81,6 @@ document.getElementById('carrousel').addEventListener('click', (e) => {
     onePlace(e.target.dataset.id);
   }
 })
+
+
+

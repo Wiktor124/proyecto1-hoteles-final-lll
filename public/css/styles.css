@@ -51,4 +51,37 @@ img {
   width: 1px;
 }
 
+.containerh2 {
+  font-weight: 300px;
+}
+.container .tab-container {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: fit-content;
+}
+.container .tab-container .tab {
+  padding: 1rem 7rem 1rem 1rem;
+  margin: 0;
+  background-color: lightcyan;
+}
+.container .tab-container .tab.active {
+  background-color: blue;
+}
+.container .data-container {
+  background-color: aquamarine;
+  position: relative;
+  max-height: 10vh;
+}
+.container .data-container .data {
+  background-color: red;
+  margin: 1em;
+  padding: 1em;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+.container .data-container .data.active {
+  opacity: 1;
+}
+
 /*# sourceMappingURL=styles.css.map */
