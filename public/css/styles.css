@@ -73,9 +73,8 @@ img {
   max-height: 10vh;
 }
 .container .data-container .data {
-  background-color: red;
-  margin: 1em;
-  padding: 1em;
+  margin: 1rem;
+  padding: 1rem;
   position: absolute;
   top: 0;
   opacity: 0;
