@@ -1,0 +1,259 @@
+[
+  {
+    "hotelName": "hotelName 1",
+    "descritption": "descritption 1",
+    "idPlace": "1",
+    "roomsList": [
+      {
+        "roomName": "",
+        "price": "1",
+        "characteristics": "",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
+    "image": "public/img-routes/puntarenas.jpg",
+    "id": "1"
+  },
+  {
+    "hotelName": "hotelName 2",
+    "descritption": "descritption 2",
+    "idPlace": "1",
+    "roomsList": [
+      {
+        "roomName": "",
+        "price": "1",
+        "characteristics": "",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
+    "image": "public/img-routes/puntarenas.jpg",
+    "id": "2"
+  },
+  {
+    "hotelName": "hotelName 3",
+    "descritption": "descritption 3",
+    "idPlace": "1",
+    "roomsList": [
+      {
+        "roomName": "",
+        "price": "1",
+        "characteristics": "",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
+    "image": "public/img-routes/puntarenas.jpg",
+    "id": "3"
+  },
+  {
+    "hotelName": "hotelName 4",
+    "descritption": "descritption 4",
+    "idPlace": "1",
+    "roomsList": [
+      {
+        "roomName": "",
+        "price": "1",
+        "characteristics": "",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
+    "image": "public/img-routes/puntarenas.jpg",
+    "id": "4"
+  },
+  {
+    "hotelName": "hotelName 5",
+    "descritption": "descritption 5",
+    "idPlace": "2",
+    "roomsList": [
+      {
+        "roomName": "",
+        "price": "1",
+        "characteristics": "",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
+    "image": "public/img-routes/puntarenas.jpg",
+    "id": "5"
+  },
+  {
+    "hotelName": "hotelName 6",
+    "descritption": "descritption 6",
+    "idPlace": "2",
+    "roomsList": [
+      {
+        "roomName": "",
+        "price": "1",
+        "characteristics": "",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
+    "image": "public/img-routes/puntarenas.jpg",
+    "id": "6"
+  },
+  {
+    "hotelName": "hotelName 7",
+    "descritption": "descritption 7",
+    "idPlace": "2",
+    "roomsList": [
+      {
+        "roomName": "",
+        "price": "1",
+        "characteristics": "",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
+    "image": "public/img-routes/puntarenas.jpg",
+    "id": "7"
+  },
+  {
+    "hotelName": "hotelName 8",
+    "descritption": "descritption 8",
+    "idPlace": "2",
+    "roomsList": [
+      {
+        "roomName": "",
+        "price": "1",
+        "characteristics": "",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
+    "image": "public/img-routes/puntarenas.jpg",
+    "id": "8"
+  },
+  {
+    "hotelName": "hotelName 9",
+    "descritption": "descritption 9",
+    "idPlace": "3",
+    "roomsList": [
+      {
+        "roomName": "",
+        "price": "1",
+        "characteristics": "",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
+    "image": "public/img-routes/puntarenas.jpg",
+    "id": "9"
+  },
+  {
+    "hotelName": "hotelName 10",
+    "descritption": "descritption 10",
+    "idPlace": "3",
+    "roomsList": [
+      {
+        "roomName": "",
+        "price": "1",
+        "characteristics": "",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
+    "image": "public/img-routes/puntarenas.jpg",
+    "id": "10"
+  },
+  {
+    "hotelName": "hotelName 11",
+    "descritption": "descritption 11",
+    "idPlace": "3",
+    "roomsList": [
+      {
+        "roomName": "",
+        "price": "1",
+        "characteristics": "",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
+    "image": "public/img-routes/puntarenas.jpg",
+    "id": "11"
+  },
+  {
+    "hotelName": "hotelName 12",
+    "descritption": "descritption 12",
+    "idPlace": "3",
+    "roomsList": [
+      {
+        "roomName": "",
+        "price": "1",
+        "characteristics": "",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
+    "image": "public/img-routes/puntarenas.jpg",
+    "id": "12"
+  },
+  {
+    "hotelName": "hotelName 13",
+    "descritption": "descritption 13",
+    "idPlace": "4",
+    "roomsList": [
+      {
+        "roomName": "",
+        "price": "1",
+        "characteristics": "",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
+    "image": "public/img-routes/puntarenas.jpg",
+    "id": "13"
+  },
+  {
+    "hotelName": "hotelName 14",
+    "descritption": "descritption 14",
+    "idPlace": "4",
+    "roomsList": [
+      {
+        "roomName": "",
+        "price": "1",
+        "characteristics": "",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
+    "image": "public/img-routes/puntarenas.jpg",
+    "id": "14"
+  },
+  {
+    "hotelName": "hotelName 15",
+    "descritption": "descritption 15",
+    "idPlace": "4",
+    "roomsList": [
+      {
+        "roomName": "",
+        "price": "1",
+        "characteristics": "",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
+    "image": "public/img-routes/puntarenas.jpg",
+    "id": "15"
+  },
+  {
+    "hotelName": "hotelName 16",
+    "descritption": "descritption 16",
+    "idPlace": "4",
+    "roomsList": [
+      {
+        "roomName": "",
+        "price": "1",
+        "characteristics": "",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
+    "image": "public/img-routes/puntarenas.jpg",
+    "id": "16"
+  }
+]
+
