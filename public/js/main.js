@@ -58,13 +58,18 @@ import {places} from './apiConnection.js';
 // })
 
 function printPlacesImages(placesData) {
-  document.querySelector('.carrousel').innerHTML = placesData.map(item => {
+  document.getElementById('track').innerHTML = placesData.map(item => {
     return `
-      <li>
-        <a href="./place.html" class="carrousel__links" data-id="${item.id}"></a>  
-        <img src="${item.heroImage}" alt="${item.placeName}">
-        <h3 class="carrousel__title">${item.placeName} <strong>TRAVEL</strong></h3>
-      </li>
+      
+
+       <div class="carrusel">
+          <div>
+            <a href="./place.html">
+              <h4>${item.placeName}<strong>Travel</strong></h4>
+              <picture><img src="${item.heroImage}" alt="#"></picture>
+            </a>
+          </div>
+        </div>
     `
   }).join('');
 
