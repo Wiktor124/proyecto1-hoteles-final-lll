@@ -5,9 +5,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Places</title>
+  <link rel="stylesheet" href="./public/css/styles.css">
 </head>
 <body>
+  <header class="header">
+     
+    <nav class="header__nav  header--flex container">
+      <a href="#">
+        <img src="./public/assets/icons/logo.svg" alt="Logo travel company" class="header__logo">
+      </a>
+
+      <button class="header__button header--flex" id="header-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+        
+    
+      <ul class="header__links">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../../places.html">Places</a>
+        </li>
+        <li>
+          <a href="../../hotels.html">Hotels</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
   <ul class="places" id="places"></ul>
 </body>
 <script src="./public/js/places.js" type="module"></script>
+<script src="./public/js/header-carrousel.js"></script>
+
 </html>
