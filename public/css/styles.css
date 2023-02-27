@@ -55,6 +55,34 @@ img {
   width: 1px;
 }
 
+.footer {
+  background-color: #D9D9D9;
+  padding: 120px 60px 120px;
+}
+.footer__list {
+  align-items: center;
+}
+.footer--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__img {
+  display: flex;
+  gap: 2rem;
+}
+.footer__anchors h2 {
+  color: #000;
+  font-size: 20px;
+}
+.footer__anchors li {
+  margin-bottom: 23px;
+  font-weight: lighter;
+  font-size: 16px;
+}
+.footer__anchors a {
+  color: #000;
+}
 .header {
   background-color: #000;
   height: 70px;
