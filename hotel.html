@@ -7,8 +7,37 @@
   <title>Hotel</title>
 </head>
 <body>
+  <header class="header">
+     
+    <nav class="header__nav  header--flex container">
+      <a href="#">
+        <img src="./public/assets/icons/logo.svg" alt="Logo travel company" class="header__logo">
+      </a>
+
+      <button class="header__button header--flex" id="header-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+        
+    
+      <ul class="header__links">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../../places.html">Places</a>
+        </li>
+        <li>
+          <a href="../../hotels.html">Hotels</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
   <div id="hotel"></div>
   <ul class="rooms" id="rooms"></ul>
 </body>
 <script src="./public/js/hotel.js" type="module"></script>
+<script src="./public/js/header-carrousel.js"></script>
 </html>

@@ -5,12 +5,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System</title>
+  <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/carrousel.css">
-  <title>Document</title>
 </head>
 
 <body>
-  <div class="carrousel">
+  <header class="header">
+     
+    <nav class="header__nav  header--flex container">
+      <a href="#">
+        <img src="../assets/icons/logo.svg" alt="Logo travel company" class="header__logo">
+      </a>
+
+      <button class="header__button" id="header-btn">click</button>
+        
+    
+      <ul class="header__links header--flex">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../../places.html">Places</a>
+        </li>
+        <li>
+          <a href="../../hotels.html">Hotels</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+   <div class="carrousel">
 
     <div class="carrousel__list" id="carrousel__list">
 
@@ -121,6 +145,7 @@
       </button>
     </div>
   </div>
+  
 </body>
-<script src="../js/header-carousel-tabs.js"></script>
+<script src="../js/header-carrousel.js"></script>
 </html>
