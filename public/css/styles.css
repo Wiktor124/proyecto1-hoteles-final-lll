@@ -83,10 +83,11 @@ img {
 .footer__anchors a {
   color: #000;
 }
+
 .header {
   background-color: #000;
   height: 70px;
-  position: sticky;
+  position: relative;
 }
 .header--flex {
   display: flex;
@@ -138,6 +139,7 @@ img {
   touch-action: none;
   width: 100%;
   transition: left 0.5s;
+  z-index: 5;
 }
 .header__links--active {
   display: flex;
