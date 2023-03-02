@@ -29,18 +29,20 @@ function printRooms() {
 printRooms()
 
 
+
+///  tabs
 function tab() {
   const tab = document.querySelectorAll(".tab");
-  const content = document.querySelectorAll(".cont");
+  const tabcontent = document.querySelectorAll(".data");
 
   tab.forEach((i, z) => {
     tab[z].addEventListener("click", () => {
       tab.forEach((i, z) => {
         tab[z].classList.remove("active")
-        content[z].classList.remove("active")
+        tabcontent[z].classList.remove("active")
       });
       tab[z].classList.add('active')
-      content[z].classList.add('active')
+      tabcontent[z].classList.add('active')
     })
   });
 

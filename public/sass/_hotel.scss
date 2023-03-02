@@ -1,4 +1,5 @@
-.container {
+.tabs-container {
+  margin: 1rem;
   &h2 {
     font-weight: 300px;
   }
@@ -18,21 +19,17 @@
   }
 
   .data-container {
-    background-color: aquamarine;
-    position: relative;
+    background-color: rgb(210, 230, 223);
     max-height: 10vh;
   }
 
   .data-container .data {
-  
     margin: 1rem;
     padding: 1rem;
-    position: absolute;
-    top: 0;
-    opacity: 0;
+    display: none;
   }
 
   .data-container .data.active {
-    opacity: 1;
+    display: block;
   }
 }
