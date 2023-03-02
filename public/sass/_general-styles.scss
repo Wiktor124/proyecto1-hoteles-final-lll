@@ -54,3 +54,15 @@ img {
   white-space: nowrap;
   width: 1px;
 }
+
+#gallery-links, #carrousel-links {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+// temporal style
+.heroImage {
+  width: 300px;
+}

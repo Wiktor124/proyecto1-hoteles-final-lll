@@ -2,7 +2,7 @@ import { hotels } from './apiConnection.js';
 
 // print hotels
 function printHotels(hotelsData) {
-  document.querySelector('.hotels').innerHTML  = hotelsData.map(item => {
+  document.getElementById('hotels').innerHTML  = hotelsData.map(item => {
    return `
     <li>
       <img src="${item.image}" alt="${item.hotelName}">
