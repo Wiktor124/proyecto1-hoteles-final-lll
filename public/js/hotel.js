@@ -29,18 +29,20 @@ function printRooms() {
 printRooms()
 
 
+function tab() {
+  const tab = document.querySelectorAll(".tab");
+  const content = document.querySelectorAll(".cont");
 
-const li = document.querySelectorAll(".tab");
-const bloque = document.querySelectorAll(".cont");
+  tab.forEach((i, z) => {
+    tab[z].addEventListener("click", () => {
+      tab.forEach((i, z) => {
+        tab[z].classList.remove("active")
+        content[z].classList.remove("active")
+      });
+      tab[z].classList.add('active')
+      content[z].classList.add('active')
+    })
+  });
 
-li.forEach((i, z) => {
-  li[z].addEventListener("click", () => {
-    li.forEach((i, z) => {
-      li[z].classList.remove("active")
-      bloque[z].classList.remove("active")
-    });
-
-    li[z].classList.add('active')
-    bloque[z].classList.add('active')
-  })
-});
+};
+tab()
