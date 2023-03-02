@@ -1,0 +1,36 @@
+.footer {
+  background-color: $gray;
+  padding: 120px 60px 120px;
+
+  &__list {
+    align-items: center;
+  }
+
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__anchors {
+    h2 {
+      color: $black;
+      font-size: 20px;
+    }
+
+    li {
+      margin-bottom: 23px;
+      font-weight: lighter;
+      font-size: 16px;
+    }
+
+    a {
+      color: $black;
+    }
+  }
+}

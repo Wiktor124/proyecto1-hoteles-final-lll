@@ -5,9 +5,84 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Places</title>
+  <link rel="stylesheet" href="./public/css/styles.css">
 </head>
 <body>
-  <ul class="places" id="places"></ul>
+  <!-- header -->
+  <header class="header">
+
+    <nav class="header__nav  header--flex container">
+      <a href="./index.html">
+        <img src="./public/assets/icons/logo.svg" alt="Logo travel company" class="header__logo">
+      </a>
+
+      <button class="header__button header--flex" id="header-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+
+      <ul class="header__links">
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Places</a>
+        </li>
+        <li>
+          <a href="./hotels.html">Hotels</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- work here! -->
+  <div class="container">
+
+    <!-- all places -->
+    <ul id="places" class="gallery"></ul>
+    
+  </div>
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__list container footer--flex">
+      <div>
+        <ul class="footer__img">
+          <li><a href="#"><img src="./public/icons-footer/logo_twitter_1.svg" alt="Logo de twitter"></a></li>
+          <li><a href="#"><img src="./public/icons-footer/logo_facebook_1.svg" alt="Logo facebook"></a></li>
+          <li><a href="#"><img src="./public/icons-footer/logo_instagram_1.svg" alt="Logo de instagram"></a></li>
+        </ul>
+      </div>
+      <div class="footer__anchors">
+        <h2>Destination</h2>
+        <ul>
+          <li><a href="#">Puntarenas</a></li>
+          <li><a href="#">Guanacaste</a></li>
+          <li><a href="#">Limón</a></li>
+        </ul>
+      </div>
+      <div class="footer__anchors">
+        <h2>Contact Us</h2>
+        <ul>
+          <li><a href="#">24/7 Chat Support</a></li>
+          <li><a href="#">contact@support.com</a></li>
+          <li><a href="#">+506 2222-2222</a></li>
+        </ul>
+      </div>
+      <div class="footer__anchors">
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Copyright</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 <script src="./public/js/places.js" type="module"></script>
+<script src="./public/js/header-carousel-tabs.js"></script>
+
 </html>

@@ -57,19 +57,15 @@ import {places} from './apiConnection.js';
 
 // 
 
+console.log(places);
 function printPlacesImages(placesData) {
-  document.getElementById('track').innerHTML = placesData.map(item => {
+  document.getElementById('place-gallery').innerHTML = placesData.map(item => {
     return `
-      
-
-       <div class="carrusel">
-          <div>
-            <a href="./place.html">
-              <h4>${item.placeName}<strong>Travel</strong></h4>
-              <picture><img src="${item.heroImage}" alt="#"></picture>
-            </a>
-          </div>
-        </div>
+      <li>
+        <a href="./place.html" id="gallery-links" class="gallery__links" data-id="${item.id}"></a>
+        <img src="${item.heroImage}" alt="${item.placeName}" />
+        <h4>${item.placeName}<strong>Travel</strong></h4>
+      </li>
     `
   }).join('');
 
@@ -81,11 +77,10 @@ function onePlace(target) {
   localStorage.setItem('place', places.findIndex(item => item.id === target));
 }
 
-document.getElementById('carrousel').addEventListener('click', (e) => {
+document.querySelector('.gallery').addEventListener('click', (e) => {
+
   if(e.target.matches('a')) {
     onePlace(e.target.dataset.id);
+    console.log(e.target);
   }
 })
-
-
-

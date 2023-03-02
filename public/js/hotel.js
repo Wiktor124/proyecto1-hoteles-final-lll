@@ -16,14 +16,14 @@ printHotel(hotels[hotelPosition])
 // print rooms
 function printRooms() {
   console.log(hotels[hotelPosition].roomsList);
-  document.getElementById('rooms').innerHTML = hotels[hotelPosition].roomsList.map(item => {
+  document.getElementById('track').innerHTML = hotels[hotelPosition].roomsList.map(item => {
     return `
-     <li>
-      <img src="${item.roomImage}" alt="${hotels[hotelPosition].hotelName}">
+     <div>
+      <img src="${item.roomImage}" alt="Room of ${hotels[hotelPosition].hotelName}">
       <h2 class="carrousel__title">${item.roomName}</h2>
       <p>${item.characteristics}</p>
       <p>${item.discoutn}</p>
-    </li>`
+    </div>`
   }).join('')
 }
 printRooms()

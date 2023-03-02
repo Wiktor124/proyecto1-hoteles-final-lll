@@ -1,0 +1,100 @@
+.header {
+  $header-height: 70px;
+  background-color: $black;
+  height: $header-height;
+  position: relative;
+
+  &--flex {
+    display: flex;
+  }
+
+  &__nav {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 70px;
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 35px;
+    height: 36px;
+    padding: 0;
+  }
+
+  &__button > div {
+    background-color: $white;
+    height: 2px;
+    width: 100%;
+    border: 5px;
+    transition: all 0.5s;
+    transform-origin: right;
+  }
+
+  &__button--active div:first-child {
+    transform: rotate(-45deg);
+  }
+
+  &__button--active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  &__button--active div:last-child {
+    transform: rotate(45deg);
+  }
+
+  &__links {
+    display: none;
+    align-items: center;
+    background-color: $black;
+    flex-direction: column;
+    gap: 20px;
+    height: calc(100vh - $header-height);
+    padding-top: $header-height;
+    position: absolute;
+    top: $header-height;
+    left: 100%;
+    touch-action: none;
+    width: 100%;
+    transition: left 0.5s;
+    z-index: 5;
+  }
+
+  &__links--active {
+    display: flex;
+    left: 0;
+  }
+
+  a {
+    color: $white;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    &__button {
+      display: none;
+    }
+
+    &__nav {
+      position: relative;
+    }
+
+    &__links {
+      background: none;
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
+      height: fit-content;
+      position: initial;
+      padding-top: 0;
+      width: fit-content;
+    }
+  }
+}
