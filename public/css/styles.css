@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 body {
   box-sizing: border-box;
@@ -50,5 +51,325 @@ img {
   white-space: nowrap;
   width: 1px;
 }
+
+.carro {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  background: rgb(49, 49, 49);
+}
+
+h4, strong, a {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.carrousel {
+  width: 100%;
+  margin: 0px 0px;
+}
+
+@media (min-widh: 768px) {
+  .carrousel {
+    margin: 0px 60px;
+  }
+}
+.carrousel__list {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 304px;
+  padding: 10px 0px;
+  margin: 0px auto;
+  max-width: 90vw;
+  overflow: hidden;
+}
+
+.carrousel__track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+
+.carrusel {
+  width: 210px;
+  padding: 0px 18px;
+  float: left;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+}
+
+.carrousel h4 {
+  position: absolute;
+  z-index: 1;
+  font-size: 22px;
+  line-height: 23px;
+  color: white;
+  padding: 25px;
+}
+.carrousel h4 strong {
+  font-size: 24px;
+  display: block;
+}
+.carrousel a img {
+  object-fit: cover;
+  height: 300px;
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: 0.3 ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .carrusel {
+    width: 275px;
+  }
+  .carrusel a img {
+    width: 250px;
+  }
+}
+.carrusel-arrow {
+  border-radius: 30px;
+  background-color: white;
+  position: absolute;
+  z-index: 4;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+}
+.carrusel-arrow :focus {
+  outline: 0;
+}
+.carrusel-arrow svg {
+  width: 12px;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.carrusel-prev {
+  left: 48px;
+}
+
+.carrusel-next {
+  right: 35px;
+}
+
+.components {
+  padding: 0 auto;
+  background-color: rgb(57, 57, 57);
+}
+
+/*Estilos de Buttons*/
+.buttons {
+  display: flex;
+}
+.buttons p {
+  padding: 20px 50px 16px 20px;
+  margin-right: 20px;
+}
+
+.button,
+.button2 {
+  width: 9%;
+  padding: 10px 10px;
+  margin: 0px 10px 0px 0px;
+  background-color: rgb(203, 203, 203);
+  color: black;
+  border-radius: 17px;
+}
+
+.button2 {
+  background-color: rgb(214, 214, 214);
+  color: rgb(175, 175, 175);
+  border-color: rgb(232, 230, 230);
+}
+
+.color1:hover {
+  background-color: rgb(140, 139, 139);
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*      Estilos del Nav    */
+.parrafo p {
+  margin: 60px 0px;
+  padding: 0px 40px;
+}
+
+.menuu {
+  display: flex;
+}
+
+.original,
+.menu1,
+.menu2 {
+  margin: 60px 0px;
+  padding: 0px 40px;
+}
+.original .original,
+.original .menu1,
+.original .menu2,
+.original a,
+.menu1 .original,
+.menu1 .menu1,
+.menu1 .menu2,
+.menu1 a,
+.menu2 .original,
+.menu2 .menu1,
+.menu2 .menu2,
+.menu2 a {
+  color: rgb(254, 254, 254);
+  text-decoration: none;
+  padding: 0px 40px;
+}
+
+.original a:hover {
+  text-decoration: underline;
+  color: rgb(180, 180, 180);
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*Estilos Tipografías*/
+.tipo {
+  display: flex;
+  margin: 40px 40px;
+  padding: 30px;
+}
+.tipo p {
+  padding: 5px 30px;
+}
+
+.tipo1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.tipo2 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.tipo3 {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*Estilos Textarea*/
+.box_text textarea {
+  background-color: rgba(53, 53, 53, 0.326);
+  color: white;
+  border-color: black;
+}
+
+.enviar {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 34px;
+  width: 10%;
+  padding: 10px 0px;
+}
+.enviar:hover {
+  background-color: #626262;
+  border-color: #626262;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*Estilos Sign Up*/
+.formulario__label {
+  display: flex;
+  color: white;
+  transform: translateY(10px);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 15px 0px;
+  margin-bottom: 15px;
+}
+
+.formulario div {
+  max-width: 20%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.formulario_input:focus + .formulario_label {
+  transform-origin: left top;
+  transform: translateY(-12px) scale(0.7);
+}
+
+.formulario__input {
+  background-color: rgba(235, 235, 235, 0);
+  border: none;
+  color: white;
+  outline: none;
+  border-bottom: 1px solid white;
+}
+
+.enviar {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 34px;
+  width: 10%;
+  padding: 10px 0px;
+  margin: 10px 0px 10px 50px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*Estilos Sign in*/
+.parrafo1 {
+  color: white;
+}
+.parrafo1 strong {
+  color: white;
+}
+.parrafo1 strong:hover {
+  text-decoration: underline;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*Estilos Footer*/
+footer {
+  width: 100%;
+  padding: 50px 0px;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.box-footer {
+  display: flex;
+  flex-direction: column;
+}
+.box-footer a {
+  margin-top: 11px;
+  color: black;
+}
+.box-footer a:hover {
+  text-decoration: underline;
+}
+
+.red-social img {
+  margin-bottom: -50px;
+  margin-left: 13px;
+  width: 40px;
+  height: 40px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
 
 /*# sourceMappingURL=styles.css.map */
