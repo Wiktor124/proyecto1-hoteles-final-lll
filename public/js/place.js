@@ -1,4 +1,7 @@
 import { places, hotels } from './apiConnection.js';
+import { placeOrHotel } from './events.js'
+placeOrHotel.clickEvents()
+
 const placePosition = localStorage.getItem('place');
 
 // print just one place
@@ -19,7 +22,7 @@ function printHotels() {
   document.getElementById('track').innerHTML = getHotels.map(item => {
     return `
      <div class="carrusel">
-      <a href="./hotel.html" id="carrousel-links" class="gallery__links" data-id="${item.id}"></a>
+      <a href="./hotel.html" class="carrousel__link hotel__link" data-id="${item.id}"></a>
       <div>
         <img src="${item.image}" alt="${item.hotelName}">
         <h2 class="carrousel__title">${item.hotelName}</h2>
@@ -29,20 +32,6 @@ function printHotels() {
   }).join('')
 }
 printHotels()
-
-
-// find index hotels
-function oneHotel(target) {
-  console.log(target);
-  localStorage.setItem('hotel', hotels.findIndex(item => item.id === target));
-}
-
-document.querySelector('.carrousel').addEventListener('click', (e) => {
-  if(e.target.matches('a')) {
-    oneHotel(e.target.dataset.id);
-    console.log(e.target);
-  }
-})
 
 
 

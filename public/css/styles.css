@@ -7,10 +7,6 @@ body {
   font-size: 1rem;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 h1 {
   font-size: 36px;
   margin: 6px 0 0;
@@ -55,7 +51,7 @@ img {
   width: 1px;
 }
 
-#gallery-links, #carrousel-links {
+.gallery__link, .carrousel__link {
   position: absolute;
   width: 100%;
   height: 100%;
