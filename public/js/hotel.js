@@ -1,9 +1,11 @@
-import { hotels } from './apiConnection.js';
+import {
+  hotels
+} from './apiConnection.js';
 const hotelPosition = localStorage.getItem('hotel');
 
 // print just one hotel
 function printHotel(hotel) {
-  document.getElementById('hotel').innerHTML  = `
+  document.getElementById('hotel').innerHTML = `
     <img src="${hotel.image}" alt="${hotel.hotelName}">
     <h2>${hotel.hotelName}</h2>
     <p>${hotel.descritption}</p>
@@ -25,3 +27,24 @@ function printRooms() {
   }).join('')
 }
 printRooms()
+
+
+
+///  tabs
+function tab() {
+  const tab = document.querySelectorAll(".tab");
+  const tabcontent = document.querySelectorAll(".data");
+
+  tab.forEach((i, z) => {
+    tab[z].addEventListener("click", () => {
+      tab.forEach((i, z) => {
+        tab[z].classList.remove("active")
+        tabcontent[z].classList.remove("active")
+      });
+      tab[z].classList.add('active')
+      tabcontent[z].classList.add('active')
+    })
+  });
+
+};
+tab()
