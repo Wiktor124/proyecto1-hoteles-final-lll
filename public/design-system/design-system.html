@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Design System</title>
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/carrousel.css">
 </head>
 
 <body>
-   <!-- header -->
-   <header class="header">
+  <!-- header -->
+  <header class="header">
 
     <nav class="header__nav  header--flex container">
       <a href="#">
@@ -38,91 +39,86 @@
     </nav>
   </header>
 
-
-<!-- tabs -->
-
- 
-
- <!-- carrousel prototype -->
- <div class="container">
-  <div class="carrousel">
-    <div class="carrousel__list" id="carrousel__list">
-      <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
-        onclick="app.processingButton(event)">
-        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
-          class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 320 512">
-          <path fill="currentColor"
-            d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
-          </path>
-        </svg>
-      </button>
-      <div class="carrousel__track" id="track">
-        <div class="carrusel">
-          <div>
-            <a href="#">
-              <h4>Puntarenas<strong>Travel</strong></h4>
-              <picture><img src="../design-system/img/puntarenas.webp" alt="#"></picture>
-            </a>
+  <!-- carrousel prototype -->
+  <div class="container">
+    <div class="carrousel">
+      <div class="carrousel__list" id="carrousel__list">
+        <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+          onclick="app.processingButton(event)">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+            class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512">
+            <path fill="currentColor"
+              d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+            </path>
+          </svg>
+        </button>
+        <div class="carrousel__track" id="track">
+          <div class="carrusel">
+            <div>
+              <a href="#">
+                <h4>Puntarenas<strong>Travel</strong></h4>
+                <picture><img src="../design-system/img/puntarenas.webp" alt="#"></picture>
+              </a>
+            </div>
+          </div>
+          <div class="carrusel">
+            <div>
+              <a href="#">
+                <h4>Guanacaste<strong>Travel</strong></h4>
+                <picture><img src="../design-system/img/guanacaste.jpg" alt="#"></picture>
+              </a>
+            </div>
+          </div>
+          <div class="carrusel">
+            <div>
+              <a href="#">
+                <h4>Limón<strong>Travel</strong></h4>
+                <picture><img src="../design-system/img/limon.webp" alt="#"></picture>
+              </a>
+            </div>
+          </div>
+          <div class="carrusel">
+            <div>
+              <a href="#">
+                <h4>Tamarindo<strong>Travel</strong></h4>
+                <picture><img src="../design-system/img/tamarindo-beach.jpg" alt="#"></picture>
+              </a>
+            </div>
+          </div>
+          <div class="carrusel">
+            <div>
+              <a href="#">
+                <h4>Conchal<strong>Travel</strong></h4>
+                <picture><img src="../design-system/img/conchal.jpg" alt="#"></picture>
+              </a>
+            </div>
+          </div>
+          <div class="carrusel">
+            <div>
+              <a href="#">
+                <h4>Jaco<strong>Travel</strong></h4>
+                <picture><img src="../design-system/img/jaco.jpg" alt="#"></picture>
+              </a>
+            </div>
+          </div>
+          <div class="carrusel">
+            <div>
+              <a href="#">
+                <h4>Cahuita<strong>Travel</strong></h4>
+                <picture><img src="../design-system/img/cahuita.jpeg" alt="#"></picture>
+              </a>
+            </div>
+          </div>
+          <div class="carrusel">
+            <div>
+              <a href="#">
+                <h4>Uvita<strong>Travel</strong></h4>
+                <picture><img src="../design-system/img/uvita.jpg" alt="#"></picture>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="carrusel">
-          <div>
-            <a href="#">
-              <h4>Guanacaste<strong>Travel</strong></h4>
-              <picture><img src="../design-system/img/guanacaste.jpg" alt="#"></picture>
-            </a>
-          </div>
-        </div>
-        <div class="carrusel">
-          <div>
-            <a href="#">
-              <h4>Limón<strong>Travel</strong></h4>
-              <picture><img src="../design-system/img/limon.webp" alt="#"></picture>
-            </a>
-          </div>
-        </div>
-        <div class="carrusel">
-          <div>
-            <a href="#">
-              <h4>Tamarindo<strong>Travel</strong></h4>
-              <picture><img src="../design-system/img/tamarindo-beach.jpg" alt="#"></picture>
-            </a>
-          </div>
-        </div>
-        <div class="carrusel">
-          <div>
-            <a href="#">
-              <h4>Conchal<strong>Travel</strong></h4>
-              <picture><img src="../design-system/img/conchal.jpg" alt="#"></picture>
-            </a>
-          </div>
-        </div>
-        <div class="carrusel">
-          <div>
-            <a href="#">
-              <h4>Jaco<strong>Travel</strong></h4>
-              <picture><img src="../design-system/img/jaco.jpg" alt="#"></picture>
-            </a>
-          </div>
-        </div>
-        <div class="carrusel">
-          <div>
-            <a href="#">
-              <h4>Cahuita<strong>Travel</strong></h4>
-              <picture><img src="../design-system/img/cahuita.jpeg" alt="#"></picture>
-            </a>
-          </div>
-        </div>
-        <div class="carrusel">
-          <div>
-            <a href="#">
-              <h4>Uvita<strong>Travel</strong></h4>
-              <picture><img src="../design-system/img/uvita.jpg" alt="#"></picture>
-            </a>
-          </div>
-        </div>
-
         <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
           onclick="app.processingButton(event)">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
@@ -135,199 +131,157 @@
         </button>
       </div>
     </div>
-  </div>
 
-  <div class="components">
+    <div class="components">
 
-    <h1>Components</h1>
-    <div>
-      <h2>Buttons</h2>
-      <span class="buttons">
-        <p>Default</p>
-        <p>Hover</p>
-        <p>Desabled</p>
+      <h1>Components</h1>
+      <div>
+        <h2>Buttons</h2>
+        <span class="buttons">
+          <p>Default</p>
+          <p>Hover</p>
+          <p>Desabled</p>
+        </span>
+        <span>
+          <button class="button">Button</button>
+          <button class="button color1">Button</button>
+          <button class="button2 color2">Button</button>
+        </span>
+      </div>
+      <div class="menuu">
+        <h2>Nav</h2>
+        <span class="parrafo">
+          <p>Default</p>
+          <p>Hover</p>
+          <p>Desabled</p>
+        </span>
+        <span>
+          <nav class="menu1">
+            <ul>
+              <a href="#">Home</a>
+              <a href="#">Destination</a>
+              <a href="#">Hotels</a></l>
+              <a href="#">Sign In</a>
+            </ul>
+          </nav>
+          <nav class="original">
+            <ul>
+              <a href="#">Home</a>
+              <a href="#">Destination</a>
+              <a href="#">Hotels</a></l>
+              <a href="#">Sign In</a>
+            </ul>
+          </nav>
+          <nav class="menu2">
+            <ul>
+              <a href="#">Home</a>
+              <a href="#">Destination</a>
+              <a href="#">Hotels</a></l>
+              <a href="#">Sign In</a>
+            </ul>
+          </nav>
+      </div>
       </span>
-      <span>
-        <button class="button">Button</button>
-        <button class="button color1">Button</button>
-        <button class="button2 color2">Button</button>
-      </span>
+
+      <div>
+        <h2>Tipografías</h2>
+        <span class="tipo tipo1">
+          <h3>H1</h3>
+          <p>Open Sans</p>
+          <p>Bold 700</p>
+        </span>
+        <span class="tipo tipo2">
+          <h3>H2</h3>
+          <p>Open Sans</p>
+          <p>Medium 500 Italic</p>
+        </span>
+        <span class="tipo tipo3">
+          <h3>P</h3>
+          <p>Open Sans</p>
+          <p>Light 300 Italic</p>
+        </span>
+        <span class="tipo tipo4">
+          <h3>Button</h3>
+          <p>Open Sans</p>
+          <p>Regular 400</p>
+        </span>
+        <span class="tipo tipo5">
+          <h3>Nav</h3>
+          <p>Open Sans</p>
+          <p>Regular 400</p>
+        </span>
+      </div>
+
+      <form class="box_text">
+        <h2>Box Consult</h2>
+        <textarea rows="5" cols="50" placeholder="Consult Us..."></textarea><br><br>
+        <input class="enviar" type="submit" value="Submit">
+      </form>
+      <form class="formulario">
+        <h2>Sign In</h2>
+        <div>
+          <input class="formulario__input" type="text" id="Name" name="user_Name" required>
+          <label class="formulario__label" for="Name">Name:</label>
+        </div>
+        <div>
+          <input class="formulario__input" type="text" id="Lastname" name="user_Lastname" required>
+          <label class="formulario__label" for="Lastname">Last Name:</label>
+        </div>
+
+        <div>
+          <input class="formulario__input" type="email" id="E-mail" name="user_E-mail" required>
+          <label class="formulario__label" for="E-mail">E-mail</label>
+        </div>
+
+        <div>
+          <input class="formulario__input" type="number" id="tel" name="user_tel" required>
+          <label class="formulario__label" for="tel">Phone</label>
+        </div>
+        <input class="enviar" type="submit" value="Submit">
+      </form>
+
+      <form class="formulario">
+        <h2>Sign Up</h2>
+        <ul>
+
+          <label class="formulario__label" for="E-mail">E-mail</label>
+          <input class="formulario__input" type="email" id="E-mail" name="user_E-mail" required>
+
+          <label class="formulario__label" for="password">Password:</label>
+          <input class="formulario__input" type="password" id="password" name="user_password" required>
+
+        </ul>
+        <input class="enviar" type="submit" value="Submit">
+        <p class="parrafo1">Don’t have an account? <a href="#"><strong>Sign up</strong></a></p>
+      </form>
     </div>
-    <div class="menuu">
-      <h2>Nav</h2>
-      <span class="parrafo">
-        <p>Default</p>
-        <p>Hover</p>
-        <p>Desabled</p>
-      </span>
-      <span>
-        <nav class="menu1">
-          <ul>
-            <a href="#">Home</a>
-            <a href="#">Destination</a>
-            <a href="#">Hotels</a></l>
-            <a href="#">Sign In</a>
-          </ul>
-        </nav>
-        <nav class="original">
-          <ul>
-            <a href="#">Home</a>
-            <a href="#">Destination</a>
-            <a href="#">Hotels</a></l>
-            <a href="#">Sign In</a>
-          </ul>
-        </nav>
-        <nav class="menu2">
-          <ul>
-            <a href="#">Home</a>
-            <a href="#">Destination</a>
-            <a href="#">Hotels</a></l>
-            <a href="#">Sign In</a>
-          </ul>
-        </nav>
-    </div>
-    </span>
-    <div>
-      <h2>Tipografías</h2>
-      <span class="tipo tipo1">
-        <h3>H1</h3>
-        <p>Open Sans</p>
-        <p>Bold 700</p>
-      </span>
-      <span class="tipo tipo2">
-        <h3>H2</h3>
-        <p>Open Sans</p>
-        <p>Medium 500 Italic</p>
-      </span>
-      <span class="tipo tipo3">
-        <h3>P</h3>
-        <p>Open Sans</p>
-        <p>Light 300 Italic</p>
-      </span>
-      <span class="tipo tipo4">
-        <h3>Button</h3>
-        <p>Open Sans</p>
-        <p>Regular 400</p>
-      </span>
-      <span class="tipo tipo5">
-        <h3>Nav</h3>
-        <p>Open Sans</p>
-        <p>Regular 400</p>
-      </span>
-    </div>
-    <form class="box_text">
-      <h2>Box Consult</h2>
-      <textarea rows="5" cols="50" placeholder="Consult Us..."></textarea><br><br>
-      <input class="enviar" type="submit" value="Submit">
-    </form>
-    <form class="formulario">
-      <h2>Sign In</h2>
-      <div>
-        <input class="formulario__input" type="text" id="Name" name="user_Name" required>
-        <label class="formulario__label" for="Name">Name:</label>
-      </div>
-<<<<<<< HEAD
-
-      <div>
-        <input class="formulario__input" type="text" id="Lastname" name="user_Lastname" required>
-        <label class="formulario__label" for="Lastname">Last Name:</label>
-      </div>
-
-      <div>
-        <input class="formulario__input" type="email" id="E-mail" name="user_E-mail" required>
-        <label class="formulario__label" for="E-mail">E-mail</label>
-      </div>
-
-      <div>
-        <input class="formulario__input" type="number" id="tel" name="user_tel" required>
-        <label class="formulario__label" for="tel">Phone</label>
-      </div>
-      <input class="enviar" type="submit" value="Submit">
-    </form>
-    <form class="formulario">
-      <h2>Sign Up</h2>
-      <ul>
-
-        <label class="formulario__label" for="E-mail">E-mail</label>
-        <input class="formulario__input" type="email" id="E-mail" name="user_E-mail" required>
-
-        <label class="formulario__label" for="password">Password:</label>
-        <input class="formulario__input" type="password" id="password" name="user_password" required>
-
+   
+    <div class="tabs-container">
+      <h2>Hotel Name</h2>
+      <ul class="tab-container">
+        <li class="tab active">Details</li>
+        <li class="tab">Equiry</li>
       </ul>
-      <input class="enviar" type="submit" value="Submit">
-      <p class="parrafo1">Don’t have an account? <a href="#"><strong>Sign up</strong></a></p>
-    </form>
-    <footer>
-      <div class="box">
-        <div class="red-social">
-          <a href="#" class="twitter">
-            <img src="img/logo_twitter.png" alt="#">
-          </a>
-          <a href="#" class="facebook">
-            <img src="img/logo_facebook.png" alt="#">
-          </a>
-          <a href="#" class="instagram">
-            <img src="img/logo_instagram.png" alt="#">
-          </a>
+      <div class="data-container">
+        <div class="data active">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit facilis
+          voluptas architecto, ut praesentium voluptatibus itaque officiis ex
+          maiores quod magnam, minus atque expedita dolorum quasi voluptate,
+          dolorem totam error consequuntur numquam animi saepe.
         </div>
-        <div class="box-footer">
-          <h4>Destination</h4>
-          <a href="#">Puntarenas</a>
-          <a href="#">Guanacaste</a>
-          <a href="#">Limón</a>
-        </div>
-        <div class="box-footer">
-          <h4>Contac Us</h4>
-          <a href="#">24/7 Chat Support</a>
-          <a href="#">contact@support.com</a>
-          <a href="#">+506-2222-2222</a>
-        </div>
-        <div class="box-footer">
-          <h4>Legal</h4>
-          <a href="#">Terms</a>
-          <a href="#">Privacy</a>
-          <a href="#">Copyright</a>
+        <div class="data">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo
+          asperiores nemo labore.
         </div>
       </div>
-    </footer>
-=======
-      <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
-        onclick="app.processingButton(event)">
-        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
-          class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 320 512">
-          <path fill="currentColor"
-            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
-          </path>
-        </svg>
-      </button>
     </div>
->>>>>>> 71e6536cd355aa8e9718f7faa06f5facaf798b62
-  </div>
-</div>
+    
 
- <div class="tabs-container">
-    <h2>Hotel Name</h2>
-    <ul class="tab-container">
-      <li class="tab active">Details</li>
-      <li class="tab">Equiry</li>
-    </ul>
-    <div class="data-container">
-      <div class="data active">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit facilis
-        voluptas architecto, ut praesentium voluptatibus itaque officiis ex
-        maiores quod magnam, minus atque expedita dolorum quasi voluptate,
-        dolorem totam error consequuntur numquam animi saepe.
-      </div>
-      <div class="data">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo
-        asperiores nemo labore.
-      </div>
-    </div>
   </div>
+
 
   <!-- footer -->
+
   <footer class="footer">
     <div class="footer__list container footer--flex">
       <div>
@@ -363,6 +317,7 @@
       </div>
     </div>
   </footer>
+
 
 </body>
 <script src="../js/header-carousel-tabs.js"></script>

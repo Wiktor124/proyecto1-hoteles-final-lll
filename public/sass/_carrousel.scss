@@ -17,26 +17,15 @@ a{
   text-decoration: none;
 }
 
-.carrousel{
-  width: 100%;
-  margin: 0px 0px;
-}
-
-@media(min-widh: 768px){
-  .carrousel{
-  margin: 0px 60px;
-  }
-}
-
 .carrousel__list{
-  display: flex;
+
   align-items: center;
-  width: fit-content;
+  display: flex;
   height: 304px;
   padding: 10px 0px;
-  margin: 0px auto;
-  max-width: 90vw;
+  width: 100%;
   overflow: hidden;
+  gap: 10px;
 }
 
 .carrousel__track{
@@ -46,18 +35,18 @@ a{
   display: flex;
   justify-content: center;
   transition: .5s ease-in-out;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
 }
 
 .carrusel{
-  width: 210px;
-  padding: 0px 18px;
-  float: left;
   box-sizing: border-box;
-  display: flex;
   height: 100%;
+  width: 302px;
 }
 
 .carrousel{
+  position: relative;
   h4{
   position: absolute;
   z-index: 1;
@@ -73,29 +62,17 @@ a{
   a img{
     object-fit: cover;
   height: 300px;
-  width: 200px;
   border-radius: 15px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   transition: .3 ease-in-out;
   }
 }
 
-
-@media(min-width: 768px){
-.carrusel{
-  width: 275px;
-  a img{
-    width: 250px;
-  }
-}
-}
-
-
 .carrusel-arrow{
   border-radius: 30px;
-  background-color: white;
+  background-color: #ccc;
   position: absolute;
-  z-index: 4;
+  z-index: 6;
   width: 48px;
   height: 48px;
   text-align: center;
@@ -113,9 +90,16 @@ a{
 
 
 .carrusel-prev{
-  left: 48px;
+  left: -24px;
 }
 
 .carrusel-next{
-  right: 35px;
+  right: -24px;
 }
+
+/*
+@media (max-width: 1240px){
+  .carrusel{
+    width: 240px;
+  }
+}*/
