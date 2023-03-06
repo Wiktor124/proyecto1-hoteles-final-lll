@@ -174,18 +174,21 @@ a {
 .tabs-container .tab-container {
   display: flex;
   flex-flow: row nowrap;
+  background-color: rgb(255, 255, 255);
+  color: black;
   max-width: fit-content;
 }
 .tabs-container .tab-container .tab {
   padding: 1rem 7rem 1rem 1rem;
-  margin: 0;
-  background-color: lightcyan;
+  margin: 0.2rem;
+  border: solid black 2px;
+  border-radius: 11px;
 }
 .tabs-container .tab-container .tab.active {
-  background-color: blue;
+  background-color: rgb(26, 25, 25);
+  color: white;
 }
 .tabs-container .data-container {
-  background-color: rgb(210, 230, 223);
   max-height: 10vh;
 }
 .tabs-container .data-container .data {
