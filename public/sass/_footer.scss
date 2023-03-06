@@ -1,7 +1,7 @@
 
 .footer {
     padding: 60px 0px;
-    background-color:orange;
+    background-color: $gray;
     
 
     &--flex {
@@ -36,7 +36,6 @@
 
 @media (min-width: 768px){
   .footer {
-    background-color: $gray;
     padding: 120px 60px 120px;
   
     &--flex {

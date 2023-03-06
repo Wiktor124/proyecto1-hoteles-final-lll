@@ -199,7 +199,7 @@ a {
 
 .footer {
   padding: 60px 0px;
-  background-color: orange;
+  background-color: #D9D9D9;
 }
 .footer--flex {
   justify-content: left;
@@ -225,7 +225,6 @@ a {
 
 @media (min-width: 768px) {
   .footer {
-    background-color: #D9D9D9;
     padding: 120px 60px 120px;
   }
   .footer--flex {
@@ -345,7 +344,7 @@ a {
 
 .components {
   padding: 0 auto;
-  background-color: rgb(57, 57, 57);
+  background-color: rgb(148, 151, 148);
 }
 
 /*Estilos de Buttons*/
