@@ -1,7 +1,7 @@
 {
   "name": "proyecto1-hoteles-final-lll",
   "version": "1.0.0",
-  "description": "",
+  "description": "* Jason Porras\r * Bryan Monge\r * Randy Luna\r * Víctor Peña",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch public/sass:public/css"

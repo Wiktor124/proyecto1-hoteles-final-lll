@@ -1,6 +1,7 @@
-import {
-  hotels
-} from './apiConnection.js';
+import { hotels } from './apiConnection.js';
+import { placeOrHotel } from './events.js'
+placeOrHotel.clickEvents()
+
 const hotelPosition = localStorage.getItem('hotel');
 
 // print just one hotel
@@ -27,24 +28,3 @@ function printRooms() {
   }).join('')
 }
 printRooms()
-
-
-
-///  tabs
-function tab() {
-  const tab = document.querySelectorAll(".tab");
-  const tabcontent = document.querySelectorAll(".data");
-
-  tab.forEach((i, z) => {
-    tab[z].addEventListener("click", () => {
-      tab.forEach((i, z) => {
-        tab[z].classList.remove("active")
-        tabcontent[z].classList.remove("active")
-      });
-      tab[z].classList.add('active')
-      tabcontent[z].classList.add('active')
-    })
-  });
-
-};
-tab()
