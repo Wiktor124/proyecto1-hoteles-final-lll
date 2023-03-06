@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 body {
   box-sizing: border-box;
@@ -61,6 +62,109 @@ img {
   width: 300px;
 }
 
+.carro {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  background: rgb(49, 49, 49);
+}
+
+h4, strong, a {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.carrousel__list {
+  align-items: center;
+  display: flex;
+  height: 304px;
+  padding: 10px 0px;
+  width: 100%;
+  overflow: hidden;
+  gap: 10px;
+}
+
+.carrousel__track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.carrusel {
+  box-sizing: border-box;
+  height: 100%;
+  width: 302px;
+}
+
+.carrousel {
+  position: relative;
+}
+.carrousel h4 {
+  position: absolute;
+  z-index: 1;
+  font-size: 22px;
+  line-height: 23px;
+  color: white;
+  padding: 25px;
+}
+.carrousel h4 strong {
+  font-size: 24px;
+  display: block;
+}
+.carrousel a img {
+  object-fit: cover;
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: 0.3 ease-in-out;
+}
+
+.carrusel-arrow {
+  border-radius: 30px;
+  background-color: #ccc;
+  position: absolute;
+  z-index: 6;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+}
+.carrusel-arrow :focus {
+  outline: 0;
+}
+.carrusel-arrow svg {
+  width: 12px;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.carrusel-prev {
+  left: -24px;
+}
+
+.carrusel-next {
+  right: -24px;
+}
+
+/*
+@media (max-width: 1240px){
+  .carrusel{
+    width: 240px;
+  }
+}*/
 .tabs-container {
   margin: 1rem;
 }
@@ -70,18 +174,21 @@ img {
 .tabs-container .tab-container {
   display: flex;
   flex-flow: row nowrap;
+  background-color: rgb(255, 255, 255);
+  color: black;
   max-width: fit-content;
 }
 .tabs-container .tab-container .tab {
   padding: 1rem 7rem 1rem 1rem;
-  margin: 0;
-  background-color: lightcyan;
+  margin: 0.2rem;
+  border: solid black 2px;
+  border-radius: 11px;
 }
 .tabs-container .tab-container .tab.active {
-  background-color: blue;
+  background-color: rgb(26, 25, 25);
+  color: white;
 }
 .tabs-container .data-container {
-  background-color: rgb(210, 230, 223);
   max-height: 10vh;
 }
 .tabs-container .data-container .data {
@@ -94,34 +201,58 @@ img {
 }
 
 .footer {
+  padding: 60px 0px;
   background-color: #D9D9D9;
-  padding: 120px 60px 120px;
-}
-.footer__list {
-  align-items: center;
 }
 .footer--flex {
-  display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
+  display: block;
 }
 .footer__img {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+  width: 125px;
+  margin-bottom: 50px;
 }
 .footer__anchors h2 {
-  color: #000;
-  font-size: 20px;
+  font-size: 12px;
 }
 .footer__anchors li {
-  margin-bottom: 23px;
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 9px;
 }
 .footer__anchors a {
   color: #000;
 }
 
+@media (min-width: 768px) {
+  .footer {
+    padding: 120px 60px 120px;
+  }
+  .footer--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__img {
+    display: flex;
+    gap: 2rem;
+    width: auto;
+  }
+  .footer__anchors h2 {
+    color: #000;
+    font-size: 20px;
+  }
+  .footer__anchors li {
+    margin-bottom: 23px;
+    font-weight: lighter;
+    font-size: 16px;
+  }
+  .footer__anchors a {
+    color: #000;
+  }
+}
 .header {
   background-color: #000;
   height: 70px;
@@ -213,5 +344,175 @@ img {
 .gallery li {
   position: relative;
 }
+
+.components {
+  padding: 0 auto;
+  background-color: rgb(148, 151, 148);
+}
+
+/*Estilos de Buttons*/
+.buttons {
+  display: flex;
+}
+.buttons p {
+  padding: 20px 50px 16px 20px;
+  margin-right: 20px;
+}
+
+.button,
+.button2 {
+  width: 9%;
+  padding: 10px 10px;
+  margin: 0px 10px 0px 0px;
+  background-color: rgb(203, 203, 203);
+  color: black;
+  border-radius: 17px;
+}
+
+.button2 {
+  background-color: rgb(214, 214, 214);
+  color: rgb(175, 175, 175);
+  border-color: rgb(232, 230, 230);
+}
+
+.color1:hover {
+  background-color: rgb(140, 139, 139);
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*      Estilos del Nav    */
+.parrafo p {
+  margin: 60px 0px;
+  padding: 0px 40px;
+}
+
+.menuu {
+  display: flex;
+}
+
+.original,
+.menu1,
+.menu2 {
+  margin: 60px 0px;
+  padding: 0px 40px;
+}
+.original .original,
+.original .menu1,
+.original .menu2,
+.original a,
+.menu1 .original,
+.menu1 .menu1,
+.menu1 .menu2,
+.menu1 a,
+.menu2 .original,
+.menu2 .menu1,
+.menu2 .menu2,
+.menu2 a {
+  color: rgb(254, 254, 254);
+  text-decoration: none;
+  padding: 0px 40px;
+}
+
+.original a:hover {
+  text-decoration: underline;
+  color: rgb(180, 180, 180);
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*Estilos Tipografías*/
+.tipo {
+  display: flex;
+  margin: 40px 40px;
+  padding: 30px;
+}
+.tipo p {
+  padding: 5px 30px;
+}
+
+.tipo1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.tipo2 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.tipo3 {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*Estilos Textarea*/
+.box_text textarea {
+  background-color: rgba(53, 53, 53, 0.326);
+  color: white;
+  border-color: black;
+}
+
+.enviar {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 34px;
+  width: 10%;
+  padding: 10px 0px;
+}
+.enviar:hover {
+  background-color: #626262;
+  border-color: #626262;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*Estilos Sign Up*/
+.formulario__label {
+  display: flex;
+  color: white;
+  transform: translateY(10px);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 15px 0px;
+  margin-bottom: 15px;
+}
+
+.formulario div {
+  max-width: 20%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.formulario_input:focus + .formulario_label {
+  transform-origin: left top;
+  transform: translateY(-12px) scale(0.7);
+}
+
+.formulario__input {
+  background-color: rgba(235, 235, 235, 0);
+  border: none;
+  color: white;
+  outline: none;
+  border-bottom: 1px solid white;
+}
+
+.enviar {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 34px;
+  width: 10%;
+  padding: 10px 0px;
+  margin: 10px 0px 10px 50px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*Estilos Sign in*/
+.parrafo1 {
+  color: white;
+}
+.parrafo1 strong {
+  color: white;
+}
+.parrafo1 strong:hover {
+  text-decoration: underline;
+}
+
+/*-------------------------------------------------------------------------------------------*/
 
 /*# sourceMappingURL=styles.css.map */
