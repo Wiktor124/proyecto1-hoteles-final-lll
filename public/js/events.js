@@ -2,7 +2,7 @@ import { places, hotels } from './apiConnection.js'
 
 export class placeOrHotel {
 
-  static getPlace (place) {
+  static savePlacePosition (place) {
 
     localStorage.setItem(
       'place',
@@ -11,7 +11,7 @@ export class placeOrHotel {
 
   }
 
-  static getHotel (hotel) {
+  static saveHotelPosition (hotel) {
 
     localStorage.setItem(
       'hotel',
@@ -25,12 +25,11 @@ export class placeOrHotel {
     document.querySelector('body').addEventListener('click', (e) => {
 
       if (e.target.matches('.place__link')) {
-
-        placeOrHotel.getPlace(e.target.dataset.id)
+        placeOrHotel.savePlacePosition(e.target.dataset.id) // data-id of target
       }
   
       if (e.target.matches('.hotel__link')) {
-        placeOrHotel.getHotel(e.target.dataset.id)
+        placeOrHotel.saveHotelPosition(e.target.dataset.id) // data-id of target
       }
 
     })

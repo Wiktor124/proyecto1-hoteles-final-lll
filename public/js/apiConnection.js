@@ -4,6 +4,7 @@ const fetchApiData = async () => {
   const api = 'https://63ed6ef13d9c852c3f5a8b83.mockapi.io/';
 
   try {
+
     const [places, hotels] = await Promise.all([
       fetch(`${api}places`).then((response) => response.json()),
       fetch(`${api}hotels`).then((response) => response.json())
@@ -12,6 +13,7 @@ const fetchApiData = async () => {
     
     return { places, hotels };
   } catch  {
+
     return JSON.parse(localStorage.getItem('apiData'))
   }
 };

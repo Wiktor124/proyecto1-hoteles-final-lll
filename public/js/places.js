@@ -4,7 +4,9 @@ placeOrHotel.clickEvents()
 
 // print places
 function printPlaces(placesData) {
+
   document.getElementById('places').innerHTML  = placesData.map(item => {
+    
    return `
     <li>
       <a href="./place.html" class="gallery__link place__link" data-id="${item.id}"></a>
@@ -15,6 +17,8 @@ function printPlaces(placesData) {
       </div>
     </li>
     `
+    
   }).join('')
+
 }
 printPlaces(places);
