@@ -1,4 +1,4 @@
-.carro{
+.carro {
   margin: 0;
   padding: 0;
   display: flex;
@@ -8,67 +8,69 @@
   background: rgb(49, 49, 49);
 }
 
-h4, strong, a{
+h4,
+strong,
+a {
   margin: 0;
   padding: 0;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.carrousel__list{
+.carrousel__list {
 
   align-items: center;
   display: flex;
   height: 304px;
   padding: 10px 0px;
-  width: 100%;
   overflow: hidden;
   gap: 10px;
 }
 
-.carrousel__track{
+.carrousel__track {
   position: relative;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
   transition: .5s ease-in-out;
-  grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
 }
 
-.carrusel{
+.carrusel {
   box-sizing: border-box;
-  height: 100%;
-  width: 302px;
+  width: 300px;
 }
 
-.carrousel{
+.carrousel {
   position: relative;
-  h4{
-  position: absolute;
-  z-index: 1;
-  font-size: 22px;
-  line-height: 23px;
-  color: white;
-  padding: 25px;
+
+  h4 {
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: white;
+    padding: 25px;
   }
-  h4 strong{
+
+  h4 strong {
     font-size: 24px;
-  display: block;
+    display: block;
   }
-  a img{
-    object-fit: cover;
-  height: 300px;
-  border-radius: 15px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-  transition: .3 ease-in-out;
+
+  a img {
+    height: 300px;
+    /* Altura automática para mantener la proporción */
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: .3 ease-in-out;
   }
 }
 
-.carrusel-arrow{
+.carrusel-arrow {
   border-radius: 30px;
   background-color: #ccc;
   position: absolute;
@@ -78,22 +80,23 @@ a{
   text-align: center;
   border: 0;
   cursor: pointer;
-  :focus{
+
+  :focus {
     outline: 0;
   }
-  svg{
+
+  svg {
     width: 12px;
-  height: 100%;
-  color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    color: rgba(0, 0, 0, 0.7);
   }
 }
 
-
-.carrusel-prev{
+.carrusel-prev {
   left: -24px;
 }
 
-.carrusel-next{
+.carrusel-next {
   right: -24px;
 }
 
