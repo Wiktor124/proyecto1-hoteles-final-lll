@@ -66,7 +66,7 @@
   {
     "hotelName": "hotelName 5",
     "descritption": "descritption 5",
-    "idPlace": "2",
+    "idPlace": "1",
     "roomsList": [
       {
         "roomName": "",
@@ -82,7 +82,7 @@
   {
     "hotelName": "hotelName 6",
     "descritption": "descritption 6",
-    "idPlace": "2",
+    "idPlace": "1",
     "roomsList": [
       {
         "roomName": "",
@@ -98,7 +98,7 @@
   {
     "hotelName": "hotelName 7",
     "descritption": "descritption 7",
-    "idPlace": "2",
+    "idPlace": "1",
     "roomsList": [
       {
         "roomName": "",
@@ -114,7 +114,7 @@
   {
     "hotelName": "hotelName 8",
     "descritption": "descritption 8",
-    "idPlace": "2",
+    "idPlace": "1",
     "roomsList": [
       {
         "roomName": "",

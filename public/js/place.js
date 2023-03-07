@@ -2,7 +2,7 @@ import { places, hotels } from './apiConnection.js';
 import { placeOrHotel } from './events.js'
 placeOrHotel.clickEvents()
 
-const placePosition = localStorage.getItem('place');
+const placePosition = Number(localStorage.getItem('place'));
 
 // print just one place
 function printPlace(placesData) {
@@ -13,6 +13,7 @@ function printPlace(placesData) {
   `;
 }
 printPlace(places[placePosition])
+console.log('bra', places);
 
 // print hotels that match with place
 function printHotels() {

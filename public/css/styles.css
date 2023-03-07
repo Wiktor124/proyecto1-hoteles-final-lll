@@ -189,7 +189,7 @@ a {
   color: white;
 }
 .tabs-container .data-container {
-  max-height: 10vh;
+  max-height: 500px;
 }
 .tabs-container .data-container .data {
   margin: 1rem;
@@ -340,6 +340,7 @@ a {
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 .gallery li {
   position: relative;
