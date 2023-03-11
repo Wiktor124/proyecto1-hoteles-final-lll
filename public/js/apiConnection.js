@@ -12,8 +12,9 @@ const fetchApiData = async () => {
     localStorage.setItem('apiData', JSON.stringify({places, hotels}))
     
     return { places, hotels };
-  } catch  {
-
+  } catch (err) {
+    console.error(err);
+    
     return JSON.parse(localStorage.getItem('apiData'))
   }
 };

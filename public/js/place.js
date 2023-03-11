@@ -1,13 +1,9 @@
-import { places, hotels } from './apiConnection.js';
-import { placeOrHotel } from './events.js'
-placeOrHotel.clickEvents()
-
-const placePosition = Number(localStorage.getItem('place'));
+import { places, hotels } from './apiConnection.js'
+const idPlace = new URLSearchParams(window.location.search).get('id')
 
 // print just one place
 function printPlace(placesData) {
-
-  document.getElementById('place').innerHTML  = `
+  document.getElementById('place').innerHTML = `
 
     <img src="${placesData.heroImage}" alt="${placesData.placeName}" class="heroImage" />
     <h3 class="carrousel__title">${placesData.placeName}</h3>
@@ -15,27 +11,25 @@ function printPlace(placesData) {
 
   `;
 }
-printPlace(places[placePosition])
+printPlace(places[idPlace - 1])
 
 // print hotels that match with place
 function printHotels() {
-  const getHotels = hotels.filter(item => places[placePosition].id === item.idPlace)
+  const getHotels = hotels.filter((item) => idPlace === item.idPlace)
 
-  document.getElementById('track').innerHTML = getHotels.map(item => {
+  document.getElementById('track').innerHTML = getHotels.map((item) => {
 
     return `
-     <div class="carrusel">
-      <a href="./hotel.html" class="carrousel__link hotel__link" data-id="${item.id}"></a>
-      <div>
-        <img src="${item.image}" alt="${item.hotelName}">
-        <h2 class="carrousel__title">${item.hotelName}</h2>
-        <p>${item.descritption}</p>
+      <div class="carrusel">
+          <div>
+            <a href="./hotel.html?id=${item.id}">
+              <h4>${item.hotelName} <strong>TRAVEL</strong></h4>
+              <picture><img src="${item.image}" alt="${item.hotelName}"></picture>
+            </a>
+          </div>
       </div>
-    </div>`
-
+    `;
+    
   }).join('')
 }
 printHotels()
-
-
-
