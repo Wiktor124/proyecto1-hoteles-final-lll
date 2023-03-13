@@ -1,13 +1,13 @@
 import { hotels } from './apiConnection.js';
+import { heroImage } from './hero-image.js';
+
 const idHotel = new URLSearchParams(window.location.search).get("id") - 1;
 
 // print just one hotel
 function printHotel(hotel) {
+  heroImage(hotel.image, hotel.hotelName)
   
   document.getElementById('hotel').innerHTML = `
-
-    <img src="${hotel.image}" alt="${hotel.hotelName}">
-    <h2>${hotel.hotelName}</h2>
     <p>${hotel.descritption}</p>
 
   `
