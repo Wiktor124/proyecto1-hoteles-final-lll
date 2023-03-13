@@ -1,50 +1,50 @@
 [
   {
-    "placeName": "placeName 1",
-    "description": "description 1",
-    "heroImage": "public/img-routes/guanacaste.jpg",
-    "id": "1"
+   "placeName": "Guanacaste",
+   "description": "description 1",
+   "heroImage": "public/assets/img/banner-guanacaste.jpg",
+   "id": "1"
   },
   {
-    "placeName": "placeName 2",
-    "description": "description 2",
-    "heroImage": "public/img-routes/limon.jpg",
-    "id": "2"
+   "placeName": "Limon",
+   "description": "description 2",
+   "heroImage": "public/assets/img/banner-limon.jpg",
+   "id": "2"
   },
   {
-    "placeName": "placeName 3",
-    "description": "description 3",
-    "heroImage": "public/img-routes/puntarenas.jpg",
-    "id": "3"
+   "placeName": "Puntarenas",
+   "description": "description 3",
+   "heroImage": "public/assets/img/banner-puntarenas.jpg",
+   "id": "3"
   },
   {
-    "placeName": "placeName 4",
-    "description": "description 4",
-    "heroImage": "public/img-routes/tamarindo.jpg",
-    "id": "4"
+   "placeName": "Tamarindo",
+   "description": "description 4",
+   "heroImage": "public/assets/img/banner-tamarindo.jpg",
+   "id": "4"
   },
   {
-    "placeName": "placeName 1",
-    "description": "description 1",
-    "heroImage": "public/img-routes/guanacaste.jpg",
-    "id": "1"
+   "placeName": "Jaco",
+   "description": "description 1",
+   "heroImage": "public/assets/img/banner-jaco.jpg",
+   "id": "5"
   },
   {
-    "placeName": "placeName 2",
-    "description": "description 2",
-    "heroImage": "public/img-routes/limon.jpg",
-    "id": "2"
+   "placeName": "Uvita",
+   "description": "description 2",
+   "heroImage": "public/assets/img/banner-uvita.jpg",
+   "id": "6"
   },
   {
-    "placeName": "placeName 3",
-    "description": "description 3",
-    "heroImage": "public/img-routes/puntarenas.jpg",
-    "id": "3"
+   "placeName": "Conchal",
+   "description": "description 3",
+   "heroImage": "public/assets/img/banner-conchal.jpg",
+   "id": "7"
   },
   {
-    "placeName": "placeName 4",
-    "description": "description 4",
-    "heroImage": "public/img-routes/tamarindo.jpg",
-    "id": "4"
+   "placeName": "Cahuita",
+   "description": "description 4",
+   "heroImage": "public/assets/img/banner-cahuita.jpeg",
+   "id": "8"
   }
-]
+ ]

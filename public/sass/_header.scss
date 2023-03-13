@@ -1,8 +1,10 @@
 .header {
   $header-height: 70px;
   background-color: $black;
+  opacity: 50%;
   height: $header-height;
   position: relative;
+  z-index: 1;
 
   &--flex {
     display: flex;
@@ -22,8 +24,8 @@
     border: none;
     justify-content: space-around;
     flex-direction: column;
-    width: 35px;
-    height: 36px;
+    width: 30px;
+    height: 31px;
     padding: 0;
   }
 
@@ -76,6 +78,19 @@
   }
 }
 
+.banner {
+  position: relative;
+  top: -100px;
+  height: 610px;
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: $white;
+    line-height: 526px;
+  }
+}
+
 @media (min-width: 768px) {
   .header {
     &__button {
@@ -97,4 +112,9 @@
       width: fit-content;
     }
   }
+
+  .banner {
+    h1 { font-size: 4rem; }
+  }
+
 }

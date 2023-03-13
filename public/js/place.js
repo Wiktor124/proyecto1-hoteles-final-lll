@@ -1,11 +1,14 @@
 import { places, hotels } from './apiConnection.js'
+import { heroImage } from './hero-image.js';
+
 const idPlace = new URLSearchParams(window.location.search).get('id')
 
 // print just one place
 function printPlace(placesData) {
+  heroImage(placesData.heroImage, placesData.placeName)
+    
   document.getElementById('place').innerHTML = `
 
-    <img src="${placesData.heroImage}" alt="${placesData.placeName}" class="heroImage" />
     <h3 class="carrousel__title">${placesData.placeName}</h3>
     <p>${placesData.description}</p>
 

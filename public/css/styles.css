@@ -254,8 +254,10 @@ a {
 }
 .header {
   background-color: #000;
+  opacity: 50%;
   height: 70px;
   position: relative;
+  z-index: 1;
 }
 .header--flex {
   display: flex;
@@ -272,8 +274,8 @@ a {
   border: none;
   justify-content: space-around;
   flex-direction: column;
-  width: 35px;
-  height: 36px;
+  width: 30px;
+  height: 31px;
   padding: 0;
 }
 .header__button > div {
@@ -318,6 +320,18 @@ a {
   font-weight: bold;
 }
 
+.banner {
+  position: relative;
+  top: -100px;
+  height: 610px;
+}
+.banner h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  line-height: 526px;
+}
+
 @media (min-width: 768px) {
   .header__button {
     display: none;
@@ -335,14 +349,14 @@ a {
     padding-top: 0;
     width: fit-content;
   }
+  .banner h1 {
+    font-size: 4rem;
+  }
 }
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-}
-.gallery li {
-  position: relative;
 }
 
 .components {
