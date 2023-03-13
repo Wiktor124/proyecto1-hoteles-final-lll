@@ -1,30 +1,35 @@
 import { hotels } from './apiConnection.js';
-import { placeOrHotel } from './events.js'
-placeOrHotel.clickEvents()
-
-const hotelPosition = localStorage.getItem('hotel');
+const idHotel = new URLSearchParams(window.location.search).get("id") - 1;
 
 // print just one hotel
 function printHotel(hotel) {
+  
   document.getElementById('hotel').innerHTML = `
+
     <img src="${hotel.image}" alt="${hotel.hotelName}">
     <h2>${hotel.hotelName}</h2>
     <p>${hotel.descritption}</p>
+
   `
 }
-printHotel(hotels[hotelPosition])
+printHotel(hotels[idHotel])
 
 // print rooms
 function printRooms() {
-  console.log(hotels[hotelPosition].roomsList);
-  document.getElementById('track').innerHTML = hotels[hotelPosition].roomsList.map(item => {
+
+  document.getElementById('track').innerHTML = hotels[idHotel].roomsList.map(item => {
+
     return `
-     <div>
-      <img src="${item.roomImage}" alt="Room of ${hotels[hotelPosition].hotelName}">
-      <h2 class="carrousel__title">${item.roomName}</h2>
-      <p>${item.characteristics}</p>
-      <p>${item.discoutn}</p>
-    </div>`
+      <div class="carrusel">
+        <div>
+          <a href="#">
+            <h4>${item.hotelName} <strong>TRAVEL</strong></h4>
+            <picture><img src="${item.image}" alt="${item.hotelName}"></picture>
+          </a>
+        </div>
+      </div>
+    `;
+    
   }).join('')
 }
 printRooms()
