@@ -42,7 +42,6 @@ btn.addEventListener('click', () => {
   
   btn.classList.toggle('header__button--active')
   document.querySelector('.header__links').classList.toggle('header__links--active')
-
 })
 
 

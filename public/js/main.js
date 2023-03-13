@@ -1,8 +1,11 @@
 import { places } from './apiConnection.js'
+import { heroImage } from './hero-image.js';
+
+heroImage('public/assets/img/banner-home.jpg', 'COSTA RICA');
 
 function printPlacesImages(placesData) {
   
-  document.querySelector('#track').innerHTML = placesData.map((item) => {
+  document.getElementById('track').innerHTML = placesData.map((item) => {
 
     return `
       <div class="carrusel">
