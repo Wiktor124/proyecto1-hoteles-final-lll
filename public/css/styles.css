@@ -253,8 +253,7 @@ a {
   }
 }
 .header {
-  background-color: #000;
-  opacity: 50%;
+  background-color: rgba(0, 0, 0, 0.54);
   height: 70px;
   position: relative;
   z-index: 1;
@@ -298,7 +297,7 @@ a {
 .header__links {
   display: none;
   align-items: center;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.54);
   flex-direction: column;
   gap: 20px;
   height: calc(100vh - 70px);

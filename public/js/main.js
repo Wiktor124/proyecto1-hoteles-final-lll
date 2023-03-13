@@ -1,7 +1,7 @@
 import { places } from './apiConnection.js'
-import { heroImage } from './hero-image.js';
+import { CreateDomElements } from './create-dom-elements.js';
 
-heroImage('public/assets/img/banner-home.jpg', 'COSTA RICA');
+CreateDomElements.getImageAndText('public/assets/img/banner-home.jpg', 'COSTA RICA');
 
 function printPlacesImages(placesData) {
   
