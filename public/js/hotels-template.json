@@ -3,12 +3,25 @@
     "descritption": "complejo turístico todo incluido cercano a la playa Matapalo",
     "idPlace": "1",
     "roomsList": [{
-      "roomName": "Magic room",
-      "price": "210",
-      "characteristics": " 1 bed, WIFI, pool, Jacuzzi",
-      "discoutn": "1",
-      "roomImage": ""
-    }],
+        "roomName": "Cuarto Grande",
+        "price": "210",
+        "characteristics": " 2 beds, WIFI, pool, Jacuzzi",
+        "discoutn": "1",
+        "roomImage": ""
+      }, {
+        "roomName": "Cuarto Normal",
+        "price": "180",
+        "characteristics": " 1 bed, WIFI, pool, Jacuzzi",
+        "discoutn": "1",
+        "roomImage": ""
+      }, {
+        "roomName": "Cuarto Pequeño",
+        "price": "150",
+        "characteristics": " 1 bed, WIFI, pool",
+        "discoutn": "1",
+        "roomImage": ""
+      }
+    ],
     "image": "public/img-routes/puntarenas.jpg",
     "id": "1"
   },
@@ -17,12 +30,24 @@
     "descritption": "cabinas  para turismo, diversión, comidas y transporte",
     "idPlace": "1",
     "roomsList": [{
-      "roomName": "Cabina Media",
-      "price": "90",
-      "characteristics": "Pool, Bar, Breakfast, WIfi",
-      "discoutn": "1",
-      "roomImage": ""
-    }],
+        "roomName": "Cabina Alta",
+        "price": "90",
+        "characteristics": "Pool, Bar, Breakfast, WIfi",
+        "discoutn": "1",
+        "roomImage": ""
+      }, {
+        "roomName": "Cabina Media",
+        "price": "60",
+        "characteristics": "Pool, Bar, Breakfast, WIfi",
+        "discoutn": "1",
+        "roomImage": ""
+      },{
+        "roomName": "Cuarto Pequeño",
+        "price": "40",
+        "characteristics": " Pool, WIFI , Breakfast,",
+        "discoutn": "1",
+        "roomImage": ""
+      }],
     "image": "public/img-routes/puntarenas.jpg",
     "id": "2"
   },
@@ -31,8 +56,20 @@
     "descritption": "Cabians familiares",
     "idPlace": "1",
     "roomsList": [{
-      "roomName": "Cabina Basica",
+      "roomName": "Cabina Grande",
       "price": "49.9",
+      "characteristics": "4 beds, Pool, Pets Allowed, WIfi",
+      "discoutn": "1",
+      "roomImage": ""
+    },{
+      "roomName": "Cabina Normal",
+      "price": "39.9",
+      "characteristics": "Pool, Pets Allowed, WIfi",
+      "discoutn": "1",
+      "roomImage": ""
+    },{
+      "roomName": "Cabina Basica",
+      "price": "29.9",
       "characteristics": "Pool, Pets Allowed, WIfi",
       "discoutn": "1",
       "roomImage": ""
