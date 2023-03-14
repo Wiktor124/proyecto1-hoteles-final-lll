@@ -1,21 +1,15 @@
 import { hotels } from './apiConnection.js';
+import { CreateDomElements } from './create-dom-elements.js'
 
 // print hotels
 function printHotels(hotelsData) {
   
-  document.getElementById('hotels').innerHTML  = hotelsData.map(item => {
-    
-   return `
-    <li>
-      <a href="./hotel.html?id=${item.id}"class="gallery__link hotel__link"></a>
-      <div>
-        <img src="${item.image}" alt="${item.hotelName}">
-        <h2>${item.hotelName}</h2>
-        <p>${item.descritption}</p>
-      </div>
-    </li>
-    `
-    
+  document.getElementById('gallery-container').innerHTML = hotelsData.map((item) => {
+    return CreateDomElements.createGalleryCards(
+      item.image,
+      item.hotelName,
+      './hotel.html?id=' + item.id,
+    )
   }).join('')
 }
 printHotels(hotels);
