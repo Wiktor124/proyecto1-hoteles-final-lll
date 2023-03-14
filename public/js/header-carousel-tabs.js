@@ -45,7 +45,7 @@ btn.addEventListener('click', () => {
 })
 
 
-/// tabs
+// tabs
 function tab() {
   const tab = document.querySelectorAll(".tab");
   const tabcontent = document.querySelectorAll(".data");
@@ -63,3 +63,17 @@ function tab() {
 
 };
 tab()
+
+// modal sign in 
+
+const open = document.getElementById('open')
+const modal = document.getElementById('modal_container')
+const close = document.getElementById('close')
+
+open.addEventListener('click', ()=>{
+  modal.classList.add('show');
+});
+
+close.addEventListener('click',()=>{
+  modal.classList.remove('show')
+});
