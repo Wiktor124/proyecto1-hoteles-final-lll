@@ -2,11 +2,10 @@
 .footer {
     padding: 60px 0px;
     background-color: $gray;
+    margin-top: 100px;
     
-
     &--flex {
       justify-content:left;
-      align-items: center;
      display: block;
     //margin-inline-start: 20px;
     }
@@ -14,9 +13,10 @@
     &__img {
       display: flex;
       gap: 1rem;
-      width: 125px;
-      margin-bottom: 50px;
+      width: 100px;
+      margin-bottom: 30px;
     }
+
     &__anchors {
       h2 {
         font-size: 12px;
@@ -25,6 +25,10 @@
       li {
         font-weight: lighter;
         font-size: 9px;
+        margin-bottom: 6px;
+        :hover{
+        text-decoration: underline;
+        }
       }
   
       a {
