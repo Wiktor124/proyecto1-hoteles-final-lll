@@ -14,3 +14,4 @@ function printPlaces(placesData) {
 
 }
 printPlaces(places)
+

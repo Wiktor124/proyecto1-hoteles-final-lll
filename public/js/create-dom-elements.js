@@ -34,5 +34,9 @@ export function createGalleryCards(routeImage, itemName, routePage) {
   //galleryLi.classList.add('') // add class
   galleryLi.innerHTML = template
 
+
   return galleryLi.outerHTML
+
 }
+
+

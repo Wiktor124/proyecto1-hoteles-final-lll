@@ -10,6 +10,7 @@ function printHotels(hotelsData) {
       item.hotelName,
       './hotel.html?id=' + item.id,
     )
+
   }).join('')
 }
 printHotels(hotels);
