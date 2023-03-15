@@ -385,6 +385,13 @@ a {
   display: block;
   height: 100%;
 }
+.gallery li {
+  height: 200px;
+}
+.gallery a {
+  display: block;
+  height: 100%;
+}
 
 .components {
   padding: 0 auto;
