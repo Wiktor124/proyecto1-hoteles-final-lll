@@ -347,7 +347,10 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
-.gallery li {
+
+.gallery a {
+  display: block;
+  height: 100%;
   height: 300px;
 }
 .gallery__titleCard {

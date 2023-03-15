@@ -1,8 +1,9 @@
 
 // Connect to Api
 const fetchApiData = async () => {
- // const api = 'https://63ed6ef13d9c852c3f5a8b83.mockapi.io/';
 
+  const api = 'https://63ed6ef13d9c852c3f5a8b83.mockapi.io/';
+  
   try {
 
     const [places, hotels] = await Promise.all([
