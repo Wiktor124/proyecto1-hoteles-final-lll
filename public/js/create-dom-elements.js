@@ -20,18 +20,19 @@ export function createBanner(route, text) {
 export function createGalleryCards(routeImage, itemName, routePage) {
   const template = `
     <a href="${routePage}">
-      <div>
-        <span>Costa Rica</span>
-        <h4>${itemName}</h4>
+      <div class="gallery__textCard--color">
+        <span class="gallery__countryText">Costa Rica</span>
+        <h4 class="gallery__titleCard">${itemName}</h4>
       </div>
 
-      <img src="" />
+      <img class="gallery__arrow" src="./public/assets/icons/arrow-card.png" />
     </a>
   `
 
   const galleryLi = document.createElement('li')
   galleryLi.style.background = `url(${routeImage})`
-  //galleryLi.classList.add('') // add class
+  galleryLi.style.backgroundSize = 'cover'
+  galleryLi.classList.add('gallery__list') // add class
   galleryLi.innerHTML = template
 
 
