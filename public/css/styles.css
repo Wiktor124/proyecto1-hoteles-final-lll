@@ -345,7 +345,7 @@ a {
 .gallery {
   display: grid;
   padding-bottom: 90px;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-template-columns: repeat(2, minmax(370px, 1fr));
   gap: 30px;
 }
 .gallery li {
@@ -380,13 +380,6 @@ a {
   bottom: 0;
   width: 10%;
   height: 15%;
-}
-.gallery a {
-  display: block;
-  height: 100%;
-}
-.gallery li {
-  height: 200px;
 }
 .gallery a {
   display: block;
