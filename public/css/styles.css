@@ -52,16 +52,6 @@ img {
   width: 1px;
 }
 
-.gallery__link, .carrousel__link {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.heroImage {
-  width: 300px;
-}
-
 .carro {
   margin: 0;
   padding: 0;
@@ -356,6 +346,17 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+}
+.gallery li {
+  height: 300px;
+}
+.gallery__titleCard {
+  background-color: rgba(0, 0, 0, 0.498);
+  color: white;
+}
+.gallery__arrow {
+  width: 12%;
+  height: 12%;
 }
 
 .components {

@@ -22,4 +22,7 @@ export class CreateDomElements {
 
     document.querySelector('.banner-title').textContent = text
   }
+
 }
+
+
