@@ -1,58 +1,38 @@
-export class CreateDomElements {
-  static createBanner() {
-    const bannerDiv = document.createElement('div')
-    bannerDiv.classList.add('banner')
+export function createBanner(route, text) {
+  const bannerDiv = document.createElement('div')
+  bannerDiv.classList.add('banner')
 
-    const bannerTitle = document.createElement('h1')
-    bannerTitle.classList.add('banner-title')
+  const bannerTitle = document.createElement('h1')
+  bannerTitle.classList.add('banner-title')
 
-    bannerDiv.append(bannerTitle)
+  bannerDiv.append(bannerTitle)
 
-    const body = document.body
-    body.insertBefore(bannerDiv, body.children[1])
-  }
+  const body = document.body
+  body.insertBefore(bannerDiv, body.children[1])
 
-  static getImageAndText(route, text) {
-    CreateDomElements.createBanner()
+  const banner = document.querySelector('.banner')
+  banner.style.background = `url(${route}) center no-repeat`
+  banner.style.backgroundSize = 'cover'
 
-    const banner = document.querySelector('.banner')
-    banner.style.background = `url(${route}) center no-repeat`
-    banner.style.backgroundSize = 'cover'
+  document.querySelector('.banner-title').textContent = text
+}
 
-    document.querySelector('.banner-title').textContent = text
-  }
+export function createGalleryCards(routeImage, itemName, routePage) {
+  const template = `
+    <a href="${routePage}">
+      <div>
+        <span>Costa Rica</span>
+        <h4>${itemName}</h4>
+      </div>
 
-  static createGalleryCards(routeImage, itemName, routePage) {
+      <img src="" />
+    </a>
+  `
 
-    console.log(routeImage);
-    
-    const galleryLi = document.createElement('li')
-    galleryLi.style.background = `url(${routeImage})`
+  const galleryLi = document.createElement('li')
+  galleryLi.style.background = `url(${routeImage})`
+  //galleryLi.classList.add('') // add class
+  galleryLi.innerHTML = template
 
-    const divCard = document.createElement('div')
-
-    const spanText = document.createElement('span')
-    spanText.textContent = 'Costa Rica'
-    spanText.classList.add('gallery__country')
-
-    const title = document.createElement('h4')
-    title.classList.add('gallery__titleCard')
-    title.textContent = itemName
-
-    divCard.append(spanText, title)
-
-    const arrow = document.createElement('img')
-    arrow.classList.add('gallery__arrow')
-    arrow.src = ''
-    arrow.classList.add()
-
-    const link = document.createElement('a')
-    link.href = routePage
-    link.classList.add('gallery__link')
-    link.append(divCard, arrow)
-
-    galleryLi.appendChild(link)
-
-    return galleryLi.outerHTML
-  } 
+  return galleryLi.outerHTML
 }
