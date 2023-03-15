@@ -1,5 +1,7 @@
 import { hotels } from './apiConnection.js';
-import { createGalleryCards } from './create-dom-elements.js'
+import { createGalleryCards,  createBanner } from './create-dom-elements.js'
+
+createBanner('./public/assets/img/banner-hotels.jpeg', 'Hotels')
 
 // print hotels
 function printHotels(hotelsData) {
@@ -10,6 +12,7 @@ function printHotels(hotelsData) {
       item.hotelName,
       './hotel.html?id=' + item.id,
     )
+
   }).join('')
 }
 printHotels(hotels);

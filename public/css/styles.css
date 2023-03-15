@@ -344,8 +344,46 @@ a {
 }
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  padding-bottom: 90px;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 30px;
+}
+.gallery li {
+  position: relative;
+  height: 305px;
+  overflow: hidden;
+}
+.gallery li:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-out;
+}
+.gallery__list {
+  border-radius: 7px;
+}
+.gallery__textCard--color {
+  background-color: rgba(0, 0, 0, 0.498);
+  padding: 9px 0px;
+  color: #fff;
+  border-radius: 7px;
+}
+.gallery__countryText {
+  font-weight: lighter;
+  margin-left: 14px;
+}
+.gallery__titleCard {
+  margin-left: 14px;
+  font-weight: bolder;
+}
+.gallery__arrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 10%;
+  height: 15%;
+}
+.gallery a {
+  display: block;
+  height: 100%;
 }
 .gallery li {
   height: 200px;
