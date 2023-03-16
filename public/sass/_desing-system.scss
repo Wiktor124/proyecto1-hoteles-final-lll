@@ -202,7 +202,7 @@
     /*background-color:  rgba(0, 0, 0, 0.6);*/
     background-image: url(/public/design-system/img/form\ 1.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -214,12 +214,6 @@
     width: 100vw;
     z-index: 3;
   }
-
-  & ::placeholder {
-    color: white;
-    font-weight: 300px;
-    font-size: 16px;
-  }
 }
 
 .show {
@@ -227,15 +221,24 @@
   opacity: 1;
 }
 
+.scroll-body{
+    overflow: hidden;
+}
+
 .formulario_img{
 height: 75px;
+margin-left: 201%;
+}
+
+.formulario__label{
+  justify-content: center;
 }
 
 #close{
-  border: none;
-  background-color:rgba(0, 0, 0, 0);
-  color: white;
   text-align: auto;
+  display: flex;
+  width: 30px;
+  height: 30px;
 }
 
 /*-------------------------------------------------------------------------------------------*/

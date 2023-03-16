@@ -72,11 +72,14 @@ tab()
 const open = document.getElementById('open')
 const modal = document.getElementById('modal_container')
 const close = document.getElementById('close')
+const scroll = document.querySelector('body')
 
 open.addEventListener('click', ()=>{
   modal.classList.add('show');
+  scroll.classList.add('scroll-body')
 });
 
 close.addEventListener('click',()=>{
   modal.classList.remove('show')
+  scroll.classList.remove('scroll-body')
 });

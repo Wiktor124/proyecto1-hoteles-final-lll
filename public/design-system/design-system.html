@@ -45,16 +45,16 @@
   <!-- modal sign in  -->
   <div class="modal-container" id="modal_container">
     <form class="formulario modal">
-    
-        <button id="close">Back</button>
+      <div>
         <img class="formulario_img" src="/public/assets/icons/logo-black.svg" alt="">
-      <h2>Sign Up</h2>
+        <img id="close" src="/public/design-system/img/vector.svg" alt="">
+      </div>
+        <h2>Sign Up</h2>
       <ul>
-        <label class="formulario__label" for="E-mail"></label>
-        <input class="formulario__input" type="email" id="E-mail" name="user_E-mail" placeholder="E-mail" required>
-        <label class="formulario__label" for="password"></label>
-        <input class="formulario__input" type="password" id="password" name="user_password" placeholder="Password"
-          required>
+        <label class="formulario__label" for="E-mail">E-mail</label>
+        <input class="formulario__input" type="email" id="E-mail" name="user_E-mail" required>
+        <label class="formulario__label" for="password">Password</label>
+        <input class="formulario__input" type="password" id="password" name="user_password" required>
       </ul>
       <input class="enviar" type="submit" value="Submit">
       <p class="parrafo1"><strong>Forgot Password?</strong></p>

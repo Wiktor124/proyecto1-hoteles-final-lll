@@ -72,9 +72,7 @@ img {
   background: rgb(49, 49, 49);
 }
 
-h4,
-strong,
-a {
+h4, strong, a {
   margin: 0;
   padding: 0;
 }
@@ -203,17 +201,17 @@ a {
 .footer {
   padding: 60px 0px;
   background-color: #D9D9D9;
+  margin-top: 100px;
 }
 .footer--flex {
   justify-content: left;
-  align-items: center;
   display: block;
 }
 .footer__img {
   display: flex;
   gap: 1rem;
-  width: 125px;
-  margin-bottom: 50px;
+  width: 100px;
+  margin-bottom: 30px;
 }
 .footer__anchors h2 {
   font-size: 12px;
@@ -221,6 +219,10 @@ a {
 .footer__anchors li {
   font-weight: lighter;
   font-size: 9px;
+  margin-bottom: 6px;
+}
+.footer__anchors li :hover {
+  text-decoration: underline;
 }
 .footer__anchors a {
   color: #000;
@@ -537,7 +539,7 @@ a {
   /*background-color:  rgba(0, 0, 0, 0.6);*/
   background-image: url(/public/design-system/img/form\ 1.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -549,26 +551,30 @@ a {
   width: 100vw;
   z-index: 3;
 }
-.modal ::placeholder {
-  color: white;
-  font-weight: 300px;
-  font-size: 16px;
-}
 
 .show {
   pointer-events: auto;
   opacity: 1;
 }
 
+.scroll-body {
+  overflow: hidden;
+}
+
 .formulario_img {
   height: 75px;
+  margin-left: 201%;
+}
+
+.formulario__label {
+  justify-content: center;
 }
 
 #close {
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-  color: white;
   text-align: auto;
+  display: flex;
+  width: 30px;
+  height: 30px;
 }
 
 /*-------------------------------------------------------------------------------------------*/
