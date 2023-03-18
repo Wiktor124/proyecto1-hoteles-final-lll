@@ -1,5 +1,5 @@
 import { hotels } from './apiConnection.js';
-import { createBanner, createBanner } from './create-dom-elements.js';
+import { createBanner } from './create-dom-elements.js';
 
 const idHotel = new URLSearchParams(window.location.search).get("id") - 1;
 
