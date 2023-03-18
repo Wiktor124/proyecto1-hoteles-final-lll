@@ -1,11 +1,11 @@
 import { places, hotels } from './apiConnection.js'
-import { CreateDomElements } from './create-dom-elements.js';
+import { createBanner } from './create-dom-elements.js';
 
 const idPlace = new URLSearchParams(window.location.search).get('id')
 
 // print just one place
 function printPlace(placesData) {
-  CreateDomElements.getImageAndText(placesData.heroImage, placesData.placeName)
+  createBanner(placesData.heroImage, placesData.placeName)
     
   document.getElementById('place').innerHTML = `
 

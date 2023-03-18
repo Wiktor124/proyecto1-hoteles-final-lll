@@ -1,11 +1,11 @@
 import { hotels } from './apiConnection.js';
-import { CreateDomElements } from './create-dom-elements.js';
+import { createBanner, createBanner } from './create-dom-elements.js';
 
 const idHotel = new URLSearchParams(window.location.search).get("id") - 1;
 
 // print just one hotel
 function printHotel(hotel) {
-  CreateDomElements.getImageAndText(hotel.image, hotel.hotelName)
+  createBanner(hotel.image, hotel.hotelName)
   
   document.getElementById('hotel').innerHTML = `
     <p>${hotel.descritption}</p>
