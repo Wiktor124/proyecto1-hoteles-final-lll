@@ -14,8 +14,8 @@
   <header class="header">
 
     <nav class="header__nav  header--flex container">
-      <a href="./index.html">
-        <img src="./public/assets/icons/logo.svg" alt="Logo travel company" class="header__logo">
+      <a href="../../index.html">
+        <img src="public/assets/icons/logo.svg" alt="Logo travel company" class="header__logo">
       </a>
 
       <button class="header__button header--flex" id="header-btn">
@@ -24,20 +24,45 @@
         <div></div>
       </button>
 
-      <ul class="header__links">
+      <ul class="header__links header--flex">
         <li>
-          <a href="./index.html">Home</a>
+          <a href="../../index.html">Home</a>
         </li>
         <li>
-          <a href="./places.html">Places</a>
+          <a href="../../places.html">Places</a>
         </li>
         <li>
-          <a href="./hotels.html">Hotels</a>
+          <a href="../../hotels.html">Hotels</a>
+        </li>
+        <li>
+          <a href="#" id="open">Sign In</a>
         </li>
       </ul>
     </nav>
   </header>
-  
+
+  <!-- modal sign in  -->
+  <div class="modal-container" id="modal_container">
+    <form class="formulario modal">
+      <div>
+        <img class="formulario_img" src="../../public/assets/icons/logo.svg" alt="">
+        <img id="close" src="../../public/design-system/img/vector.svg" alt="">
+      </div>
+      <h2>Sign Up</h2>
+      <ul>
+        <li><label class="formulario__label" for="E-mail">E-mail</label></li>
+        <li><input class="formulario__input" type="email" id="E-mail" name="user_E-mail" required></li>
+        <li><label class="formulario__label" for="password">Password</label></li>
+        <li><input class="formulario__input" type="password" id="password" name="user_password" required></li>
+        <label class="formulario__label" for="E-mail">E-mail</label>
+      </ul>
+      <input class="enviar" type="submit" value="Submit">
+      <p class="parrafo1"><strong>Forgot Password?</strong></p>
+      <p class="parrafo1">Don’t have an account? <a href="#"><strong>Sign up</strong></a></p>
+    </form>
+
+  </div>
+
   <!-- work here! -->
   <div class="container">
 

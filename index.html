@@ -5,16 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Design System</title>
   <link rel="stylesheet" href="./public/css/styles.css">
+  <link rel="stylesheet" href="./public/css/carrousel.css">
 </head>
 
 <body>
   <header class="header">
 
     <nav class="header__nav  header--flex container">
-      <a href="#">
-        <img src="./public/assets/icons/logo.svg" alt="Logo travel company" class="header__logo">
+      <a href="../../index.html">
+        <img src="public/assets/icons/logo.svg" alt="Logo travel company" class="header__logo">
       </a>
 
       <button class="header__button header--flex" id="header-btn">
@@ -23,25 +24,47 @@
         <div></div>
       </button>
 
-      <ul class="header__links">
+      <ul class="header__links header--flex">
         <li>
-          <a href="#">Home</a>
+          <a href="../../index.html">Home</a>
         </li>
         <li>
-          <a href="./places.html">Places</a>
+          <a href="../../places.html">Places</a>
         </li>
         <li>
-          <a href="./hotels.html">Hotels</a>
+          <a href="../../hotels.html">Hotels</a>
+        </li>
+        <li>
+          <a href="#" id="open">Sign In</a>
         </li>
       </ul>
     </nav>
-
   </header>
 
-  <!-- work here! -->
-  <div class="container" id="container">
+  <!-- modal sign in  -->
+  <div class="modal-container" id="modal_container">
+    <form class="formulario modal">
+      <div>
+        <img class="formulario_img" src="../../public/assets/icons/logo.svg" alt="">
+        <img id="close" src="../../public/design-system/img/vector.svg" alt="">
+      </div>
+      <h2>Sign Up</h2>
+      <ul>
+        <li><label class="formulario__label" for="E-mail">E-mail</label></li>
+        <li><input class="formulario__input" type="email" id="E-mail" name="user_E-mail" required></li>
+        <li><label class="formulario__label" for="password">Password</label></li>
+        <li><input class="formulario__input" type="password" id="password" name="user_password" required></li>
+        <label class="formulario__label" for="E-mail">E-mail</label>
+      </ul>
+      <input class="enviar" type="submit" value="Submit">
+      <p class="parrafo1"><strong>Forgot Password?</strong></p>
+      <p class="parrafo1">Don’t have an account? <a href="#"><strong>Sign up</strong></a></p>
+    </form>
 
-    <!-- carrousel -->
+  </div>
+
+  <!-- carrousel prototype -->
+  <div class="container">
     <div class="carrousel">
       <div class="carrousel__list" id="carrousel__list">
         <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
@@ -54,9 +77,72 @@
             </path>
           </svg>
         </button>
-
-        <div class="carrousel__track" id="track"></div>
-
+        <div class="carrousel__track" id="track">
+          <div class="carrusel">
+            <div>
+              <a href="#">
+                <h4>Puntarenas<strong>Travel</strong></h4>
+                <picture><img src="./public/design-system/img/puntarenas.webp" alt="#"></picture>
+              </a>
+            </div>
+          </div>
+          <div class="carrusel">
+            <div>
+              <a href="#">
+                <h4>Guanacaste<strong>Travel</strong></h4>
+                <picture><img src="./public/design-system/img/guanacaste.jpg" alt="#"></picture>
+              </a>
+            </div>
+          </div>
+          <div class="carrusel">
+            <div>
+              <a href="#">
+                <h4>Limón<strong>Travel</strong></h4>
+                <picture><img src="./public/design-system/img/limon.webp" alt="#"></picture>
+              </a>
+            </div>
+          </div>
+          <div class="carrusel">
+            <div>
+              <a href="#">
+                <h4>Tamarindo<strong>Travel</strong></h4>
+                <picture><img src="./public/design-system/img/tamarindo-beach.jpg" alt="#"></picture>
+              </a>
+            </div>
+          </div>
+          <div class="carrusel">
+            <div>
+              <a href="#">
+                <h4>Conchal<strong>Travel</strong></h4>
+                <picture><img src="./public/design-system/img/conchal.jpg" alt="#"></picture>
+              </a>
+            </div>
+          </div>
+          <div class="carrusel">
+            <div>
+              <a href="#">
+                <h4>Jaco<strong>Travel</strong></h4>
+                <picture><img src="./public/design-system/img/jaco.jpg" alt="#"></picture>
+              </a>
+            </div>
+          </div>
+          <div class="carrusel">
+            <div>
+              <a href="#">
+                <h4>Cahuita<strong>Travel</strong></h4>
+                <picture><img src="./public/design-system/img/cahuita.jpeg" alt="#"></picture>
+              </a>
+            </div>
+          </div>
+          <div class="carrusel">
+            <div>
+              <a href="#">
+                <h4>Uvita<strong>Travel</strong></h4>
+                <picture><img src="./public/design-system/img/uvita.jpg" alt="#"></picture>
+              </a>
+            </div>
+          </div>
+        </div>
         <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
           onclick="app.processingButton(event)">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
@@ -69,7 +155,6 @@
         </button>
       </div>
     </div>
-
   </div>
 
   <!-- footer -->
@@ -109,7 +194,7 @@
     </div>
   </footer>
 </body>
-<script src="./public/js/main.js" type="module"></script>
+<!-- <script src="./public/js/main.js" type="module"></script> -->
 <script src="./public/js/header-carousel-tabs.js"></script>
 
 </html>

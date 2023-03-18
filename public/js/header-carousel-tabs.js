@@ -9,9 +9,7 @@ App.prototype.processingButton = function (event) {
   const carruselList = event.currentTarget.parentNode;
   const track = event.currentTarget.parentNode.querySelector('#track');
   const carrusel = track.querySelectorAll('.carrusel');
-
   const carruselWidth = carrusel[0].offsetWidth;
-
   const trackWidth = track.offsetWidth;
   const listWidth = carruselList.offsetWidth;
 
@@ -24,7 +22,6 @@ let prevAction = (leftPosition, carruselWidth, track) => {
   if (leftPosition > 0) {
     track.style.left = `${-1 * (leftPosition - carruselWidth)}px`;
   }
-
 }
 
 let nextAction = (leftPosition, trackWidth, listWidth, carruselWidth, track) => {
@@ -32,8 +29,14 @@ let nextAction = (leftPosition, trackWidth, listWidth, carruselWidth, track) => 
   if (leftPosition < (trackWidth - listWidth)) {
     track.style.left = `${-1 * (leftPosition + carruselWidth)}px`;
   }
+  /*
+  if (leftPosition + carruselWidth >= trackWidth - listWidth) {
+    // Devolver el carrusel al inicio
+    track.style.left = '0px';
+  }
+  */
+  
 }
-
 
 
 // header button
@@ -45,7 +48,7 @@ btn.addEventListener('click', () => {
 })
 
 
-/// tabs
+// tabs
 function tab() {
   const tab = document.querySelectorAll(".tab");
   const tabcontent = document.querySelectorAll(".data");
@@ -63,3 +66,20 @@ function tab() {
 
 };
 tab()
+
+// modal sign in 
+
+const open = document.getElementById('open')
+const modal = document.getElementById('modal_container')
+const close = document.getElementById('close')
+const scroll = document.querySelector('body')
+
+open.addEventListener('click', ()=>{
+  modal.classList.add('show');
+  scroll.classList.add('scroll-body')
+});
+
+close.addEventListener('click',()=>{
+  modal.classList.remove('show')
+  scroll.classList.remove('scroll-body')
+});

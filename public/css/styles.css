@@ -76,7 +76,6 @@ a {
   display: flex;
   height: 304px;
   padding: 10px 0px;
-  width: 100%;
   overflow: hidden;
   gap: 10px;
 }
@@ -88,14 +87,13 @@ a {
   display: flex;
   justify-content: center;
   transition: 0.5s ease-in-out;
-  grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
+  z-index: 1;
 }
 
 .carrusel {
   box-sizing: border-box;
-  height: 100%;
-  width: 302px;
+  width: 300px;
 }
 
 .carrousel {
@@ -114,8 +112,8 @@ a {
   display: block;
 }
 .carrousel a img {
-  object-fit: cover;
   height: 300px;
+  /* Altura automática para mantener la proporción */
   border-radius: 15px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   transition: 0.3 ease-in-out;
@@ -125,7 +123,6 @@ a {
   border-radius: 30px;
   background-color: #ccc;
   position: absolute;
-  z-index: 6;
   width: 48px;
   height: 48px;
   text-align: center;
@@ -143,10 +140,12 @@ a {
 
 .carrusel-prev {
   left: -24px;
+  z-index: 2;
 }
 
 .carrusel-next {
   right: -24px;
+  z-index: 1;
 }
 
 /*
@@ -192,17 +191,17 @@ a {
 .footer {
   padding: 60px 0px;
   background-color: #D9D9D9;
+  margin-top: 100px;
 }
 .footer--flex {
   justify-content: left;
-  align-items: center;
   display: block;
 }
 .footer__img {
   display: flex;
   gap: 1rem;
-  width: 125px;
-  margin-bottom: 50px;
+  width: 100px;
+  margin-bottom: 30px;
 }
 .footer__anchors h2 {
   font-size: 12px;
@@ -210,6 +209,10 @@ a {
 .footer__anchors li {
   font-weight: lighter;
   font-size: 9px;
+  margin-bottom: 6px;
+}
+.footer__anchors li :hover {
+  text-decoration: underline;
 }
 .footer__anchors a {
   color: #000;
@@ -246,7 +249,7 @@ a {
   background-color: rgba(0, 0, 0, 0.54);
   height: 70px;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 .header--flex {
   display: flex;
@@ -494,8 +497,8 @@ a {
   background-color: rgb(0, 0, 0);
   color: white;
   border-radius: 34px;
-  width: 10%;
-  padding: 10px 0px;
+  padding: 10px 15px;
+  margin-top: 30px;
 }
 .enviar:hover {
   background-color: #626262;
@@ -533,15 +536,6 @@ a {
   border-bottom: 1px solid white;
 }
 
-.enviar {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  border-radius: 34px;
-  width: 10%;
-  padding: 10px 0px;
-  margin: 10px 0px 10px 50px;
-}
-
 /*-------------------------------------------------------------------------------------------*/
 /*Estilos Sign in*/
 .parrafo1 {
@@ -554,6 +548,95 @@ a {
   text-decoration: underline;
 }
 
+/*-------------------------------------------------------------------------------------------*/
+/*      Modal sign in    */
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 325px;
+  max-width: 100%;
+  padding: 20px 30px;
+  border-radius: 17px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.modal > h2 {
+  color: white;
+  font-size: 28px;
+}
+.modal-container {
+  display: flex;
+  /*background-color:  rgba(0, 0, 0, 0.6);*/
+  background-image: url(/public/design-system/img/form_1.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 3;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.scroll-body {
+  overflow: hidden;
+}
+
+.formulario_img {
+  height: 75px;
+  width: 100px;
+  margin-left: 169%;
+}
+
+.formulario__label {
+  justify-content: center;
+}
+
+#close {
+  text-align: auto;
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+
+.enviar {
+  background-color: rgba(255, 255, 255, 0.747);
+  color: black;
+  border-color: black;
+  font-weight: bolder;
+}
+.enviar:hover {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 500px;
+    padding: 30px 50px;
+  }
+  .modal > h2 {
+    font-size: 36px;
+  }
+  .formulario_img {
+    height: 75px;
+    margin-left: 201%;
+  }
+  .enviar {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  .enviar:hover {
+    background-color: #626262;
+    border-color: #626262;
+  }
+}
 /*-------------------------------------------------------------------------------------------*/
 
 /*# sourceMappingURL=styles.css.map */
