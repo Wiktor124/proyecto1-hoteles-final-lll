@@ -3,8 +3,9 @@
   $borderCard: 7px;
   display: grid;
   padding-bottom: 90px;
-  grid-template-columns: repeat(2, minmax(370px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
+  place-content: center;
 
   li {
     position: relative;
@@ -45,7 +46,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 10%;
+    width: 50px;
     height: 15%;
 
   }
