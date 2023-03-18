@@ -14,8 +14,8 @@
   <header class="header">
 
     <nav class="header__nav  header--flex container">
-      <a href="#">
-        <img src="/public/assets/icons/logo.svg" alt="Logo travel company" class="header__logo">
+      <a href="../../index.html">
+        <img src="public/assets/icons/logo.svg" alt="Logo travel company" class="header__logo">
       </a>
 
       <button class="header__button header--flex" id="header-btn">
@@ -45,15 +45,16 @@
   <div class="modal-container" id="modal_container">
     <form class="formulario modal">
       <div>
-        <img class="formulario_img" src="/public/assets/icons/logo.svg" alt="">
-        <img id="close" src="/public/design-system/img/vector.svg" alt="">
+        <img class="formulario_img" src="../../public/assets/icons/logo.svg" alt="">
+        <img id="close" src="../../public/design-system/img/vector.svg" alt="">
       </div>
       <h2>Sign Up</h2>
       <ul>
+        <li><label class="formulario__label" for="E-mail">E-mail</label></li>
+        <li><input class="formulario__input" type="email" id="E-mail" name="user_E-mail" required></li>
+        <li><label class="formulario__label" for="password">Password</label></li>
+        <li><input class="formulario__input" type="password" id="password" name="user_password" required></li>
         <label class="formulario__label" for="E-mail">E-mail</label>
-        <input class="formulario__input" type="email" id="E-mail" name="user_E-mail" required>
-        <label class="formulario__label" for="password">Password</label>
-        <input class="formulario__input" type="password" id="password" name="user_password" required>
       </ul>
       <input class="enviar" type="submit" value="Submit">
       <p class="parrafo1"><strong>Forgot Password?</strong></p>
@@ -61,6 +62,7 @@
     </form>
 
   </div>
+
   <div class="container">
     <ul id="hotels" class="gallery"></ul>
   </div>
