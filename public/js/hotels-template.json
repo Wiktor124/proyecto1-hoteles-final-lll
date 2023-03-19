@@ -8,11 +8,25 @@
      "roomName": "Magic room",
      "price": "210",
      "characteristics": " 1 bed, WIFI, pool, Jacuzzi",
-     "discoutn": "1",
-     "roomImage": ""
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
     }
    ],
-   "image": "public/img-routes/puntarenas.jpg",
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
    "id": "1"
   },
   {
@@ -24,11 +38,25 @@
      "roomName": "Cabina Media",
      "price": "90",
      "characteristics": "Pool, Bar, Breakfast, WIfi",
-     "discoutn": "1",
-     "roomImage": ""
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
     }
    ],
-   "image": "public/img-routes/puntarenas.jpg",
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
    "id": "2"
   },
   {
@@ -40,11 +68,25 @@
      "roomName": "Cabina Basica",
      "price": "49.9",
      "characteristics": "Pool, Pets Allowed, WIfi",
-     "discoutn": "1",
-     "roomImage": ""
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
     }
    ],
-   "image": "public/img-routes/puntarenas.jpg",
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
    "id": "3"
   },
   {
@@ -56,11 +98,25 @@
      "roomName": "King room",
      "price": "1200",
      "characteristics": "Spa, Pool, WiFi, Full Catering Services",
-     "discoutn": "1",
-     "roomImage": ""
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
     }
    ],
-   "image": "public/img-routes/puntarenas.jpg",
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
    "id": "4"
   },
   {
@@ -72,11 +128,25 @@
      "roomName": "Cuarto Grande",
      "price": "55",
      "characteristics": "Pool, Pets Allowed, Bar",
-     "discoutn": "1",
-     "roomImage": ""
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
     }
    ],
-   "image": "public/img-routes/puntarenas.jpg",
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
    "id": "5"
   },
   {
@@ -88,11 +158,25 @@
      "roomName": "Habitacion compartida",
      "price": "28",
      "characteristics": "Restaurant, Bar, WIFI",
-     "discoutn": "1",
-     "roomImage": ""
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
     }
    ],
-   "image": "public/img-routes/puntarenas.jpg",
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
    "id": "6"
   },
   {
@@ -104,11 +188,25 @@
      "roomName": "",
      "price": "110",
      "characteristics": "Spa, Pool, WiFi, Breakfast",
-     "discoutn": "1",
-     "roomImage": ""
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
     }
    ],
-   "image": "public/img-routes/puntarenas.jpg",
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
    "id": "7"
   },
   {
@@ -120,11 +218,25 @@
      "roomName": "Cuarto simple",
      "price": "102",
      "characteristics": "WIFI, Pool, Breakfast",
-     "discoutn": "1",
-     "roomImage": ""
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
     }
    ],
-   "image": "public/img-routes/puntarenas.jpg",
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
    "id": "8"
   },
   {
@@ -136,11 +248,25 @@
      "roomName": "Cuarto Normal",
      "price": "220",
      "characteristics": "Spa, Pool, WiFi,",
-     "discoutn": "1",
-     "roomImage": ""
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
     }
    ],
-   "image": "public/img-routes/puntarenas.jpg",
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
    "id": "9"
   },
   {
@@ -152,11 +278,25 @@
      "roomName": "Ecoroom",
      "price": "50",
      "characteristics": "Pool, WIfi, ",
-     "discoutn": "1",
-     "roomImage": ""
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
     }
    ],
-   "image": "public/img-routes/puntarenas.jpg",
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
    "id": "10"
   },
   {
@@ -168,11 +308,25 @@
      "roomName": "Dormitorio Matrimonial",
      "price": "640",
      "characteristics": "No kids, Wifi, Spa, Pool",
-     "discoutn": "1",
-     "roomImage": ""
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
     }
    ],
-   "image": "public/img-routes/puntarenas.jpg",
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
    "id": "11"
   },
   {
@@ -184,11 +338,25 @@
      "roomName": "Dormitorio Grande",
      "price": "270",
      "characteristics": "Spa, Pool, WiFi, Breakfast all Included",
-     "discoutn": "1",
-     "roomImage": ""
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
     }
    ],
-   "image": "public/img-routes/puntarenas.jpg",
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
    "id": "12"
   },
   {
@@ -200,11 +368,25 @@
      "roomName": "cuarto para turistas",
      "price": "88",
      "characteristics": "WIFI, Breackfast included, pets allowed",
-     "discoutn": "1",
-     "roomImage": ""
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
     }
    ],
-   "image": "public/img-routes/puntarenas.jpg",
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
    "id": "13"
   },
   {
@@ -216,11 +398,25 @@
      "roomName": "Cabina Bungalows",
      "price": "1",
      "characteristics": "WIFI, Breackfast, Kids allowed",
-     "discoutn": "1",
-     "roomImage": ""
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
     }
    ],
-   "image": "public/img-routes/puntarenas.jpg",
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
    "id": "14"
   },
   {
@@ -232,11 +428,25 @@
      "roomName": "Dormitorio personal",
      "price": "83",
      "characteristics": "1 bed, Tv, WIFI ",
-     "discoutn": "1",
-     "roomImage": ""
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
     }
    ],
-   "image": "public/img-routes/puntarenas.jpg",
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
    "id": "15"
   },
   {
@@ -248,11 +458,25 @@
      "roomName": "Habitacion tropical",
      "price": "400",
      "characteristics": "Free Breackfast, WIFI, Pool",
-     "discoutn": "1",
-     "roomImage": ""
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
     }
    ],
-   "image": "public/img-routes/puntarenas.jpg",
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
    "id": "16"
   }
  ]

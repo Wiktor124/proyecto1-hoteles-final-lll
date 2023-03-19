@@ -5,13 +5,10 @@ const idPlace = new URLSearchParams(window.location.search).get('id')
 
 // print just one place
 function printPlace(placesData) {
-  createBanner(placesData.heroImage, placesData.placeName)
+  createBanner(placesData.heroImage[0], placesData.placeName)
     
   document.getElementById('place').innerHTML = `
-
-    <h3 class="carrousel__title">${placesData.placeName}</h3>
-    <p>${placesData.description}</p>
-
+    <h3 class="carrousel__title">Travel to <br> ${placesData.placeName}</h3>
   `;
 }
 printPlace(places[idPlace - 1])

@@ -8,7 +8,7 @@ function printHotels(hotelsData) {
   
   document.getElementById('gallery-container').innerHTML = hotelsData.map((item) => {
     return createGalleryCards(
-      item.image,
+      item.image[0],
       item.hotelName,
       './hotel.html?id=' + item.id,
     )
