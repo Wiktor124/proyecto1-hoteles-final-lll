@@ -12,7 +12,7 @@ function printPlacesImages(placesData) {
         <div>
           <a href="./place.html?id=${item.id}">
            <h4>${item.placeName}<strong>Travel</strong></h4>
-            <picture><img src="${item.heroImage}" alt="${item.placeName}" /></picture>
+            <picture><img src="${item.heroImage[0]}" alt="${item.placeName}" /></picture>
           </a>
         </div>
       </div>

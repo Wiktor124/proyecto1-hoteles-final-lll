@@ -1,0 +1,9 @@
+.discover {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 100px;
+
+  &__title {
+    margin: 0 0 70px 0;
+  }
+}

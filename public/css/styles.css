@@ -9,12 +9,13 @@ body {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 4rem;
   margin: 6px 0 0;
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 ul,
@@ -168,7 +169,7 @@ a {
   max-width: fit-content;
 }
 .tabs-container .tab-container .tab {
-  padding: 1rem 7rem 1rem 1rem;
+  padding: 1rem 3rem 1rem 1rem;
   margin: 0.2rem;
   border: solid black 2px;
   border-radius: 11px;
@@ -178,14 +179,20 @@ a {
   color: white;
 }
 .tabs-container .data-container {
-  max-height: 500px;
+  height: 65vh;
+  overflow-y: auto;
 }
 .tabs-container .data-container .data {
-  margin: 1rem;
   display: none;
 }
 .tabs-container .data-container .data.active {
   display: block;
+}
+
+.rooms {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .footer {
@@ -639,5 +646,13 @@ a {
   }
 }
 /*-------------------------------------------------------------------------------------------*/
+.discover {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 100px;
+}
+.discover__title {
+  margin: 0 0 70px 0;
+}
 
 /*# sourceMappingURL=styles.css.map */
