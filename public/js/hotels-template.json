@@ -1,266 +1,482 @@
-[{
-    "hotelName": "Hotel Riu Guanacaste",
-    "descritption": "complejo turístico todo incluido cercano a la playa Matapalo",
-    "idPlace": "1",
-    "roomsList": [{
-        "roomName": "Cuarto Grande",
-        "price": "210",
-        "characteristics": " 2 beds, WIFI, pool, Jacuzzi",
-        "discoutn": "1",
-        "roomImage": ""
-      }, {
-        "roomName": "Cuarto Normal",
-        "price": "180",
-        "characteristics": " 1 bed, WIFI, pool, Jacuzzi",
-        "discoutn": "1",
-        "roomImage": ""
-      }, {
-        "roomName": "Cuarto Pequeño",
-        "price": "150",
-        "characteristics": " 1 bed, WIFI, pool",
-        "discoutn": "1",
-        "roomImage": ""
-      }
-    ],
-    "image": "public/img-routes/puntarenas.jpg",
-    "id": "1"
+[
+  {
+   "hotelName": "Hotel Riu Guanacaste",
+   "descritption": "complejo turístico todo incluido cercano a la playa Matapalo",
+   "idPlace": "1",
+   "roomsList": [
+    {
+     "roomName": "Magic room",
+     "price": "210",
+     "characteristics": " 1 bed, WIFI, pool, Jacuzzi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    }
+   ],
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
+   "id": "1"
   },
   {
-    "hotelName": "Hotel La Teca",
-    "descritption": "cabinas  para turismo, diversión, comidas y transporte",
-    "idPlace": "1",
-    "roomsList": [{
-        "roomName": "Cabina Alta",
-        "price": "90",
-        "characteristics": "Pool, Bar, Breakfast, WIfi",
-        "discoutn": "1",
-        "roomImage": ""
-      }, {
-        "roomName": "Cabina Media",
-        "price": "60",
-        "characteristics": "Pool, Bar, Breakfast, WIfi",
-        "discoutn": "1",
-        "roomImage": ""
-      },{
-        "roomName": "Cuarto Pequeño",
-        "price": "40",
-        "characteristics": " Pool, WIFI , Breakfast,",
-        "discoutn": "1",
-        "roomImage": ""
-      }],
-    "image": "public/img-routes/puntarenas.jpg",
-    "id": "2"
+   "hotelName": "Hotel La Teca",
+   "descritption": "cabinas  para turismo, diversión, comidas y transporte",
+   "idPlace": "1",
+   "roomsList": [
+    {
+     "roomName": "Cabina Media",
+     "price": "90",
+     "characteristics": "Pool, Bar, Breakfast, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    }
+   ],
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
+   "id": "2"
   },
   {
-    "hotelName": " Hotel Cabinas Isabel",
-    "descritption": "Cabians familiares",
-    "idPlace": "1",
-    "roomsList": [{
-      "roomName": "Cabina Grande",
-      "price": "49.9",
-      "characteristics": "4 beds, Pool, Pets Allowed, WIfi",
-      "discoutn": "1",
-      "roomImage": ""
-    },{
-      "roomName": "Cabina Normal",
-      "price": "39.9",
-      "characteristics": "Pool, Pets Allowed, WIfi",
-      "discoutn": "1",
-      "roomImage": ""
-    },{
-      "roomName": "Cabina Basica",
-      "price": "29.9",
-      "characteristics": "Pool, Pets Allowed, WIfi",
-      "discoutn": "1",
-      "roomImage": ""
-    }],
-    "image": "public/img-routes/puntarenas.jpg",
-    "id": "3"
+   "hotelName": " Hotel Cabinas Isabel",
+   "descritption": "Cabians familiares",
+   "idPlace": "2",
+   "roomsList": [
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    }
+   ],
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
+   "id": "3"
   },
   {
-    "hotelName": "JW Marriott Guanacaste Resort & Spa",
-    "descritption": "Complejo turístico frente al mar con dormitorios elegantes, restaurantes, spa y una piscina infinita.",
-    "idPlace": "1",
-    "roomsList": [{
-      "roomName": "King room",
-      "price": "1200",
-      "characteristics": "Spa, Pool, WiFi, Full Catering Services",
-      "discoutn": "1",
-      "roomImage": ""
-    }],
-    "image": "public/img-routes/puntarenas.jpg",
-    "id": "4"
-  },
-
-
-
-  {
-    "hotelName": "Selina Hostel Puerto Viejo",
-    "descritption": "Dormitorios coloridos en un hotel sencillo ",
-    "idPlace": "2",
-    "roomsList": [{
-      "roomName": "Cuarto Grande",
-      "price": "55",
-      "characteristics": "Pool, Pets Allowed, Bar",
-      "discoutn": "1",
-      "roomImage": ""
-    }],
-    "image": "public/img-routes/puntarenas.jpg",
-    "id": "5"
-  },
-  {
-    "hotelName": "Hotel Cabinas Tortuguero",
-    "descritption": "Hostal sencillo se encuentra en jardines exuberantes",
-    "idPlace": "2",
-    "roomsList": [{
-      "roomName": "Habitacion compartida",
-      "price": "28",
-      "characteristics": "Restaurant, Bar, WIFI",
-      "discoutn": "1",
-      "roomImage": ""
-    }],
-    "image": "public/img-routes/puntarenas.jpg",
-    "id": "6"
+   "hotelName": "JW Marriott Guanacaste Resort & Spa",
+   "descritption": "Complejo turístico frente al mar con dormitorios elegantes, restaurantes, spa y una piscina infinita.",
+   "idPlace": "2",
+   "roomsList": [
+    {
+     "roomName": "King room",
+     "price": "1200",
+     "characteristics": "Spa, Pool, WiFi, Full Catering Services",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    }
+   ],
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
+   "id": "4"
   },
   {
-    "hotelName": "Pacuare Lodge",
-    "descritption": "Hotel todo incluido",
-    "idPlace": "2",
-    "roomsList": [{
-      "roomName": "",
-      "price": "110",
-      "characteristics": "Spa, Pool, WiFi, Breakfast",
-      "discoutn": "1",
-      "roomImage": ""
-    }],
-    "image": "public/img-routes/puntarenas.jpg",
-    "id": "7"
+   "hotelName": "Selina Hostel Puerto Viejo",
+   "descritption": "Dormitorios coloridos en un hotel sencillo ",
+   "idPlace": "3",
+   "roomsList": [
+    {
+     "roomName": "Cuarto Grande",
+     "price": "55",
+     "characteristics": "Pool, Pets Allowed, Bar",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    }
+   ],
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
+   "id": "5"
   },
   {
-    "hotelName": "Hotel Banana Azul",
-    "descritption": " hotel informal de madera rodeado por jardines tropicales en playa Negra",
-    "idPlace": "2",
-    "roomsList": [{
-      "roomName": "Cuarto simple",
-      "price": "102",
-      "characteristics": "WIFI, Pool, Breakfast",
-      "discoutn": "1",
-      "roomImage": ""
-    }],
-    "image": "public/img-routes/puntarenas.jpg",
-    "id": "8"
+   "hotelName": "Hotel Cabinas Tortuguero",
+   "descritption": "Hostal sencillo se encuentra en jardines exuberantes",
+   "idPlace": "3",
+   "roomsList": [
+    {
+     "roomName": "Habitacion compartida",
+     "price": "28",
+     "characteristics": "Restaurant, Bar, WIFI",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    }
+   ],
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
+   "id": "6"
   },
   {
-    "hotelName": "Barcelo tambor",
-    "descritption": " Complejo turístico playero todo incluido",
-    "idPlace": "3",
-    "roomsList": [{
-      "roomName": "Cuarto Normal",
-      "price": "220",
-      "characteristics": "Spa, Pool, WiFi,",
-      "discoutn": "1",
-      "roomImage": ""
-    }],
-    "image": "public/img-routes/puntarenas.jpg",
-    "id": "9"
+   "hotelName": "Pacuare Lodge",
+   "descritption": "Hotel todo incluido",
+   "idPlace": "4",
+   "roomsList": [
+    {
+     "roomName": "",
+     "price": "110",
+     "characteristics": "Spa, Pool, WiFi, Breakfast",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    }
+   ],
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
+   "id": "7"
   },
   {
-    "hotelName": "Teva Hotel & Jungle Reserve",
-    "descritption": "Hotel ecológico informal con senderos, piscina al aire libre y restaurante ",
-    "idPlace": "3",
-    "roomsList": [{
-      "roomName": "Ecoroom",
-      "price": "50",
-      "characteristics": "Pool, WIfi, ",
-      "discoutn": "1",
-      "roomImage": ""
-    }],
-    "image": "public/img-routes/puntarenas.jpg",
-    "id": "10"
+   "hotelName": "Hotel Banana Azul",
+   "descritption": " hotel informal de madera rodeado por jardines tropicales en playa Negra",
+   "idPlace": "4",
+   "roomsList": [
+    {
+     "roomName": "Cuarto simple",
+     "price": "102",
+     "characteristics": "WIFI, Pool, Breakfast",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    }
+   ],
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
+   "id": "8"
   },
   {
-    "hotelName": "Oxygen Jungle Villas",
-    "descritption": "Complejo turístico con chalés elegantes con vista a la selva o al mar",
-    "idPlace": "3",
-    "roomsList": [{
-      "roomName": "Dormitorio Matrimonial",
-      "price": "640",
-      "characteristics": "No kids, Wifi, Spa, Pool",
-      "discoutn": "1",
-      "roomImage": ""
-    }],
-    "image": "public/img-routes/puntarenas.jpg",
-    "id": "11"
+   "hotelName": "Barcelo tambor",
+   "descritption": " Complejo turístico playero todo incluido",
+   "idPlace": "5",
+   "roomsList": [
+    {
+     "roomName": "Cuarto Normal",
+     "price": "220",
+     "characteristics": "Spa, Pool, WiFi,",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    }
+   ],
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
+   "id": "9"
   },
   {
-    "hotelName": "Parador Resort & Spa Manuel Antonio",
-    "descritption": "Hotel de alta gama con 4 restaurantes",
-    "idPlace": "3",
-    "roomsList": [{
-      "roomName": "Dormitorio Grande",
-      "price": "270",
-      "characteristics": "Spa, Pool, WiFi, Breakfast all Included",
-      "discoutn": "1",
-      "roomImage": ""
-    }],
-    "image": "public/img-routes/puntarenas.jpg",
-    "id": "12"
-  },
-
-  {
-    "hotelName": "La Laguna del Cocodrilo",
-    "descritption": "Hotel de playa con restaurante",
-    "idPlace": "4",
-    "roomsList": [{
-      "roomName": "cuarto para turistas",
-      "price": "88",
-      "characteristics": "WIFI, Breackfast included, pets allowed",
-      "discoutn": "1",
-      "roomImage": ""
-    }],
-    "image": "public/img-routes/puntarenas.jpg",
-    "id": "13"
-  },
-  {
-    "hotelName": "The Beach Bungalows",
-    "descritption": "Hotel tipo Bungalow todo ingluido",
-    "idPlace": "4",
-    "roomsList": [{
-      "roomName": "Cabina Bungalows",
-      "price": "1",
-      "characteristics": "WIFI, Breackfast, Kids allowed",
-      "discoutn": "1",
-      "roomImage": ""
-    }],
-    "image": "public/img-routes/puntarenas.jpg",
-    "id": "14"
+   "hotelName": "Teva Hotel & Jungle Reserve",
+   "descritption": "Hotel ecológico informal con senderos, piscina al aire libre y restaurante ",
+   "idPlace": "5",
+   "roomsList": [
+    {
+     "roomName": "Ecoroom",
+     "price": "50",
+     "characteristics": "Pool, WIfi, ",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    }
+   ],
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
+   "id": "10"
   },
   {
-    "hotelName": "La Botella de Leche",
-    "descritption": "Hostal privado y dormitorios",
-    "idPlace": "4",
-    "roomsList": [{
-      "roomName": "Dormitorio personal",
-      "price": "83",
-      "characteristics": "1 bed, Tv, WIFI ",
-      "discoutn": "1",
-      "roomImage": ""
-    }],
-    "image": "public/img-routes/puntarenas.jpg",
-    "id": "15"
+   "hotelName": "Oxygen Jungle Villas",
+   "descritption": "Complejo turístico con chalés elegantes con vista a la selva o al mar",
+   "idPlace": "6",
+   "roomsList": [
+    {
+     "roomName": "Dormitorio Matrimonial",
+     "price": "640",
+     "characteristics": "No kids, Wifi, Spa, Pool",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    }
+   ],
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
+   "id": "11"
   },
   {
-    "hotelName": "Tamarindo Diria",
-    "descritption": "Complejo turístico costero .",
-    "idPlace": "4",
-    "roomsList": [{
-      "roomName": "Habitacion tropical",
-      "price": "400",
-      "characteristics": "Free Breackfast, WIFI, Pool",
-      "discoutn": "1",
-      "roomImage": ""
-    }],
-    "image": "public/img-routes/puntarenas.jpg",
-    "id": "16"
+   "hotelName": "Parador Resort & Spa Manuel Antonio",
+   "descritption": "Hotel de alta gama con 4 restaurantes",
+   "idPlace": "6",
+   "roomsList": [
+    {
+     "roomName": "Dormitorio Grande",
+     "price": "270",
+     "characteristics": "Spa, Pool, WiFi, Breakfast all Included",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    }
+   ],
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
+   "id": "12"
+  },
+  {
+   "hotelName": "La Laguna del Cocodrilo",
+   "descritption": "Hotel de playa con restaurante",
+   "idPlace": "7",
+   "roomsList": [
+    {
+     "roomName": "cuarto para turistas",
+     "price": "88",
+     "characteristics": "WIFI, Breackfast included, pets allowed",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    }
+   ],
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
+   "id": "13"
+  },
+  {
+   "hotelName": "The Beach Bungalows",
+   "descritption": "Hotel tipo Bungalow todo ingluido",
+   "idPlace": "7",
+   "roomsList": [
+    {
+     "roomName": "Cabina Bungalows",
+     "price": "1",
+     "characteristics": "WIFI, Breackfast, Kids allowed",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    }
+   ],
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
+   "id": "14"
+  },
+  {
+   "hotelName": "La Botella de Leche",
+   "descritption": "Hostal privado y dormitorios",
+   "idPlace": "8",
+   "roomsList": [
+    {
+     "roomName": "Dormitorio personal",
+     "price": "83",
+     "characteristics": "1 bed, Tv, WIFI ",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    }
+   ],
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
+   "id": "15"
+  },
+  {
+   "hotelName": "Tamarindo Diria",
+   "descritption": "Complejo turístico costero .",
+   "idPlace": "8",
+   "roomsList": [
+    {
+     "roomName": "Habitacion tropical",
+     "price": "400",
+     "characteristics": "Free Breackfast, WIFI, Pool",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    },
+    {
+     "roomName": "Cabina Basica",
+     "price": "49.9",
+     "characteristics": "Pool, Pets Allowed, WIfi",
+     "discoutn": "20",
+     "roomImage": "public/assets/hotels/rooms/room.jpg"
+    }
+   ],
+   "image": ["public/assets/hotels/banner-puntarenas.jpg", "public/assets/hotels/banner-puntarenas.jpg"],
+   "id": "16"
   }
-]
+ ]

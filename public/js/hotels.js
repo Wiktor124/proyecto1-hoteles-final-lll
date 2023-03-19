@@ -1,20 +1,18 @@
 import { hotels } from './apiConnection.js';
-import { placeOrHotel } from './events.js'
-placeOrHotel.clickEvents()
+import { createGalleryCards,  createBanner } from './create-dom-elements.js'
+
+createBanner('./public/assets/img/banner-hotels.jpeg', 'Hotels')
 
 // print hotels
 function printHotels(hotelsData) {
-  document.getElementById('hotels').innerHTML  = hotelsData.map(item => {
-   return `
-    <li>
-      <a href="./hotel.html"class="gallery__link hotel__link" data-id="${item.id}"></a>
-      <div>
-        <img src="${item.image}" alt="${item.hotelName}">
-        <h2>${item.hotelName}</h2>
-        <p>${item.descritption}</p>
-      </div>
-    </li>
-    `
+  
+  document.getElementById('gallery-container').innerHTML = hotelsData.map((item) => {
+    return createGalleryCards(
+      item.image[0],
+      item.hotelName,
+      './hotel.html?id=' + item.id,
+    )
+
   }).join('')
 }
 printHotels(hotels);

@@ -1,8 +1,9 @@
 .header {
   $header-height: 70px;
-  background-color: $black;
+  background-color: $black-header;
   height: $header-height;
   position: relative;
+  z-index: 3;
 
   &--flex {
     display: flex;
@@ -22,8 +23,8 @@
     border: none;
     justify-content: space-around;
     flex-direction: column;
-    width: 35px;
-    height: 36px;
+    width: 30px;
+    height: 31px;
     padding: 0;
   }
 
@@ -51,7 +52,7 @@
   &__links {
     display: none;
     align-items: center;
-    background-color: $black;
+    background-color: $black-header;
     flex-direction: column;
     gap: 20px;
     height: calc(100vh - $header-height);
@@ -62,7 +63,7 @@
     touch-action: none;
     width: 100%;
     transition: left 0.5s;
-    z-index: 5;
+    z-index: 10;
   }
 
   &__links--active {
@@ -73,6 +74,19 @@
   a {
     color: $white;
     font-weight: bold;
+  }
+}
+
+.banner {
+  position: relative;
+  top: -100px;
+  height: 610px;
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: $white;
+    line-height: 526px;
   }
 }
 
@@ -97,4 +111,9 @@
       width: fit-content;
     }
   }
+
+  .banner {
+    h1 { font-size: 4rem; }
+  }
+
 }

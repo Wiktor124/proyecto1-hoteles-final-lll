@@ -2,25 +2,49 @@
   {
     "placeName": "Guanacaste",
     "description": "description 1",
-    "heroImage": "public/img-routes/guanacaste.jpg",
+    "heroImage": ["public/assets/img/banner-guanacaste.jpg", "public/assets/img/banner-guanacaste.jpg"],
     "id": "1"
   },
   {
-    "placeName": "Limon",
+    "placeName": "Limón",
     "description": "description 2",
-    "heroImage": "public/img-routes/limon.jpg",
+    "heroImage": ["public/assets/img/banner-limon.jpg", "public/assets/img/banner-limon.jpg"],
     "id": "2"
   },
   {
     "placeName": "Puntarenas",
     "description": "description 3",
-    "heroImage": "public/img-routes/puntarenas.jpg",
+    "heroImage": ["public/assets/img/banner-puntarenas.jpg", "public/assets/img/banner-puntarenas.jpg"],
     "id": "3"
   },
   {
     "placeName": "Tamarindo",
     "description": "description 4",
-    "heroImage": "public/img-routes/tamarindo.jpg",
+    "heroImage": ["public/assets/img/banner-tamarindo.jpg", "public/assets/img/banner-tamarindo.jpg"],
     "id": "4"
+  },
+  {
+    "placeName": "Jaco",
+    "description": "description 1",
+    "heroImage": ["public/assets/img/banner-jaco.jpg", "public/assets/img/banner-jaco.jpg"],
+    "id": "5"
+  },
+  {
+    "placeName": "Uvita",
+    "description": "description 2",
+    "heroImage": ["public/assets/img/banner-uvita.jpg", "public/assets/img/banner-uvita.jpg"],
+    "id": "6"
+  },
+  {
+    "placeName": "Conchal",
+    "description": "description 3",
+    "heroImage": ["public/assets/img/banner-conchal.jpg", "public/assets/img/banner-conchal.jpg"],
+    "id": "7"
+  },
+  {
+    "placeName": "Cahuita",
+    "description": "description 4",
+    "heroImage": ["public/assets/img/banner-cahuita.jpeg", "public/assets/img/banner-cahuita.jpeg"],
+    "id": "8"
   }
 ]

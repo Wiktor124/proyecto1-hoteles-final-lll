@@ -15,7 +15,7 @@
 
     <nav class="header__nav  header--flex container">
       <a href="./index.html">
-        <img src="./public/assets/icons/logo.svg" alt="Logo travel company" class="header__logo">
+        <img src="public/assets/icons/logo.svg" alt="Logo travel company" class="header__logo">
       </a>
 
       <button class="header__button header--flex" id="header-btn">
@@ -24,7 +24,7 @@
         <div></div>
       </button>
 
-      <ul class="header__links">
+      <ul class="header__links header--flex">
         <li>
           <a href="./index.html">Home</a>
         </li>
@@ -34,67 +34,58 @@
         <li>
           <a href="./hotels.html">Hotels</a>
         </li>
+        <li>
+          <a href="#" id="open">Sign In</a>
+        </li>
       </ul>
     </nav>
   </header>
 
-  <!-- work here! -->
+  <!-- modal sign in  -->
+  <div class="modal-container" id="modal_container">
+    <form class="formulario modal">
+      <div>
+        <img class="formulario_img" src="./public/assets/icons/logo.svg" alt="">
+        <img id="close" src="./public/design-system/img/vector.svg" alt="">
+      </div>
+      <h2>Sign In</h2>
+      <ul>
+        <li>
+          <label class="formulario__label" for="E-mail">E-mail</label>
+          <input class="formulario__input" type="email" id="E-mail" name="user_E-mail" required>
+        </li>
+        <li>
+          <label class="formulario__label" for="password">Password</label>
+          <input class="formulario__input" type="password" id="password" name="user_password" required>
+        </li>
+      </ul>
+      <input class="enviar" type="submit" value="Submit">
+      <p class="parrafo1"><strong>Forgot Password?</strong></p>
+      <p class="parrafo1">Don’t have an account? <a href="#"><strong>Sign up</strong></a></p>
+    </form>
 
-<div class="container">
-
-<div class="tabs-container">
-  <h2>Hotel Name</h2>
-  <ul class="tab-container">
-    <li class="tab active">Details</li>
-    <li class="tab">Equiry</li>
-  </ul>
-  <div class="data-container">
-    <div class="data active">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit facilis
-      voluptas architecto, ut praesentium voluptatibus itaque officiis ex
-      maiores quod magnam, minus atque expedita dolorum quasi voluptate,
-      dolorem totam error consequuntur numquam animi saepe.
-    </div>
-    <div class="data">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo
-      asperiores nemo labore.
-      <img src="./public/" alt="">
-    </div>
   </div>
-</div>
-  
-</div>
 
+  <!-- work here! -->
+  <div class="container">
 
     <!-- place-->
     <div id="hotel"></div>
 
-    <!-- carrousel -->
-    <div class="carrousel">
-      <div class="carrousel__list" id="carrousel__list">
-        <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
-          onclick="app.processingButton(event)">
-          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
-            class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 320 512">
-            <path fill="currentColor"
-              d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
-            </path>
-          </svg>
-        </button>
-
-        <div class="carrousel__track" id="track"></div>
-
-        <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
-          onclick="app.processingButton(event)">
-          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
-            class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 320 512">
-            <path fill="currentColor"
-              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
-            </path>
-          </svg>
-        </button>
+    <div class="tabs-container">
+      <ul class="tab-container">
+        <li class="tab active">Rooms</li>
+        <li class="tab">Equiry</li>
+      </ul>
+      <div class="data-container">
+        <div class="data active">
+          <ul class="rooms"></ul>
+        </div>
+        <div class="data">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo
+          asperiores nemo labore.
+          <img src="./public/" alt="">
+        </div>
       </div>
     </div>
 
