@@ -26,12 +26,7 @@
     ],
     "image": ["public/assets/hotels/riu-banner.jpg", "public/assets/hotels/riu-banner.jpg"],
     "id": "1"
-  },
-
-
-
-
-  {
+  }, {
     "hotelName": "Hotel La Teca",
     "descritption": "cabins for tourism, entertainment, meals and transportation",
     "idPlace": "1",
@@ -60,9 +55,6 @@
     "image": ["public/assets/hotels/teca-banner.jpg", "public/assets/hotels/teca-banner.jpg"],
     "id": "2"
   },
-
-
-
   {
     "hotelName": "Selina Hostel Puerto Viejo",
     "descritption": "Colorful bedrooms in a simple hotel",
@@ -150,7 +142,6 @@
     "image": ["public/assets/hotels/tambor-banner.jpg", "public/assets/hotels/tambor-banner.jpg"],
     "id": "5"
   },
-
   {
     "hotelName": "Teva Hotel & Jungle Reserve",
     "descritption": "Casual eco-friendly hotel with trails, outdoor pool, and restaurant ",
@@ -210,7 +201,7 @@
     "image": ["public/assets/hotels/bunga-banner.jpg", "public/assets/hotels/bunga-banner.jpg"],
     "id": "7"
   },
-  
+
   {
     "hotelName": "Oxygen Jungle Villas",
     "descritption": "Resort with elegant chalets overlooking the jungle or the sea",
@@ -329,7 +320,7 @@
     "image": ["public/assets/hotels/whale-banner.jpg", "public/assets/hotels/whale-banner.jpg"],
     "id": "11"
   },
-  
+
 
 
 
@@ -395,10 +386,6 @@
     "image": ["public/assets/hotels/papaya-banner.jpg", "public/assets/hotels/papaya-banner.jpg"],
     "id": "13"
   },
-
-
-
-
   {
     "hotelName": "Reserva Conchal Beach Resort, Golf & Spa Costa Rica",
     "descritption": "Refined condominiums in luxury hotel with elegant restaurant, plus gym, spa and pool.",
@@ -427,12 +414,7 @@
     ],
     "image": ["public/assets/hotels/reserva-banner.jpg", "public/assets/hotels/reserva-banner.jpg"],
     "id": "14"
-  },
-
-
-
-  
-  {
+  }, {
     "hotelName": "Hotel El Encanto",
     "descritption": "Quiet hotel with bright bedrooms, 2 outdoor pools, lush garden and breakfast",
     "idPlace": "8",
@@ -461,8 +443,6 @@
     "image": ["public/assets/hotels/banner.jpg", "public/assets/hotels/banner.jpg"],
     "id": "15"
   },
-
-  
   {
     "hotelName": "3 Bamboo Ecolodge",
     "descritption": "Simple accommodations on lush grounds, breakfast included, outdoor pool and hot tub..",
