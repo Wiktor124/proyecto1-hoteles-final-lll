@@ -8,9 +8,7 @@
     display: flex;
     flex-flow: row nowrap;
     background-color: rgb(255, 255, 255);
-
     color: black;
-
     max-width: fit-content;
     & .tab {
       padding: 1rem 3rem 1rem 1rem;
@@ -27,8 +25,7 @@
   .data-container {
     height: 65vh;
     overflow-y: auto;
-
-
+    background-color: gray;
   }
 
   .data-container .data {

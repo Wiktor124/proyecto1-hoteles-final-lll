@@ -51,17 +51,19 @@
       </div>
       <h2>Sign Up</h2>
       <ul>
-        <li><label class="formulario__label" for="E-mail">E-mail</label></li>
-        <li><input class="formulario__input" type="email" id="E-mail" name="user_E-mail" required></li>
-        <li><label class="formulario__label" for="password">Password</label></li>
-        <li><input class="formulario__input" type="password" id="password" name="user_password" required></li>
-        <label class="formulario__label" for="E-mail">E-mail</label>
+        <li>
+          <label class="formulario__label" for="E-mail">E-mail</label>
+          <input class="formulario__input" type="email" id="E-mail" name="user_E-mail" required>
+        </li>
+        <li>
+          <label class="formulario__label" for="password">Password</label>
+          <input class="formulario__input" type="password" id="password" name="user_password" required>
+        </li>
       </ul>
       <input class="enviar" type="submit" value="Submit">
       <p class="parrafo1"><strong>Forgot Password?</strong></p>
       <p class="parrafo1">Don’t have an account? <a href="#"><strong>Sign up</strong></a></p>
     </form>
-
   </div>
 
   <!-- carrousel prototype -->
@@ -156,53 +158,61 @@
         </button>
       </div>
     </div>
+  </div>
 
-    <div class="components">
 
-      <form class="box_text">
-        <h2>Box Consult</h2>
-        <textarea rows="5" cols="50" placeholder="Consult Us..."></textarea><br><br>
-        <input class="enviar" type="submit" value="Submit">
-      </form>
-      <form class="formulario">
-        <h2>Sign In</h2>
-        <div>
-          <input class="formulario__input" type="text" id="Name" name="user_Name" required>
-          <label class="formulario__label" for="Name">Name:</label>
-        </div>
-        <div>
-          <input class="formulario__input" type="text" id="Lastname" name="user_Lastname" required>
-          <label class="formulario__label" for="Lastname">Last Name:</label>
-        </div>
-
-        <div>
-          <input class="formulario__input" type="email" id="E-mail" name="user_E-mail" required>
-          <label class="formulario__label" for="E-mail">E-mail</label>
-        </div>
-
-        <div>
-          <input class="formulario__input" type="number" id="tel" name="user_tel" required>
-          <label class="formulario__label" for="tel">Phone</label>
-        </div>
-        <input class="enviar" type="submit" value="Submit">
-      </form>
-
-      <form class="formulario">
-        <h2>Sign Up</h2>
+  <!-- forms prototype -->
+  <div class="center">
+    <div>
+      <form class="formulario modal">
+        <h2 class="">Contact Us</h2>
         <ul>
-
-          <label class="formulario__label" for="E-mail">E-mail</label>
-          <input class="formulario__input" type="email" id="E-mail" name="user_E-mail" required>
-
-          <label class="formulario__label" for="password">Password:</label>
-          <input class="formulario__input" type="password" id="password" name="user_password" required>
-
+          <li>
+              <label class="formulario__label" for="Name">Name:</label>
+              <input class="formulario__input" type="text" id="Name" name="user_Name" required>
+          </li>
+          <li>
+              <label class="formulario__label" for="E-mail">E-mail</label>
+              <input class="formulario__input" type="email" id="E-mail" name="user_E-mail" required>
+          </li>
+          <li>
+            <label class="formulario__label" for="tel">Phone</label>
+            <input class="formulario__input" type="number" id="tel" name="user_tel" required>
+          </li>
+          <li>
+            <textarea class="formulario-textarea" type="text" placeholder="Consult Us..."></textarea>
+          </li>
         </ul>
         <input class="enviar" type="submit" value="Submit">
-        <p class="parrafo1">Don’t have an account? <a href="#"><strong>Sign up</strong></a></p>
       </form>
     </div>
+  </div>
 
+  <div class="center">
+    <form class="formulario modal">
+      <div>
+        <img class="formulario_img" src="../../public/assets/icons/logo.svg" alt="">
+        <img id="close" src="../../public/design-system/img/vector.svg" alt="">
+      </div>
+      <h2>Sign In</h2>
+      <ul>
+        <li>
+          <label class="formulario__label" for="E-mail">E-mail</label>
+          <input class="formulario__input" type="email" id="E-mail" name="user_E-mail" required>
+        </li>
+        <li>
+          <label class="formulario__label" for="password">Password</label>
+          <input class="formulario__input" type="password" id="password" name="user_password" required>
+        </li>
+      </ul>
+      <input class="enviar" type="submit" value="Submit">
+      <p class="parrafo1"><strong>Forgot Password?</strong></p>
+      <p class="parrafo1">Don’t have an account? <a href="#"><strong>Sign up</strong></a></p>
+    </form>
+  </div>
+
+  <!-- tabs prototype -->
+  <div class="container">
     <div class="tabs-container">
       <h2>Hotel Name</h2>
       <ul class="tab-container">
@@ -222,12 +232,9 @@
         </div>
       </div>
     </div>
-
-
   </div>
 
-
-  <!-- footer -->
+  <!-- footer prototype -->
 
   <footer class="footer">
     <div class="footer__list container footer--flex">
