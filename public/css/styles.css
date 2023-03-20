@@ -178,7 +178,6 @@ a {
 .tabs-container .data-container {
   height: 65vh;
   overflow-y: auto;
-  background-color: gray;
 }
 .tabs-container .data-container .data {
   display: none;
