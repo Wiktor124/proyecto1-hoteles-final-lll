@@ -1,5 +1,5 @@
 .tabs-container {
-  margin: 1rem;
+
   &h2 {
     font-weight: 300px;
   }
@@ -39,6 +39,39 @@
 
 .rooms {
   display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+}
+
+.hotels {
+  $borders: 12px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  &__card {
+    
+    * img {
+      border-radius: $borders;
+      height: 100%;
+    }
+  }
+  
+  &__link {
+    position: relative;
+  }
+  
+  &__title {
+    background-color: $black-dissipated;
+    border-radius: $borders;
+    bottom: 4px;
+    box-sizing: border-box;
+    color: $white;
+    left: 0;
+    margin: 0;
+    padding: 1.1356rem 0 1.1356rem 1.1356rem;
+    position: absolute;
+    width: 100%;
+  }
+  
 }

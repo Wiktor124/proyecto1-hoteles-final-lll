@@ -1,6 +1,6 @@
 .header {
   $header-height: 70px;
-  background-color: $black-header;
+  background-color: $black-dissipated;
   height: $header-height;
   position: relative;
   z-index: 3;
@@ -52,7 +52,7 @@
   &__links {
     display: none;
     align-items: center;
-    background-color: $black-header;
+    background-color: $black-dissipated;
     flex-direction: column;
     gap: 20px;
     height: calc(100vh - $header-height);
