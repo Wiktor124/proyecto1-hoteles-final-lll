@@ -81,15 +81,44 @@
         <div class="data active">
           <ul class="rooms"></ul>
         </div>
+        <!-- contact form-->
+
         <div class="data">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo
-          asperiores nemo labore.
-          <img src="./public/" alt="">
+          <div class="center contact-img">
+            <div>
+              <form action="https://formsubmit.co/651f8046dfd776e1dd96cc255ad6e47c" method="POST" class="formulario2 modal2">
+                <div>
+                  <h2>Contact Us</h2>
+                  <ul>
+                    <li>
+                      <label class="formulario2__label" for="name">Name</label>
+                      <input class="formulario2__input" type="text" id="Name" name="name" required>
+                    </li>
+                    <li>
+                      <label class="formulario2__label" for="e-mail">E-mail</label>
+                      <input class="formulario2__input" type="email" id="E-mail" name="e-mail" required>
+                    </li>
+                    <li>
+                      <label class="formulario2__label" for="phone">Phone</label>
+                      <input class="formulario2__input" type="number" id="tel" name="phone" required>
+                    </li>
+                    <li>
+                      <label class="formulario2__label" for="comments"></label>
+                      <textarea class="formulario2-textarea" type="text" name="comments" placeholder="Consult Us..."></textarea>
+                    </li>
+                  </ul>
+                  <input class="enviar" type="submit" value="Submit">
+                  <input type="hidden" name="_next" value="http://127.0.0.1:5501/hotels.html">
+                  <input type="hidden" name="_captcha" value="false">
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
   </div>
+
 
   <!-- footer -->
   <footer class="footer">
