@@ -1,7 +1,7 @@
 import { places } from './apiConnection.js'
 import { createGalleryCards, createBanner } from './create-dom-elements.js'
 
-createBanner('./public/assets/img/banner-destinies.jpg', 'Places')
+createBanner('./public/assets/img/banner-destinies.jpg', 'places')
 // print places
 function printPlaces(placesData) {
 
