@@ -1,8 +1,8 @@
-import { hotels } from './apiConnection.js';
-import { createBanner } from './create-dom-elements.js';
-console.log(hotels)
+import { validateUrlQueryId } from './validateUrlQueryId.js'
+import { createBanner } from './create-dom-elements.js'
 
-const idHotel = new URLSearchParams(window.location.search).get("id") - 1;
+const idHotel = new URLSearchParams(window.location.search).get('id') - 1;
+const hotels = await validateUrlQueryId(idHotel, 'hotels');
 
 // print just one hotel
 function printHotel(hotel) {
@@ -53,6 +53,4 @@ function printRooms() {
 printRooms()
 
 /* form contact*/
-
 document.getElementById('link').value = window.location.href;
-
