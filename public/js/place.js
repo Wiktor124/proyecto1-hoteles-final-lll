@@ -1,7 +1,8 @@
-import { places, hotels } from './apiConnection.js'
+import { validateUrlQueryId } from './validateUrlQueryId.js';
 import { createBanner } from './create-dom-elements.js';
 
 const idPlace = new URLSearchParams(window.location.search).get('id')
+const [places, hotels] = await validateUrlQueryId(idPlace, 'both');
 
 // print just one place
 function printPlace(placesData) {
@@ -24,7 +25,7 @@ printPlace(places[idPlace - 1])
 // print hotels that match with place
 function printHotels() {
   const getHotels = hotels.filter((item) => idPlace === item.idPlace)
-  
+
   document.querySelector('.hotels').innerHTML = getHotels.map((item) => {
 
     return `
@@ -38,4 +39,4 @@ function printHotels() {
     
   }).join('')
 }
-printHotels()
+document.querySelector('#fetchHotels').addEventListener('click', printHotels)

@@ -1,4 +1,4 @@
-import { hotels } from './apiConnection.js';
+import { fetchHotels } from './apiConnection.js';
 import { createGalleryCards,  createBanner } from './create-dom-elements.js'
 
 createBanner('./public/assets/img/banner-hotels.jpeg', 'Hotels')
@@ -15,4 +15,4 @@ function printHotels(hotelsData) {
 
   }).join('')
 }
-printHotels(hotels);
+printHotels(await fetchHotels());
