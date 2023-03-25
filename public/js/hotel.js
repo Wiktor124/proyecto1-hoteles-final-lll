@@ -51,3 +51,4 @@ printRooms()
 
 /* form contact*/
 document.getElementById('link').value = window.location.href;
+

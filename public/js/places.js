@@ -16,4 +16,3 @@ function printPlaces(placesData) {
 printPlaces(await fetchPlaces())
 
 
-
