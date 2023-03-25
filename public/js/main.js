@@ -1,4 +1,4 @@
-import { places } from './apiConnection.js'
+import { fetchPlaces } from './apiConnection.js'
 import { createBanner } from './create-dom-elements.js';
 
 createBanner('public/assets/img/banner-home.jpg', 'COSTA RICA');
@@ -20,4 +20,4 @@ function printPlacesImages(placesData) {
 
   }).join('')
 }
-printPlacesImages(places)
+printPlacesImages(await fetchPlaces())

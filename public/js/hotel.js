@@ -1,12 +1,13 @@
-import { hotels } from './apiConnection.js';
-import { createBanner } from './create-dom-elements.js';
+import { validateUrlQueryId } from './validateUrlQueryId.js'
+import { createBanner } from './create-dom-elements.js'
 
-const idHotel = new URLSearchParams(window.location.search).get("id") - 1;
+const idHotel = new URLSearchParams(window.location.search).get('id') - 1;
+const hotels = await validateUrlQueryId(idHotel, 'hotels');
 
 // print just one hotel
 function printHotel(hotel) {
   createBanner(hotel.image[0], hotel.hotelName)
-  
+
   document.getElementById('hotel').innerHTML = `
    
   <div class="discover">
