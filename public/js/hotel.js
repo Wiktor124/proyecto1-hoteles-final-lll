@@ -32,31 +32,25 @@ printHotel(hotels[idHotel])
 function printRooms() {
 
   document.querySelector('.rooms').innerHTML = hotels[idHotel].roomsList.map(item => {
+    const total = Number(item.price) - Number(item.discount)
 
     return `
       <li class="rooms__card">
-        <img src="${item.roomImage}" alt="${item.roomName}" />
-      
         <div class="rooms__text">
-          <h3>${item.roomName}</h3>
-          <div>
-            <h3>Includes:</h3>
-            <div>
-              <span>${item.characteristics}</span>
-            </div>
+        <img src="${item.roomImage}" alt="${item.roomName}" />
+          <div class="rooms--space">
+            <h3>${item.roomName}</h3>
+            <span>${item.characteristics}</span>
           </div>
-      
-          <div>
-            <h3>Costs:</h3>
-            <div>
-              <span>CRC ${item.price}</span>
-              <span>Original Price CRC ${(item.price + 100)} + CRC 56 of taxes and charges - ${item.discoutn}%</span>
-            </div>
-          </div>
+        <div>
+            <span class="price price-font">${item.price} $</span>
+            <span class="total price-font">${total} $</span>
         </div>
       </li>
     `;
-    
   }).join('')
 }
 printRooms()
+
+/* form contact*/
+document.getElementById('link').value = window.location.href;
