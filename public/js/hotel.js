@@ -1,5 +1,6 @@
 import { hotels } from './apiConnection.js';
 import { createBanner } from './create-dom-elements.js';
+console.log(hotels)
 
 const idHotel = new URLSearchParams(window.location.search).get("id") - 1;
 
@@ -54,3 +55,4 @@ printRooms()
 /* form contact*/
 
 document.getElementById('link').value = window.location.href;
+
