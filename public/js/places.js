@@ -12,7 +12,8 @@ function printPlaces(placesData) {
       './place.html?id=' + item.id,
     )
   }).join('')
-
 }
 printPlaces(await fetchPlaces())
+
+
 

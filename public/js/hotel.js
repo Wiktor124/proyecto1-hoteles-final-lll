@@ -14,15 +14,12 @@ function printHotel(hotel) {
 
       <div class="discover__textContainer">
         <h2 class="discover__title">${hotel.hotelName}</h2>
-
         <p class="discover__text">${hotel.descritption}</p>
       </div>
-
       <div class="discover__img">
         <img src="${hotel.image[1]}" alt="${hotel.hotelName}">
       </div>
-
-    </div>
+  </div>
 
   `
 }
