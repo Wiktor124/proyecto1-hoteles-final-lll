@@ -1,7 +1,7 @@
 import { fetchPlaces } from './apiConnection.js'
 import { createGalleryCards, createBanner } from './create-dom-elements.js'
 
-createBanner('./public/assets/img/banner-destinies.jpg', 'Places')
+createBanner('./public/assets/img/banner-destinies.jpg', 'Destinations')
 // print places
 function printPlaces(placesData) {
 
@@ -12,7 +12,7 @@ function printPlaces(placesData) {
       './place.html?id=' + item.id,
     )
   }).join('')
-
 }
 printPlaces(await fetchPlaces())
+
 

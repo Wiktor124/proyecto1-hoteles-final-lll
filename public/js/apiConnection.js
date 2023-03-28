@@ -1,8 +1,7 @@
-const api = 'https://63ed6ef13d9c852c3f5a8b83.mockapi.io/';
+const api = 'https://641ce24db556e431a877f2a0.mockapi.io/';
 
 // Connect to Api
 export const fetchPlaces = async () => {
-  
   try {
     const destinations = await fetch(`${api}places`).then((response) => response.json())
 

@@ -5,7 +5,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
 }
 
 h1 {
@@ -21,16 +20,12 @@ h2 {
 ul,
 ol {
   list-style: none;
-  padding: 0;
+  padding: 0px;
   margin: 0;
 }
 
 a {
   text-decoration: none;
-}
-
-span {
-  font-size: 1rem;
 }
 
 img {
@@ -164,6 +159,7 @@ a {
   background-color: rgb(255, 255, 255);
   color: black;
   max-width: fit-content;
+  margin-bottom: 30px;
 }
 .tabs-container .tab-container .tab {
   padding: 1rem 3rem 1rem 1rem;
@@ -174,9 +170,10 @@ a {
 .tabs-container .tab-container .tab.active {
   background-color: rgb(26, 25, 25);
   color: white;
+  font-weight: bold;
 }
 .tabs-container .data-container {
-  height: 467px;
+  height: 100%;
   width: 100%;
   overflow-y: auto;
 }
@@ -190,7 +187,36 @@ a {
 .rooms {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 25px;
+  padding: 5px;
+}
+.rooms__card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding-bottom: 98px;
+  border-radius: 20px;
+  max-width: 425px;
+}
+.rooms__text img {
+  height: 250px;
+  border-radius: 20px 20px 0px 0px;
+}
+.rooms--space {
+  padding-left: 5px;
+  margin-bottom: 20px;
+}
+
+.price {
+  text-decoration: line-through 2px;
+}
+.price-font {
+  font-weight: bold;
+  font-size: 22px;
+  margin-left: 5px;
+}
+
+.total {
+  color: limegreen;
+  margin-left: 15px;
 }
 
 .hotels {
@@ -200,7 +226,7 @@ a {
 }
 .hotels__card * img {
   border-radius: 12px;
-  height: 100%;
+  height: 98%;
 }
 .hotels__link {
   position: relative;
@@ -220,9 +246,14 @@ a {
 
 /*contact form*/
 .contact-img {
-  background-image: url(/public/design-system/img/pool.jpg);
+  background-image: url("../design-system/img/pool.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.list {
+  list-style: disc;
+  padding: 0px 0px 0px 20px;
 }
 
 .footer {
@@ -254,20 +285,25 @@ a {
 .footer__anchors a {
   color: #000;
 }
+.footer .setting {
+  display: flex;
+  gap: 80px;
+}
 
 @media (min-width: 768px) {
   .footer {
-    padding: 120px 60px 120px;
+    padding: 100px 60px 100px;
   }
   .footer--flex {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
   }
   .footer__img {
     display: flex;
     gap: 2rem;
     width: auto;
+    min-width: 150px;
   }
   .footer__anchors h2 {
     color: #000;
@@ -280,6 +316,10 @@ a {
   }
   .footer__anchors a {
     color: #000;
+  }
+  .footer .setting {
+    gap: 55px;
+    margin-left: 40px;
   }
 }
 .header {
@@ -355,10 +395,14 @@ a {
   height: 610px;
 }
 .banner h1 {
+  display: flex;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
   color: #fff;
-  line-height: 526px;
+  height: 610px;
+  background-color: rgba(0, 0, 0, 0.54);
 }
 
 @media (min-width: 768px) {
@@ -724,11 +768,12 @@ a {
 }
 .discover {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 55px;
+  margin-bottom: 80px;
 }
 .discover__title {
-  margin: 0 0 70px 0;
+  margin: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
