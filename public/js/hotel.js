@@ -57,18 +57,18 @@ function printRooms() {
     // Add features
     let addFeatures = 0;
     for(const i in room.characteristics) {
-      const span = document.createElement('span')
+      const span = document.createElement('div')
 
       const [a, b] = room.characteristics[i];
 
       addFeatures += Number(b)
       
-      span.textContent = `${a} ${b}`
+      span.textContent = `${a} ${b}$`
       roomsSpace.appendChild(span)
     }
 
-    const priceCharacteristics = addFeatures + Number(room.price)
-    spanPrice.textContent = priceCharacteristics
+    const priceCharacteristics = Math.floor(addFeatures + Number(room.price))
+    spanPrice.textContent = priceCharacteristics + '$'
     
     // Validate if room has discount
     if(Number(room.discount) !== 0) {
@@ -76,7 +76,7 @@ function printRooms() {
       
       const priceDiscount = document.createElement('span')
       priceDiscount.className = 'total price-font'
-      priceDiscount.textContent = priceCharacteristics - (priceCharacteristics * Number(room.discount) / 100);
+      priceDiscount.textContent = (priceCharacteristics - (priceCharacteristics * Number(room.discount) / 100)) + '$';
       priceContainer.appendChild(priceDiscount);
     }
     roomText.appendChild(priceContainer)

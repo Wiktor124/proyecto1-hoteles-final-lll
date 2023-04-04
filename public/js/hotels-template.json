@@ -18,11 +18,7 @@
       {
         "roomName": "Suite",
         "price": "300",
-        "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
-        },
+        "characteristics": "hola rayos asdf ",
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/riu-room-2.jpg"
       },
