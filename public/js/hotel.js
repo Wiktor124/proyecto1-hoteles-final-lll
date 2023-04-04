@@ -28,27 +28,64 @@ printHotel(hotels[idHotel])
 // print rooms
 function printRooms() {
 
-  document.querySelector('.rooms').innerHTML = hotels[idHotel].roomsList.map(item => {
-    const total = Number(item.price) - Number(item.discount)
+  document.querySelector('.rooms').innerHTML = hotels[idHotel].roomsList.map(room => {
+    const cards = document.createElement('li')
+    cards.className = 'rooms__card'
 
-    return `
-      <li class="rooms__card">
-        <div class="rooms__text">
-        <img src="${item.roomImage}" alt="${item.roomName}" />
-          <div class="rooms--space">
-            <h3>${item.roomName}</h3>
-            <span>${item.characteristics}</span>
-          </div>
-        <div>
-            <span class="price price-font">${item.price} $</span>
-            <span class="total price-font">${total} $</span>
-        </div>
-      </li>
-    `;
+    const roomText = document.createElement('div')
+    roomText.className = 'rooms__text'
+
+    const imgRoom = document.createElement('img')
+    imgRoom.src = room.roomImage
+    imgRoom.alt = room.roomName
+
+    const roomsSpace = document.createElement('div')
+    roomsSpace.className = 'rooms--space'
+
+    const roomTitle = document.createElement('h3')
+    roomTitle.textContent = room.roomName;
+    roomsSpace.append(roomTitle)
+
+    roomText.append(imgRoom, roomsSpace)
+    
+    const priceContainer = document.createElement('div')
+    const spanPrice = document.createElement('span')
+    spanPrice.className = 'total price-font'
+    
+    priceContainer.append(spanPrice);
+    
+    // Add features
+    let addFeatures = 0;
+    for(const i in room.characteristics) {
+      const span = document.createElement('span')
+
+      const [a, b] = room.characteristics[i];
+
+      addFeatures += Number(b)
+      
+      span.textContent = `${a} ${b}`
+      roomsSpace.appendChild(span)
+    }
+
+    const priceCharacteristics = addFeatures + Number(room.price)
+    spanPrice.textContent = priceCharacteristics
+    
+    // Validate if room has discount
+    if(Number(room.discount) !== 0) {
+      spanPrice.className = 'price price-font'
+      
+      const priceDiscount = document.createElement('span')
+      priceDiscount.className = 'total price-font'
+      priceDiscount.textContent = priceCharacteristics - (priceCharacteristics * Number(room.discount) / 100);
+      priceContainer.appendChild(priceDiscount);
+    }
+    roomText.appendChild(priceContainer)
+ 
+    cards.append(roomText)
+    return cards.outerHTML
   }).join('')
 }
 printRooms()
 
 /* form contact*/
 document.getElementById('link').value = window.location.href;
-

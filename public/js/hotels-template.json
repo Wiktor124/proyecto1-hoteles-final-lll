@@ -7,21 +7,33 @@
       {
         "roomName": "Family Room (2 Beds)",
         "price": "170",
-        "characteristics": "2 beds - Wifi - Television",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "20",
         "roomImage": "public/assets/hotels/rooms/riu-room-1.jpg"
       },
       {
         "roomName": "Suite",
         "price": "300",
-        "characteristics": "1 bed - Wifi - Television - Jacuzzi - Minibar.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/riu-room-2.jpg"
       },
       {
         "roomName": "Superior Double with sea view",
         "price": "130",
-        "characteristics": "1 bed - Wifi - Television.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/riu-room-3.jpg"
       }
@@ -40,21 +52,33 @@
       {
         "roomName": "Economic cabin",
         "price": "90",
-        "characteristics": "Wifi - Television.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/teca-room-1.jpg"
       },
       {
         "roomName": "Standard cabin",
         "price": "120",
-        "characteristics": "Television - Wifi - Air conditioning.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/teca-room-2.jpg"
       },
       {
         "roomName": "Family cabin",
         "price": "140.9",
-        "characteristics": "Pool - Bar - Breakfast - Wifi",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/teca-room-3.jpg"
       }
@@ -73,21 +97,33 @@
       {
         "roomName": "Shared rooms",
         "price": "60",
-        "characteristics": "Bar - Pets Allowed.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/selina-room-1.jpg"
       },
       {
         "roomName": "Teepee tent",
         "price": "90",
-        "characteristics": "Pool - Pets Allowed - Wifi.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/selina-room-2.jpg"
       },
       {
         "roomName": "Standard room",
         "price": "125",
-        "characteristics": "Pool - Air conditioning - Wifi.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/selina-room-3.jpg"
       }
@@ -106,21 +142,33 @@
       {
         "roomName": "Premium room",
         "price": "300",
-        "characteristics": "Spa - Pool - WiFi - Breakfast - Minibar.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/pacuare-room-1.jpg"
       },
       {
         "roomName": "Standard room ",
         "price": "250",
-        "characteristics": " Wifi - Air conditioning.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/pacuare-room-2.jpg"
       },
       {
         "roomName": "Economic room",
         "price": "200",
-        "characteristics": "Pets Allowed - Wifi.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/pacuare-room-3.jpg"
       }
@@ -139,21 +187,33 @@
       {
         "roomName": "Standard room",
         "price": "200",
-        "characteristics": "Air conditioning - Pool - WiFi.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "20",
         "roomImage": "public/assets/hotels/rooms/tambor-room-1.jpg"
       },
       {
         "roomName": "Family room",
         "price": "110.9",
-        "characteristics": "Pool - Wifi.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/tambor-room-2.jpg"
       },
       {
         "roomName": "Premium room",
         "price": "230",
-        "characteristics": "Pool - Living room - Minibar - Wifi.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "25",
         "roomImage": "public/assets/hotels/rooms/tambor-room-3.jpg"
       }
@@ -172,21 +232,33 @@
       {
         "roomName": "Ecoroom",
         "price": "60",
-        "characteristics": "Pets Allowed - Pool - Wifi.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/teva-room-1.jpg"
       },
       {
         "roomName": "Shared rooms",
         "price": "50",
-        "characteristics": "Pool - Wifi.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/teva-room-2.jpg"
       },
       {
         "roomName": "The Suite",
         "price": "90",
-        "characteristics": "Pool - Scenic view - Wifi - Dinner.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/teva-room-3.jpg"
       }
@@ -205,21 +277,33 @@
       {
         "roomName": "Premium bungalow",
         "price": "349.9",
-        "characteristics": "Wifi - Garden - Kitchen - Refrigerator - Pool.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/bunga-room-1.jpg"
       },
       {
         "roomName": "Standard room",
         "price": "150",
-        "characteristics": "Wifi - Breackfast - Air conditioning.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/bunga-room-2.jpg"
       },
       {
         "roomName": "Family Room",
         "price": "90",
-        "characteristics": "Wifi - Pool.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/bunga-room-3.jpg"
       }
@@ -238,21 +322,33 @@
       {
         "roomName": " Oceanview villa",
         "price": "640",
-        "characteristics": "Private terrace - Wifi - Spa - Refrigerator - Pool.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "40",
         "roomImage": "public/assets/hotels/rooms/oxygen-room-1.jpg"
       },
       {
         "roomName": "Jungle view villa",
         "price": "550",
-        "characteristics": "Air Conditioning - Wifi - Pool - Minibar.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/oxygen-room-2.jpg"
       },
       {
         "roomName": "Basic villa",
         "price": "490.9",
-        "characteristics": "Wifi - Spa - Air Conditioning.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "13",
         "roomImage": "public/assets/hotels/rooms/oxygen-room-3.jpg"
       }
@@ -271,21 +367,33 @@
       {
         "roomName": "Standard room",
         "price": "140",
-        "characteristics": "Work area - Pool - WiFi.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "30",
         "roomImage": "public/assets/hotels/rooms/jaco-room-1.jpg"
       },
       {
         "roomName": "Family room",
         "price": "160",
-        "characteristics": "Air conditioning - Pool - WiFi - Television.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/jaco-room-2.jpg"
       },
       {
         "roomName": "Beach view room",
         "price": "170",
-        "characteristics": "Spa - WiFi - Breakfast - Scenic view.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/jaco-room-3.jpg"
       }
@@ -304,21 +412,33 @@
       {
         "roomName": "Standard room",
         "price": "100",
-        "characteristics": "Pool - Air conditioning - Wifi.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/balcon-room-1.jpg"
       },
       {
         "roomName": "Premium room",
         "price": "259",
-        "characteristics": "Pool - Scenic view - Wifi - Dinner - Minibar.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/balcon-room-2.jpg"
       },
       {
         "roomName": "Economic room",
         "price": "50",
-        "characteristics": "Wifi - Television.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/balcon-room-3.jpg"
       }
@@ -337,21 +457,33 @@
       {
         "roomName": "Family Room ",
         "price": "170",
-        "characteristics": "Wifi - Restaurant - Air conditioning - Pool.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/whale-room-1.jpg"
       },
       {
         "roomName": "Mixed bed room",
         "price": "150",
-        "characteristics": "Pool - Wifi - Television.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/whale-room-2.jpg"
       },
       {
         "roomName": "Economic room",
         "price": "100",
-        "characteristics": "Wifi - Television.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/whale-room-3.jpg"
       }
@@ -370,21 +502,33 @@
       {
         "roomName": "Premium room",
         "price": "350",
-        "characteristics": "Pool - WiFi - Breakfast - Scenic view.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/capi-room-1.jpg"
       },
       {
         "roomName": "Standard room ",
         "price": "230",
-        "characteristics": "Pool - Air conditioning - Wifi.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/capi-room-2.jpg"
       },
       {
         "roomName": "Family room ",
         "price": "180",
-        "characteristics": "Wifi - Breackfast - Air conditioning.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/capi-room-3.jpg"
       }
@@ -403,21 +547,33 @@
       {
         "roomName": "Premium room",
         "price": "175",
-        "characteristics": "Pool - WiFi - Breakfast - Scenic view.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/conchal-room-1.jpg"
       },
       {
         "roomName": "Standard room ",
         "price": "100",
-        "characteristics": "Air conditioning - Pool - WiFi.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/conchal-room-2.jpg"
       },
       {
         "roomName": "Family room ",
         "price": "85",
-        "characteristics": "Pool - Wifi - Television.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/conchal-room-3.jpg"
       }
@@ -436,21 +592,33 @@
       {
         "roomName": "Premium room",
         "price": "300",
-        "characteristics": "Spa - Pool - Breakfast - Minibar - Scenic view.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "20",
         "roomImage": "public/assets/hotels/rooms/resort-room-1.jpg"
       },
       {
         "roomName": "Standard room ",
         "price": "260",
-        "characteristics": "Air conditioning - Pool - WiFi - Television.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/resort-room-2.jpg"
       },
       {
         "roomName": "Family room ",
         "price": "200",
-        "characteristics": "Pool - Breakfast - Wifi",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/resort-room-3.jpg"
       }
@@ -469,21 +637,33 @@
       {
         "roomName": "Premium room",
         "price": "270",
-        "characteristics": "Air conditioning - Pool - WiFi - Minibar.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "20",
         "roomImage": "public/assets/hotels/rooms/encanto-room-1.jpg"
       },
       {
         "roomName": "Double room",
         "price": "199.9",
-        "characteristics": "Wifi - Air conditioning - Television.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/encanto-room-2.jpg"
       },
       {
         "roomName": "Economic room",
         "price": "100",
-        "characteristics": "Pool - Wifi.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/encanto-room-3.jpg"
       }
@@ -502,21 +682,33 @@
       {
         "roomName": "Standard room ",
         "price": "130",
-        "characteristics": "Air conditioning - Pool - WiFi.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "20",
         "roomImage": "public/assets/hotels/rooms/bamboo-room-1.jpg"
       },
       {
         "roomName": "Economic room",
         "price": "60",
-        "characteristics": "Television - Air conditioning.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/bamboo-room-2.jpg"
       },
       {
         "roomName": "Double room",
         "price": "70",
-        "characteristics": "Television - Pool - WiFi.",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "perla": ["Jacuzzi", 40],
+          "carr": ["Jacuzzi", 40]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/bamboo-room-3.jpg"
       }
