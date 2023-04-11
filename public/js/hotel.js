@@ -1,5 +1,9 @@
-import { validateUrlQueryId } from './validateUrlQueryId.js'
-import { createBanner } from './create-dom-elements.js'
+import {
+  validateUrlQueryId
+} from './validateUrlQueryId.js'
+import {
+  createBanner
+} from './create-dom-elements.js'
 
 const idHotel = new URLSearchParams(window.location.search).get('id') - 1;
 const hotels = await validateUrlQueryId(idHotel, 'hotels');
@@ -47,42 +51,56 @@ function printRooms() {
     roomsSpace.append(roomTitle)
 
     roomText.append(imgRoom, roomsSpace)
-    
+
     const priceContainer = document.createElement('div')
     const spanPrice = document.createElement('span')
     spanPrice.className = 'total price-font'
-    
+
     priceContainer.append(spanPrice);
-    
+
     // Add features
+
     let addFeatures = 0;
-    for(const i in room.characteristics) {
+    let priceCharacteristics = "";
+
+    for (const i in room.characteristics) {
       const span = document.createElement('div')
-
       const [a, b] = room.characteristics[i];
-
       addFeatures += Number(b)
-      
       span.textContent = `${a} ${b}$`
       roomsSpace.appendChild(span)
-    }
+      priceCharacteristics = Math.floor(addFeatures + Number(room.price))
+      spanPrice.textContent = priceCharacteristics + '$'
 
-    const priceCharacteristics = Math.floor(addFeatures + Number(room.price))
-    spanPrice.textContent = priceCharacteristics + '$'
-    
-    // Validate if room has discount
-    if(Number(room.discount) !== 0) {
-      spanPrice.className = 'price price-font'
-      
-      const priceDiscount = document.createElement('span')
-      priceDiscount.className = 'total price-font'
-      priceDiscount.textContent = (priceCharacteristics - (priceCharacteristics * Number(room.discount) / 100)) + '$';
-      priceContainer.appendChild(priceDiscount);
     }
-    roomText.appendChild(priceContainer)
- 
-    cards.append(roomText)
+    // Validate if room has discount
+
+    function validateDiscount() {
+
+      if (Number(room.discount) !== 0) {
+        spanPrice.className = 'price price-font'
+        const priceDiscount = document.createElement('span')
+        priceDiscount.className = 'total price-font'
+        priceDiscount.textContent = (priceCharacteristics - (priceCharacteristics * Number(room.discount) / 100)) + '$';
+        priceContainer.appendChild(priceDiscount);
+        roomText.appendChild(priceContainer)
+        cards.append(roomText)
+      }
+
+      // if not, show the base price
+      
+      else {
+        spanPrice.className = ' price-font'
+        const priceDiscount = document.createElement('span')
+        roomText.appendChild(priceContainer)
+        cards.append(roomText)
+      }
+    }
+    
+    
+    validateDiscount()
     return cards.outerHTML
+    
   }).join('')
 }
 printRooms()
