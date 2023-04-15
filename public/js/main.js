@@ -4,8 +4,8 @@ import { createBanner } from './create-dom-elements.js';
 createBanner('public/assets/img/banner-home.jpg', 'COSTA RICA');
 
 function printPlacesImages(placesData) {
-  
-  document.getElementById('track').innerHTML = placesData.map((item) => {
+
+  document.getElementById('track').innerHTML = placesData.slice(0, 8).map((item) => {
 
     return `
       <div class="carrusel">
