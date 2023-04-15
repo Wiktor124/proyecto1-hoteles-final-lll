@@ -46,10 +46,12 @@ function printRooms() {
     const roomsSpace = document.createElement('div')
     roomsSpace.className = 'rooms--space'
 
+    const roomsUl = document.createElement('ul')
+    roomsUl.className = 'roomsUl'
+
     const roomTitle = document.createElement('h3')
     roomTitle.textContent = room.roomName;
-    roomsSpace.append(roomTitle)
-
+    roomsSpace.append(roomTitle,roomsUl)
     roomText.append(imgRoom, roomsSpace)
 
     const priceContainer = document.createElement('div')
@@ -65,10 +67,12 @@ function printRooms() {
 
     for (const i in room.characteristics) {
       const span = document.createElement('div')
+      const roomsLi = document.createElement('li')
       const [a, b] = room.characteristics[i];
       addFeatures += Number(b)
       span.textContent = `${a} ${b}$`
-      roomsSpace.appendChild(span)
+      roomsUl.appendChild(roomsLi)
+      roomsLi.appendChild (span)
       priceCharacteristics = Math.floor(addFeatures + Number(room.price))
       spanPrice.textContent = priceCharacteristics + '$'
 
