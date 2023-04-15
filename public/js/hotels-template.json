@@ -8,9 +8,8 @@
         "roomName": "Family Room (2 Beds)",
         "price": "170",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "wiFi": ["WiFi", 10],
+          "air-conditioning": ["Air conditioning", 20]
         },
         "discount": "20",
         "roomImage": "public/assets/hotels/rooms/riu-room-1.jpg"
@@ -18,7 +17,11 @@
       {
         "roomName": "Suite",
         "price": "300",
-        "characteristics": "hola rayos asdf ",
+        "characteristics": {
+          "jacuzzi": ["Jacuzzi", 40],
+          "air-conditioning": ["Air conditioning", 20],
+          "breakfast": ["Breakfast", 30]
+        },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/riu-room-2.jpg"
       },
@@ -26,9 +29,8 @@
         "roomName": "Superior Double with sea view",
         "price": "130",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "pool": ["Pool", 35],
+          "air-conditioning": ["Air conditioning", 20]
         },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/riu-room-3.jpg"
@@ -49,9 +51,7 @@
         "roomName": "Economic cabin",
         "price": "90",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "wiFi": ["WiFi", 10]
         },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/teca-room-1.jpg"
@@ -60,9 +60,9 @@
         "roomName": "Standard cabin",
         "price": "120",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "service": ["Room service", 25],
+          "air-conditioning": ["Air conditioning", 20],
+          "scenic": ["Scenic view", 30]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/teca-room-2.jpg"
@@ -71,9 +71,9 @@
         "roomName": "Family cabin",
         "price": "140.9",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "restaurant": ["Restaurant", 15],
+          "air-conditioning": ["Air conditioning", 20],
+          "pool": ["Pool", 35]
         },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/teca-room-3.jpg"
@@ -94,9 +94,7 @@
         "roomName": "Shared rooms",
         "price": "60",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "air-conditioning": ["Air conditioning", 20]
         },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/selina-room-1.jpg"
@@ -105,9 +103,9 @@
         "roomName": "Teepee tent",
         "price": "90",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "service": ["Room service", 25],
+          "parking": ["Parking", 10],
+          "pets": ["Pets allowed", 15]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/selina-room-2.jpg"
@@ -116,9 +114,8 @@
         "roomName": "Standard room",
         "price": "125",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "wiFi": ["WiFi", 10],
+          "air-conditioning": ["Air conditioning", 20]
         },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/selina-room-3.jpg"
@@ -140,8 +137,8 @@
         "price": "300",
         "characteristics": {
           "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "air-conditioning": ["Air conditioning", 20],
+          "breakfast": ["Breakfast", 30]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/pacuare-room-1.jpg"
@@ -150,9 +147,9 @@
         "roomName": "Standard room ",
         "price": "250",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "restaurant": ["Restaurant", 15],
+          "air-conditioning": ["Air conditioning", 20],
+          "pool": ["Pool", 35]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/pacuare-room-2.jpg"
@@ -161,9 +158,8 @@
         "roomName": "Economic room",
         "price": "200",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "wiFi": ["WiFi", 10],
+          "air-conditioning": ["Air conditioning", 20]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/pacuare-room-3.jpg"
@@ -184,9 +180,8 @@
         "roomName": "Standard room",
         "price": "200",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "air-conditioning": ["Air conditioning", 20],
+          "breakfast": ["Breakfast", 30]
         },
         "discount": "20",
         "roomImage": "public/assets/hotels/rooms/tambor-room-1.jpg"
@@ -195,9 +190,8 @@
         "roomName": "Family room",
         "price": "110.9",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "air-conditioning": ["Air conditioning", 20],
+          "pool": ["Pool", 35]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/tambor-room-2.jpg"
@@ -206,9 +200,9 @@
         "roomName": "Premium room",
         "price": "230",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "service": ["Room service", 25],
+          "air-conditioning": ["Air conditioning", 20],
+          "scenic": ["Scenic view", 30]
         },
         "discount": "25",
         "roomImage": "public/assets/hotels/rooms/tambor-room-3.jpg"
@@ -229,9 +223,8 @@
         "roomName": "Ecoroom",
         "price": "60",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "wiFi": ["WiFi", 10],
+          "parking": ["Parking", 5]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/teva-room-1.jpg"
@@ -240,9 +233,8 @@
         "roomName": "Shared rooms",
         "price": "50",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "wiFi": ["WiFi", 10],
+          "air-conditioning": ["Air conditioning", 15]
         },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/teva-room-2.jpg"
@@ -252,8 +244,8 @@
         "price": "90",
         "characteristics": {
           "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "air-conditioning": ["Air conditioning", 20],
+          "scenic": ["Scenic view", 30]
         },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/teva-room-3.jpg"
@@ -274,9 +266,9 @@
         "roomName": "Premium bungalow",
         "price": "349.9",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "jacuzzi": ["Jacuzzi", 30],
+          "air-conditioning": ["Air conditioning", 10],
+          "scenic": ["Scenic view", 20]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/bunga-room-1.jpg"
@@ -285,9 +277,8 @@
         "roomName": "Standard room",
         "price": "150",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "restaurant": ["Restaurant", 20],
+          "pool": ["Pool", 30]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/bunga-room-2.jpg"
@@ -296,9 +287,9 @@
         "roomName": "Family Room",
         "price": "90",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "restaurant": ["Restaurant", 15],
+          "air-conditioning": ["Air conditioning", 20],
+          "pool": ["Pool", 35]
         },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/bunga-room-3.jpg"
@@ -319,9 +310,9 @@
         "roomName": " Oceanview villa",
         "price": "640",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "service": ["Room service", 25],
+          "air-conditioning": ["Air conditioning", 20],
+          "scenic": ["Scenic view", 30]
         },
         "discount": "40",
         "roomImage": "public/assets/hotels/rooms/oxygen-room-1.jpg"
@@ -330,9 +321,8 @@
         "roomName": "Jungle view villa",
         "price": "550",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "air-conditioning": ["Air conditioning", 15],
+          "breakfast": ["Breakfast", 30]
         },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/oxygen-room-2.jpg"
@@ -341,9 +331,7 @@
         "roomName": "Basic villa",
         "price": "490.9",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "pool": ["Pool", 35]
         },
         "discount": "13",
         "roomImage": "public/assets/hotels/rooms/oxygen-room-3.jpg"
@@ -365,8 +353,8 @@
         "price": "140",
         "characteristics": {
           "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "air-conditioning": ["Air conditioning", 20],
+          "breakfast": ["Breakfast", 30]
         },
         "discount": "30",
         "roomImage": "public/assets/hotels/rooms/jaco-room-1.jpg"
@@ -375,9 +363,9 @@
         "roomName": "Family room",
         "price": "160",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "restaurant": ["Restaurant", 15],
+          "air-conditioning": ["Air conditioning", 20],
+          "pool": ["Pool", 35]
         },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/jaco-room-2.jpg"
@@ -386,9 +374,8 @@
         "roomName": "Beach view room",
         "price": "170",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "restaurant": ["Restaurant", 20],
+          "pool": ["Pool", 30]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/jaco-room-3.jpg"
@@ -409,9 +396,8 @@
         "roomName": "Standard room",
         "price": "100",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "restaurant": ["Restaurant", 15],
+          "parking": ["Parking", 10]
         },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/balcon-room-1.jpg"
@@ -421,8 +407,8 @@
         "price": "259",
         "characteristics": {
           "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "service": ["Room service", 25],
+          "terrace": ["Terrace", 25]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/balcon-room-2.jpg"
@@ -431,9 +417,7 @@
         "roomName": "Economic room",
         "price": "50",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "parking": ["Parking", 10]
         },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/balcon-room-3.jpg"
@@ -454,9 +438,9 @@
         "roomName": "Family Room ",
         "price": "170",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "breakfast": ["Breakfast", 30],
+          "pool": ["Pool", 35],
+          "wiFi": ["WiFi", 10]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/whale-room-1.jpg"
@@ -465,9 +449,8 @@
         "roomName": "Mixed bed room",
         "price": "150",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "pets": ["Pets allowed", 15],
+          "parking": ["Parking", 10]
         },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/whale-room-2.jpg"
@@ -476,9 +459,8 @@
         "roomName": "Economic room",
         "price": "100",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "air-conditioning": ["Air conditioning", 20],
+          "wiFi": ["WiFi", 10]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/whale-room-3.jpg"
@@ -499,9 +481,9 @@
         "roomName": "Premium room",
         "price": "350",
         "characteristics": {
+          "garden": ["Garden", 15],
           "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "service": ["Room service", 25]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/capi-room-1.jpg"
@@ -510,9 +492,8 @@
         "roomName": "Standard room ",
         "price": "230",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "restaurant": ["Restaurant", 15],
+          "air-conditioning": ["Air conditioning", 20]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/capi-room-2.jpg"
@@ -521,9 +502,8 @@
         "roomName": "Family room ",
         "price": "180",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "restaurant": ["Restaurant", 15],
+          "pool": ["Pool", 35]
         },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/capi-room-3.jpg"
@@ -544,9 +524,10 @@
         "roomName": "Premium room",
         "price": "175",
         "characteristics": {
+          "terrace": ["Terrace", 25],
           "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "breakfast": ["Breakfast", 30]
+
         },
         "discount": "15",
         "roomImage": "public/assets/hotels/rooms/conchal-room-1.jpg"
@@ -555,9 +536,8 @@
         "roomName": "Standard room ",
         "price": "100",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "parking": ["Parking", 10],
+          "garden": ["Garden", 15]
         },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/conchal-room-2.jpg"
@@ -566,9 +546,9 @@
         "roomName": "Family room ",
         "price": "85",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "scenic": ["Scenic view", 30],
+          "restaurant": ["Restaurant", 15],
+          "pool": ["Pool", 35]
         },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/conchal-room-3.jpg"
@@ -589,9 +569,9 @@
         "roomName": "Premium room",
         "price": "300",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "scenic": ["Scenic view", 30],
+          "restaurant": ["Restaurant", 15],
+          "pets": ["Pets allowed", 15]
         },
         "discount": "20",
         "roomImage": "public/assets/hotels/rooms/resort-room-1.jpg"
@@ -600,9 +580,9 @@
         "roomName": "Standard room ",
         "price": "260",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "pool": ["Pool", 35],
+          "wiFi": ["WiFi", 10],
+          "air-conditioning": ["Air conditioning", 20]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/resort-room-2.jpg"
@@ -611,9 +591,8 @@
         "roomName": "Family room ",
         "price": "200",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "pool": ["Pool", 35],
+          "garden": ["Garden", 15]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/resort-room-3.jpg"
@@ -634,9 +613,9 @@
         "roomName": "Premium room",
         "price": "270",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "terrace": ["Terrace", 25],
+          "parking": ["Parking", 10],
+          "air-conditioning": ["Air conditioning", 20]
         },
         "discount": "20",
         "roomImage": "public/assets/hotels/rooms/encanto-room-1.jpg"
@@ -645,9 +624,8 @@
         "roomName": "Double room",
         "price": "199.9",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "air-conditioning": ["Air conditioning", 20],
+          "wiFi": ["WiFi", 10]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/encanto-room-2.jpg"
@@ -656,9 +634,8 @@
         "roomName": "Economic room",
         "price": "100",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "restaurant": ["Restaurant", 15],
+          "pool": ["Pool", 35]
         },
         "discount": "5",
         "roomImage": "public/assets/hotels/rooms/encanto-room-3.jpg"
@@ -679,9 +656,9 @@
         "roomName": "Standard room ",
         "price": "130",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "breakfast": ["Breakfast", 30],
+          "pets": ["Pets allowed", 15],
+          "pool": ["Pool", 35]
         },
         "discount": "20",
         "roomImage": "public/assets/hotels/rooms/bamboo-room-1.jpg"
@@ -690,9 +667,8 @@
         "roomName": "Economic room",
         "price": "60",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "parking": ["Parking", 10],
+          "air-conditioning": ["Air conditioning", 20]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/bamboo-room-2.jpg"
@@ -701,9 +677,8 @@
         "roomName": "Double room",
         "price": "70",
         "characteristics": {
-          "jacuzzi": ["Jacuzzi", 40],
-          "perla": ["Jacuzzi", 40],
-          "carr": ["Jacuzzi", 40]
+          "pool": ["Pool", 35],
+          "wiFi": ["WiFi", 10]
         },
         "discount": "10",
         "roomImage": "public/assets/hotels/rooms/bamboo-room-3.jpg"

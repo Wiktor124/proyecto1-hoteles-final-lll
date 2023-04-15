@@ -242,6 +242,13 @@ a {
   width: 100%;
 }
 
+.roomsUl {
+  padding-left: 20px;
+  color: rgb(128, 127, 127);
+  list-style: disc;
+  font-size: #D9D9D9;
+}
+
 /*contact form*/
 .contact-img {
   background-image: url("../design-system/img/pool.jpg");
