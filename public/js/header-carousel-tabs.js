@@ -1,44 +1,39 @@
-function App() { }
+function App() {}
 window.onload = function (event) {
-  var app = new App();
-  window.app = app;
+  var app = new App()
+  window.app = app
 }
+
+function updateSlide(slide, widthcard) {
+  document.querySelector(
+    '.carousel__trackList',
+  ).style.transform = `translateX(-${slide * widthcard}px)`
+}
+
+let currentSlide = 0
 App.prototype.processingButton = function (event) {
+  const trackWidth = window.innerWidth
+  const btn = event.currentTarget
+  const carrusel = track.querySelectorAll('.carousel__card')
+  const widthcard = carrusel[0].clientWidth + 20
 
-  const btn = event.currentTarget;
-  const carruselList = event.currentTarget.parentNode;
-  const track = event.currentTarget.parentNode.querySelector('#track');
-  const carrusel = track.querySelectorAll('.carrusel');
-  const carruselWidth = carrusel[0].offsetWidth + 20;
-  const trackWidth = track.offsetWidth;
-  const listWidth = carruselList.offsetWidth;
-
-  track.style.left == "" ? 
-   leftPosition = track.style.left = 0 : 
-   leftPosition = parseFloat(track.style.left.slice(0, -2) * -1);
-
-  btn.dataset.button == "button-prev" ? 
-  prevAction(leftPosition, carruselWidth, track) : 
-  nextAction(leftPosition, trackWidth, listWidth, carruselWidth, track)
-
-}
-
-const prevAction = (leftPosition, carruselWidth, track) => {
-  if (leftPosition > 0) {
-    track.style.left = `${-1 * (leftPosition - carruselWidth)}px`;
+  if (btn.dataset.button === 'button-prev') {
+    currentSlide = Math.max(currentSlide - 1, 0)
   } else {
-    track.style.left = 0;
-  }
-}
+    if (trackWidth > 960) {
+      currentSlide = Math.min(currentSlide + 1, 4)
+    }
 
-const nextAction = (leftPosition, trackWidth, listWidth, carruselWidth, track) => {
-  if ((leftPosition + listWidth) < trackWidth) {
-    if ((leftPosition + listWidth + carruselWidth) >= trackWidth) {
-      track.style.left = `${-1 * (trackWidth - listWidth)}px`;
-    } else {
-      track.style.left = `${-1 * (leftPosition + carruselWidth)}px`;
+    if (trackWidth > 768 && trackWidth <= 950) {
+      currentSlide = Math.min(currentSlide + 1, 5)
+    }
+
+    if (trackWidth <= 768) {
+      currentSlide = Math.min(currentSlide + 1, 7)
     }
   }
+
+  updateSlide(currentSlide, widthcard)
 }
 
 // header button

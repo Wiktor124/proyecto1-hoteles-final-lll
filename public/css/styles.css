@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 body {
   box-sizing: border-box;
@@ -48,106 +47,85 @@ img {
   width: 1px;
 }
 
-.carro {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  background: rgb(49, 49, 49);
-}
-
-h4, strong, a {
-  margin: 0;
-  padding: 0;
-}
-
+h4,
+strong,
 a {
-  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
-.carrousel__list {
-  align-items: center;
-  display: flex;
-  height: 304px;
-  padding: 10px 0px;
+.carousel {
+  position: relative;
+}
+.carousel__track {
   overflow: hidden;
-  gap: 10px;
 }
-
-.carrousel__track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: flex;
-  transition: 0.5s ease-in-out;
+.carousel__trackList {
+  display: grid;
   gap: 1.25rem;
-  z-index: 1;
+  grid-template-columns: repeat(8, 23.6%);
+  place-content: start;
+  transition: transform 0.5s ease-in-out;
 }
-
-.carrusel {
-  box-sizing: border-box;
-  width: 235px;
-}
-
-.carrousel {
+.carousel__card {
   position: relative;
+  height: 200px;
 }
-.carrousel h4 {
+.carousel__card :last-child {
+  padding: 0;
+}
+.carousel__card h4 {
   position: absolute;
-  z-index: 1;
   font-size: 22px;
   line-height: 23px;
   color: white;
   padding: 25px;
 }
-.carrousel h4 strong {
+.carousel__card h4 strong {
   font-size: 24px;
   display: block;
 }
-.carrousel a img {
-  height: 300px;
-  /* Altura automática para mantener la proporción */
+.carousel__card a img {
+  height: 100%;
   border-radius: 15px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-  transition: 0.3 ease-in-out;
 }
-
-.carrusel-arrow {
+.carousel__arrowBtn {
   border-radius: 30px;
   background-color: #ccc;
   position: absolute;
   width: 48px;
   height: 48px;
-  text-align: center;
-  border: 0;
+  border: none;
   cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.carrusel-arrow :focus {
+.carousel__arrowBtn :focus {
   outline: 0;
 }
-.carrusel-arrow svg {
+.carousel__nextBtn {
+  right: -24px;
+}
+.carousel__prevBtn {
+  left: -24px;
+}
+.carousel__iconArrow {
   width: 12px;
   height: 100%;
-  color: rgba(0, 0, 0, 0.7);
+  fill: rgba(0, 0, 0, 0.7);
 }
 
-.carrusel-prev {
-  left: -24px;
-  z-index: 2;
-}
-
-.carrusel-next {
-  right: -24px;
-  z-index: 1;
-}
-
-/*
-@media (max-width: 1240px){
-  .carrusel{
-    width: 240px;
+@media (max-width: 960px) {
+  .carousel__trackList {
+    grid-template-columns: repeat(8, 31.6%);
   }
-}*/
+}
+@media (max-width: 768px) {
+  .carousel__trackList {
+    grid-template-columns: repeat(8, 100%);
+  }
+}
 .tabs-containerh2 {
   font-weight: 300px;
 }
