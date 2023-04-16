@@ -270,7 +270,7 @@ a {
 }
 .footer .setting {
   display: flex;
-  gap: 80px;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
@@ -299,10 +299,6 @@ a {
   }
   .footer__anchors a {
     color: #000;
-  }
-  .footer .setting {
-    gap: 55px;
-    margin-left: 40px;
   }
 }
 .header {
@@ -751,7 +747,7 @@ a {
 }
 .discover {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 55px;
   margin-bottom: 80px;
 }
