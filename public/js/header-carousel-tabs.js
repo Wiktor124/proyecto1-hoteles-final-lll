@@ -1,4 +1,4 @@
-import { createHeader } from './create-dom-elements.js';
+import { createHeader } from './create-dom-elements.js'
 // this function create header
 createHeader()
 
@@ -41,36 +41,34 @@ App.prototype.processingButton = function (event) {
 }
 
 // header button
-const btn = document.getElementById('header-btn');
+const btn = document.getElementById('header-btn')
 btn.addEventListener('click', () => {
-
   btn.classList.toggle('header__button--active')
-  document.querySelector('.header__links').classList.toggle('header__links--active')
+  document
+    .querySelector('.header__links')
+    .classList.toggle('header__links--active')
 })
-
 
 // tabs
 function tab() {
-  const tab = document.querySelectorAll(".tab");
-  const tabcontent = document.querySelectorAll(".data");
+  const tab = document.querySelectorAll('.tab')
+  const tabcontent = document.querySelectorAll('.data')
 
   tab.forEach((i, z) => {
-    tab[z].addEventListener("click", () => {
+    tab[z].addEventListener('click', () => {
       tab.forEach((i, z) => {
-        tab[z].classList.remove("active")
-        tabcontent[z].classList.remove("active")
-      });
+        tab[z].classList.remove('active')
+        tabcontent[z].classList.remove('active')
+      })
       tab[z].classList.add('active')
       tabcontent[z].classList.add('active')
     })
-  });
-
-};
+  })
+}
 tab()
 
 // modal sign in }
 function modal() {
-
   const open = document.getElementById('open')
   const modal = document.getElementById('modal_container')
   const close = document.getElementById('close')
@@ -78,52 +76,52 @@ function modal() {
 
   open.addEventListener('click', () => {
     btn.classList.toggle('header__button--active')
-    document.querySelector('.header__links').classList.toggle('header__links--active')
+    document
+      .querySelector('.header__links')
+      .classList.toggle('header__links--active')
 
-    modal.classList.add('show');
-    scroll.classList.add('scroll-body');
-  });
+    modal.classList.add('show')
+    scroll.classList.add('scroll-body')
+  })
 
   close.addEventListener('click', () => {
-    modal.classList.remove('show');
-    scroll.classList.remove('scroll-body');
-  });
+    modal.classList.remove('show')
+    scroll.classList.remove('scroll-body')
+  })
 }
 
 function login() {
+  const form = document.getElementById('myForm')
+  form.addEventListener('submit', function (event) {
+    event.preventDefault()
+    
+    const userName = document.getElementById('user').value
 
-  const form = document.getElementById("myForm");
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const userName = document.getElementById('user').value;
-    localStorage.setItem('userName', userName);
+    // storage userName in cookies for 10 minutes
+    // just value without name of cookies
+    document.cookie = `${userName};max-age=${60 * 10}`
 
     location.reload()
-  });
+  })
 }
 login()
 
 function validateUser() {
   const userLi = document.getElementById('userLogin')
-  userLi.style.textAlign = "center"
-  userLi.style.color = "white"
-  userLi.style.textDecoration = "underline 2px"
-  userLi.style.textUnderlineOffset = "3px"
-
-  
+  userLi.style.textAlign = 'center'
+  userLi.style.color = 'white'
+  userLi.style.textDecoration = 'underline 2px'
+  userLi.style.textUnderlineOffset = '3px'
 
   const login = `<button type="button" id="open">Sign In</button>`
   const logged = document.createElement('h4')
 
-  if (localStorage.getItem('userName') === null) {
+  if (document.cookie === '') {
     userLi.innerHTML = login
     modal()
   } else {
-    logged.textContent = localStorage.getItem('userName')
+    logged.textContent = document.cookie
     userLi.innerHTML = `<strong>Bienvenido </strong><br>${logged.outerHTML}`
-    
   }
 }
 validateUser()
-
