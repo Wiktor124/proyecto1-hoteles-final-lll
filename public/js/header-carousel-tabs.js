@@ -98,8 +98,7 @@ function login() {
     const userName = document.getElementById('user').value
 
     // storage userName in cookies for 10 minutes
-    // just value without name of cookies
-    document.cookie = `${userName};max-age=${60 * 10}`
+    document.cookie = `userName=${userName};max-age=${60 * 20}`
 
     location.reload()
   })
@@ -120,7 +119,7 @@ function validateUser() {
     userLi.innerHTML = login
     modal()
   } else {
-    logged.textContent = document.cookie
+    logged.textContent = document.cookie.split('; ').find(row => row.startsWith('userName')).split('=')[1];
     userLi.innerHTML = `<strong>Bienvenido </strong><br>${logged.outerHTML}`
   }
 }
