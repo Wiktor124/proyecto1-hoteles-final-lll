@@ -40,4 +40,37 @@ export function createGalleryCards(routeImage, itemName, routePage) {
 
 }
 
+export function createHeader () {
 
+  const headerHtml = document.createElement('header')
+  headerHtml.className = 'header'
+  headerHtml.innerHTML = `
+    <nav class="header__nav  header--flex container">
+      <a href="#">
+        <img src="public/assets/icons/logo.svg" alt="Logo travel company" class="header__logo">
+      </a>
+
+      <button class="header__button header--flex" id="header-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+
+      <ul class="header__links header--flex">
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./places.html">Destinations</a>
+        </li>
+        <li>
+          <a href="./hotels.html">Hotels</a>
+        </li>
+        <li id="userLogin"></li>
+      </ul>
+    </nav>
+  `;
+  const body = document.body;
+
+  return body.insertBefore(headerHtml, body.firstChild)
+}
