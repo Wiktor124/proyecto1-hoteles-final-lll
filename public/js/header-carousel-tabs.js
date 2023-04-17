@@ -43,7 +43,7 @@ App.prototype.processingButton = function (event) {
 // header button
 const btn = document.getElementById('header-btn');
 btn.addEventListener('click', () => {
-  
+
   btn.classList.toggle('header__button--active')
   document.querySelector('.header__links').classList.toggle('header__links--active')
 })
@@ -68,24 +68,62 @@ function tab() {
 };
 tab()
 
-// modal sign in 
+// modal sign in }
+function modal() {
 
-const open = document.getElementById('open')
-const modal = document.getElementById('modal_container')
-const close = document.getElementById('close')
-const scroll = document.querySelector('body')
+  const open = document.getElementById('open')
+  const modal = document.getElementById('modal_container')
+  const close = document.getElementById('close')
+  const scroll = document.querySelector('body')
 
+  open.addEventListener('click', () => {
+    btn.classList.toggle('header__button--active')
+    document.querySelector('.header__links').classList.toggle('header__links--active')
 
+    modal.classList.add('show');
+    scroll.classList.add('scroll-body');
+  });
 
-open.addEventListener('click', ()=>{
-  btn.classList.toggle('header__button--active')
-  document.querySelector('.header__links').classList.toggle('header__links--active')
+  close.addEventListener('click', () => {
+    modal.classList.remove('show');
+    scroll.classList.remove('scroll-body');
+  });
+}
+
+function login() {
+
+  const form = document.getElementById("myForm");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const userName = document.getElementById('user').value;
+    localStorage.setItem('userName', userName);
+
+    location.reload()
+  });
+}
+login()
+
+function validateUser() {
+  const userLi = document.getElementById('userLogin')
+  userLi.style.textAlign = "center"
+  userLi.style.color = "white"
+  userLi.style.textDecoration = "underline 2px"
+  userLi.style.textUnderlineOffset = "3px"
+
   
-  modal.classList.add('show');
-  scroll.classList.add('scroll-body');
-});
 
-close.addEventListener('click',()=>{
-  modal.classList.remove('show');
-  scroll.classList.remove('scroll-body');
-});
+  const login = `<button type="button" id="open">Sign In</button>`
+  const logged = document.createElement('h4')
+
+  if (localStorage.getItem('userName') === null) {
+    userLi.innerHTML = login
+    modal()
+  } else {
+    logged.textContent = localStorage.getItem('userName')
+    userLi.innerHTML = `<strong>Bienvenido </strong><br>${logged.outerHTML}`
+    
+  }
+}
+validateUser()
+
