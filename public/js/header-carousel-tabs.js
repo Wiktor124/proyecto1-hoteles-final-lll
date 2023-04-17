@@ -1,4 +1,8 @@
-function App() { }
+import { createHeader } from './create-dom-elements.js';
+// this function create header
+createHeader()
+
+function App() {}
 window.onload = function (event) {
   var app = new App()
   window.app = app
