@@ -80,21 +80,3 @@ a {
   }
 }
 
-@media (max-width: 960px) {
-  .carousel {
-    &__trackList {
-      grid-template-columns: repeat(8, 31.6%);
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  
-  .carousel {
-    &__trackList {
-      grid-template-columns: repeat(8, 100%);
-
-    }
-  }
-}  
-

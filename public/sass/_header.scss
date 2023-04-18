@@ -93,31 +93,3 @@
     background-color: $black-dissipated;
   }
 }
-
-@media (min-width: 768px) {
-  .header {
-    &__button {
-      display: none;
-    }
-
-    &__nav {
-      position: relative;
-    }
-
-    &__links {
-      background: none;
-      display: flex;
-      flex-direction: row;
-      gap: 60px;
-      height: fit-content;
-      position: initial;
-      padding-top: 0;
-      width: fit-content;
-    }
-  }
-
-  .banner {
-    h1 { font-size: 4rem; }
-  }
-
-}

@@ -7,7 +7,7 @@
   gap: 30px;
   place-content: center;
 
-  li {
+  li {    
     position: relative;
     height: 305px;
     overflow:hidden;
@@ -15,6 +15,12 @@
     &:hover{
       transform:scale(1.1);
       transition: all 0.5s ease-out;
+    }
+
+    :focus {
+      transform:scale(1.1);
+      transition: all 0.5s ease-out;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
     
   }

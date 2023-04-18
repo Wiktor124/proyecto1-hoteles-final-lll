@@ -46,7 +46,7 @@ export function createHeader () {
   headerHtml.className = 'header'
   headerHtml.innerHTML = `
     <nav class="header__nav  header--flex container">
-      <a href="#">
+      <a href="./index.html">
         <img src="public/assets/icons/logo.svg" alt="Logo travel company" class="header__logo">
       </a>
 
