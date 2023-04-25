@@ -6,12 +6,12 @@ const validateUrlQueryId = async (id, typeData) => {
   if(id < 0) throw new Error("There's not id!");
 
   const apiData = {
-    places: await fetchPlaces(),
-    hotels: await fetchHotels(),
-    both: await Promise.all([fetchPlaces(), fetchHotels()])
+    places: fetchPlaces(),
+    hotels: fetchHotels(),
+    both: Promise.all([fetchPlaces(), fetchHotels()])
   }
 
-  return apiData[typeData]
+  return await apiData[typeData]
 }
 
 export default validateUrlQueryId;
